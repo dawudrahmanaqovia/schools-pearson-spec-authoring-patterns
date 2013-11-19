@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Project>
+	<Folder FolderName="XML Files" ExtStr="xml;cml;math;rdf;smil;svg;wml">
+		<File FilePath="config\config.xml" HomeFolder="Yes"/>
+		<File FilePath="xml\document.xml" HomeFolder="Yes"/>
+		<File FilePath="xml\documentblank.xml" HomeFolder="Yes"/>
+		<File FilePath="xml\documentfilled.xml" HomeFolder="Yes"/>
+		<File FilePath="xml\test.xml" HomeFolder="Yes"/>
+		<File FilePath="config\toolbar.xml" HomeFolder="Yes"/>
+	</Folder>
+	<Folder FolderName="XSL Files" ExtStr="xsl;xslt">
+		<File FilePath="xsl\assessment_criteria.xsl" HomeFolder="Yes"/>
+		<File FilePath="xsl\assessment_guidance.xsl" HomeFolder="Yes"/>
+		<File FilePath="xsl\content.xsl" HomeFolder="Yes"/>
+		<File FilePath="xsl\introduction.xsl" HomeFolder="Yes"/>
+		<File FilePath="xsl\learning_objective.xsl" HomeFolder="Yes"/>
+		<File FilePath="xsl\meta.xsl" HomeFolder="Yes"/>
+		<File FilePath="xsl\stylesheet.xsl" HomeFolder="Yes"/>
+		<File FilePath="xsl\suggested_assignment.xsl" HomeFolder="Yes"/>
+		<File FilePath="xsl\tagson.xsl" HomeFolder="Yes"/>
+		<File FilePath="xsl\teacher_guidance.xsl" HomeFolder="Yes"/>
+		<File FilePath="xsl\test.xsl" HomeFolder="Yes"/>
+		<File FilePath="xsl\unit.xsl" HomeFolder="Yes"/>
+	</Folder>
+	<Folder FolderName="XQuery Files" ExtStr="xq;xql;xquery"/>
+	<Folder FolderName="HTML Files" ExtStr="html;htm;xhtml;asp">
+		<File FilePath="css\common.css" HomeFolder="Yes"/>
+		<File FilePath="css\lookup.css" HomeFolder="Yes"/>
+		<File FilePath="css\tagson.css" HomeFolder="Yes"/>
+		<File FilePath="css\wysiwyg.css" HomeFolder="Yes"/>
+	</Folder>
+	<Folder FolderName="DTD/Schemas" ExtStr="dtd;dcd;xdr;biz;xsd">
+		<File FilePath="xsd\schema.xsd" HomeFolder="Yes"/>
+		<File FilePath="xsd\shared_types.xsd" HomeFolder="Yes"/>
+		<File FilePath="xsd\test.xsd" HomeFolder="Yes"/>
+	</Folder>
+	<Folder FolderName="Entities" ExtStr="ent"/>
+</Project>

@@ -26,7 +26,7 @@
 			<xs:element name="level" type="level_def"/>
 			<xs:element name="type" type="unit_type_def"/>
 			<xs:element name="guided_learning_hours" type="xs:float"/>
-			<xs:element name="assessment_type" type="unit_assessment_type_def" />
+			<xs:element name="assessment_type" type="unit_assessment_type_def"/>
 		</xs:sequence>
 	</xs:complexType>
 	<!-- Introduction -->
@@ -48,7 +48,7 @@
 			<xs:element ref="learning_objective" minOccurs="0" maxOccurs="unbounded"/>
 		</xs:sequence>
 	</xs:complexType>
-	<xs:element name="learning_objective" type="learning_objectiveType" />
+	<xs:element name="learning_objective" type="learning_objectiveType"/>
 	<xs:complexType name="learning_objectiveType">
 		<xs:sequence>
 			<!-- Learning Objective title -->
@@ -82,13 +82,12 @@
 			<xs:element name="topic_content" type="section_content_type" minOccurs="1" maxOccurs="1" x:placeholder="Insert topic content"/>
 		</xs:sequence>
 	</xs:complexType>
-	
 	<!-- BEGIN ASSESSMENT CRITERIA -->
 	<xs:complexType name="assessment_criterias_type">
 		<xs:sequence>
 			<xs:element name="assessment_criteria" type="assessment_criteria_type" minOccurs="0" maxOccurs="unbounded"/>
 		</xs:sequence>
-	</xs:complexType>				
+	</xs:complexType>
 	<xs:complexType name="assessment_criteria_type">
 		<xs:sequence>
 			<xs:element name="level_1_criteria" type="assessment_criterion_xtype_relax_validation" minOccurs="0" maxOccurs="1"/>
@@ -103,6 +102,7 @@
 			<xs:element name="criterion" type="section_content_type" x:role="hidden-from-ui" x:placeholder="Insert criterion text"/>
 			<xs:element name="GSCE_english" type="xs:string"/>
 			<xs:element name="GSCE_math" type="xs:string"/>
+			<xs:element ref="categories" minOccurs="0" maxOccurs="1"/>
 			<xs:choice minOccurs="0" maxOccurs="unbounded">
 				<xs:element ref="paragraph" x:placeholder="Paragraph introducing the unit"/>
 			</xs:choice>
@@ -110,6 +110,26 @@
 			<xs:element name="criterion_guidance" type="section_content_type" minOccurs="0" maxOccurs="1"/>
 		</xs:sequence>
 	</xs:complexType>
+  <xs:element name="categories" type="categories.type"/>
+
+  <xs:element name="category" type="category.type"/>
+  <!-- categories.type -->
+	<xs:complexType name="categories.type" mixed="false">
+		<xs:sequence>
+			<xs:element ref="category" maxOccurs="unbounded"/>
+		</xs:sequence>
+	</xs:complexType>
+	<!-- category.type -->
+	<xs:simpleType name="category.type">
+		<xs:restriction base="xs:string">
+			<xs:enumeration value="Art"/>
+			<xs:enumeration value="Culture"/>
+			<xs:enumeration value="Design"/>
+			<xs:enumeration value="Media"/>
+			<xs:enumeration value="Sports"/>
+			<xs:enumeration value="Travel"/>
+		</xs:restriction>
+	</xs:simpleType>
 	<xs:complexType name="assessment_criterion_xtype">
 		<xs:sequence>
 			<xs:element name="criterion_id" type="criterion_id__type"/>
@@ -149,7 +169,7 @@
 	<xs:complexType name="suggested_assignment_type">
 		<xs:sequence>
 			<xs:element name="criteria_covered" type="criteria_covered_type"/>
-			<xs:element name="assignment_title" type="xs:string" x:placeholder="Insert title of assignment " minOccurs="1" maxOccurs="1"/>
+			<xs:element name="assignment_title" type="xs:string" minOccurs="1" maxOccurs="1" x:placeholder="Insert title of assignment "/>
 			<xs:element name="scenario" type="section_content_type" minOccurs="1" maxOccurs="1"/>
 			<xs:element name="assessment_evidence" type="section_content_type" minOccurs="1" maxOccurs="1"/>
 		</xs:sequence>

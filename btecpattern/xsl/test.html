@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Bootstrap 101 Template</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+	<!-- Bootstrap -->
+	<link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css"/>
+	<script type="text/javascript" src="../js/bootstrap.min.js"/>	
+	
+
+
+
+  </head>
+  <body>
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://code.jquery.com/jquery.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+	
+	
+<!-- Standard button -->
+<button type="button" class="btn btn-default">Default</button>
+
+<!-- Provides extra visual weight and identifies the primary action in a set of buttons -->
+<button type="button" class="btn btn-primary">Primary</button>
+
+<!-- Indicates a successful or positive action -->
+<button type="button" class="btn btn-success">Success</button>
+
+<!-- Contextual button for informational alert messages -->
+<button type="button" class="btn btn-info">Info</button>
+
+<!-- Indicates caution should be taken with this action -->
+<button type="button" class="btn btn-warning">Warning</button>
+
+<!-- Indicates a dangerous or potentially negative action -->
+<button type="button" class="btn btn-danger">Danger</button>
+
+<!-- Deemphasize a button by making it look like a link while maintaining button behavior -->
+<button type="button" class="btn btn-link">Link</button>
+	
+	
+	
+    <div id="category_options" onclick="event.cancelBubble = true; ;return false;">
+      <div class="boxside-left"></div>
+      <div class="boxside-right"></div>
+    </div>			
+
+
+		<script type="text/javascript">
+		var myData = [{id: 1, label: "Test" }];
+			$(".myDropdownCheckbox").dropdownCheckbox({
+			  data: myData,
+			  title: "<i class="icon-plus-sign"/>"
+		});
+		
+		
+		var tab = [
+		  { id: "1", label: "Forever.", isChecked: true },
+		  { id: "2", label: "I love cheese.", isChecked: true },
+		  { id: "3", label: "Meat for all", isChecked: false },
+		  { id: "4", label: "Again and again", isChecked: true },
+		  { id: "5", label: "Hey bro!", isChecked: true },
+		  { id: "6", label: "It's working?", isChecked: false },
+		  { id: "7", label: "Horse", isChecked: true },
+		  { id: "8", label: "z-index", isChecked: true },
+		  { id: "9", label: "language scala", isChecked: true },
+		  { id: "10", label: "Yahoo", isChecked: true },
+		  { id: "11", label: "yellow", isChecked: true },
+		  { id: "12", label: "Gooooooooooogle", isChecked: true },
+		  { id: "13", label: "NO WAY!", isChecked: false },
+		  { id: "14", label: "2 times?", isChecked: true }
+		];
+		$('.myDropdownCheckboxcat').dropdownCheckbox({
+		  data: tab,
+		  autosearch: true,
+		  btnClass: "btn btn-primary icon-plus-sign bringtofront",
+		  hideHeader: false,
+		  title: ""
+		});		
+		
+		</script>
+
+
+
+	<div class="panel-group" id="accordion">
+		<div class="panel panel-default">
+		
+			
+		  <div class="panel-body">	  		
+  <div class="panel panel-primary overflow">
+    <div class="panel-heading">
+    <span class="panel-title">
+    <i class="icon-collapse accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapse_assessment_criteria"/>
+		Assessment Criteria 
+	</span>
+	<i class="icon-question-sign pull-right" data-toggle="popover" title="" data-content="Make sure these are criteria that you can measure against and not a task - if you can't measure it, it isn't a criterion" data-original-title="Assessment Criteria"/>
+    </div>
+    <div id="collapse_assessment_criteria" class="panel-collapse collapse in">
+      <div class="panel-body overflow">
+	This is a test
+	  
+    <div class="myDropdownCheckboxcat pull-right">
+	<!--<button type="button" class="pull-right btn btn-primary" data-placement="auto" data-toggle="dropdown" title="Add"><i class="icon-plus-sign"/></button>-->
+	</div>	  
+	  
+	  
+      </div>
+    </div>
+  </div>	
+  
+  
+	
+		  </div>
+		</div>
+	</div>	
+	
+	
+	
+  </body>
+</html>

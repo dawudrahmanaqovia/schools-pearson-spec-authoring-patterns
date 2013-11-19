@@ -1,4 +1,4 @@
-﻿$(document).ready(function () {
+$(document).ready(function () {
     $(".icon-question-sign").popover({
         placement : 'auto right',
 		container: 'body'
@@ -11,23 +11,24 @@ function add_button(element, node)
 //alert(node.getFirstChild().getNodeName() + " - " + element);
 
 var document = node.getOwnerDocument();
-var newnode = document.createElement(node.getFirstChild().getNodeName());
+//var newnode = document.createElement(node.getFirstChild().getNodeName());
 //document.getDocumentElement().appendChild(newnode);
 
 
-var firstChild = document.getDocumentElement().getFirstChild();
+//var firstChild = document.getDocumentElement().getFirstChild();
 
 //document.getDocumentElement().insertNear(newnode, node.getParentNode());
 
-alert(node);
-node.insertNear(newnode, node.getParentNode());
-alert(node);
+//alert(node.getParentNode());
+//node.insertNear(newnode, node.getParentNode());
+alert(node.getFirstChild().getNodeName());
 }
 
-function remove_button(element, node)
+function remove_button(element, XopusNode)
 {
 
-alert(node.getNodeName());
+alert(XopusNode.getNodeName());
+alert(XopusNode.getTextContent());
 
 }
 
@@ -99,7 +100,7 @@ function insert_node(element, node, nodename)
   container.className = "showMenuButton";
 
   //remove the menu
-  container.removeChild(element.parentNode);
+  //-container.removeChild(element.parentNode);
   return true ; 
 }
 

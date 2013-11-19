@@ -26,13 +26,25 @@
 				<!-- JQuery 2.0 -->
 				<script type="text/javascript" src="../js/jquery.min.js"/>
 				<!-- Bootstrap -->
-				<link rel="stylesheet" href="../css/bootstrap.min.css" type="text/css"/>
+				<link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css"/>
 				<script type="text/javascript" src="../js/bootstrap.min.js"/>
 
-				<link rel="stylesheet" href="../css/font-awesome/css/font-awesome.min.css" type="text/css"/>
+				<link rel="stylesheet" type="text/css" href="../css/font-awesome/css/font-awesome.min.css"/>
 				<script type="text/javascript" src="../js/initialize.js"/>
+				
+				<script type="text/javascript" src="../js/meta.js"/>
+				<link rel="stylesheet" href="../css/common.css" type="text/css"/>
+				
+				
+				<link rel="stylesheet" type="text/css" href="../css/bootstrap-dropdown-checkbox.css"/>
+				
 			</head>
-			<body>		
+			<body>
+			<script type="text/javascript" src="../js/bootstrap-dropdown-checkbox.js"/>
+    <div id="category_options" onclick="event.cancelBubble = true; ;return false;">
+      <div class="boxside-left"></div>
+      <div class="boxside-right"></div>
+    </div>			
 				<!-- Unit section -->
 				<xsl:apply-templates select="unit"/>
 			</body>
