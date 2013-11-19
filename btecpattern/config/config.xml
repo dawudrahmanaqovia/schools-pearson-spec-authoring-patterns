@@ -1,0 +1,862 @@
+<x:config version="1.0" xmlns:x="http://www.xopus.com/xmlns/config">
+  
+  <x:nodeConfig>
+  
+    <x:node match="title | footer | caption | td | th">
+      <x:placeholder>{name}</x:placeholder>
+    </x:node>
+  
+      <x:node match="unit">
+      <x:role>unit</x:role>
+      <x:name xml:lang="en">Unit</x:name>
+      <x:description xml:lang="en">Unit</x:description>
+    </x:node>
+  
+	  <!-- Meta data section -->
+    <x:node match="meta">
+      <x:role>meta</x:role>
+      <x:name xml:lang="en">Meta</x:name>
+      <x:description xml:lang="en">Meta data</x:description>
+    </x:node>
+
+    <x:node match="unit_title">
+      <x:name>Unit Title</x:name>
+      <x:placeholder>Enter unit title</x:placeholder>
+    </x:node>
+
+    <x:node match="number">
+      <x:name>Unit Number</x:name>
+      <x:placeholder>0</x:placeholder>
+    </x:node>
+
+    <x:node match="level">
+      <x:name>Unit Level</x:name>
+      <x:placeholder>1</x:placeholder>
+    </x:node>
+
+    <x:node match="type">
+      <x:name>Unit Type</x:name>
+      <x:placeholder>Right click for drop down list</x:placeholder>
+    </x:node>
+
+    <x:node match="guided_learning_hours">
+      <x:name>Unit Guided Learning Hours</x:name>
+      <x:placeholder>0</x:placeholder>
+    </x:node>
+
+    <x:node match="assessment_type">
+      <x:name>Unit Assessment Type</x:name>
+      <x:placeholder>Right click for drop down list</x:placeholder>
+    </x:node>
+
+
+    <x:node match="assignment_title">
+      <x:name>Assignment Title</x:name>
+      <x:role>assignment_title</x:role>
+      <x:placeholder>Insert assignment title</x:placeholder>
+    </x:node>
+	  <!-- End Meta data section -->
+
+
+	 <!-- Introduction section -->
+    <x:node match="introduction">
+      <x:role>introduction</x:role>      
+      <x:name xml:lang="en">Introduction</x:name>
+      <x:description xml:lang="en">Introduction</x:description>      
+    </x:node>
+	  <!-- End Introduction section -->
+
+
+
+	 <!-- Learning Aim section -->
+	<x:node match="learning_objectives">
+      <x:role>learning_objectives</x:role>      
+      <x:name xml:lang="en">Learning Aims</x:name>
+      <x:description xml:lang="en">Learning Aims</x:description>
+    <x:templates>
+        <x:template>
+			<learning_objectives>        
+			<learning_objective>
+			  <learning_objective_title>
+			  </learning_objective_title>
+				<learning_objective_content>
+					<topic>
+						<topic_title></topic_title>
+						<topic_content><paragraph></paragraph></topic_content>
+					</topic>
+				</learning_objective_content>
+				<assessment_criterias>
+				<assessment_criteria>
+				<level_1_criteria>
+				  <criterion_id>
+				  </criterion_id>
+				  <criterion>
+					<paragraph>
+					</paragraph>
+				  </criterion>
+				  <GSCE_english>
+				  </GSCE_english>
+				  <GSCE_math>
+				  </GSCE_math>
+				  <criterion_guidance />				  
+				</level_1_criteria>
+				<pass_criteria>
+				  <criterion_id>
+				  </criterion_id>
+				  <criterion>
+					<paragraph>
+					</paragraph>
+				  </criterion>
+				  <GSCE_english>
+				  </GSCE_english>
+				  <GSCE_math>
+				  </GSCE_math>
+				  <criterion_guidance />
+				</pass_criteria>
+				<merit_criteria>
+				  <criterion_id>
+				  </criterion_id>
+				  <criterion>
+					<paragraph>
+					</paragraph>
+				  </criterion>
+				  <GSCE_english>
+				  </GSCE_english>
+				  <GSCE_math>
+				  </GSCE_math>
+				  <criterion_guidance />
+				</merit_criteria>
+				<distinction_criteria>
+				  <criterion_id>
+				  </criterion_id>
+				  <criterion>
+					<paragraph>
+					</paragraph>
+				  </criterion>
+				  <GSCE_english>
+				  </GSCE_english>
+				  <GSCE_math>
+				  </GSCE_math>
+				  <criterion_guidance />
+				</distinction_criteria>
+				</assessment_criteria>
+				</assessment_criterias>
+			  <assessment_guidance>
+				<paragraph>
+				</paragraph>
+			  </assessment_guidance>
+			  <suggested_assignment>
+				<criteria_covered>
+				  <criterion_id>
+				  </criterion_id>
+				</criteria_covered>
+				<assignment_title>
+				</assignment_title>
+				<scenario>
+				  <paragraph>
+				  </paragraph>
+				</scenario>
+				<assessment_evidence>
+				  <paragraph>
+				  </paragraph>
+				</assessment_evidence>
+			  </suggested_assignment>
+			</learning_objective>
+			</learning_objectives>			
+        </x:template>
+      </x:templates>                 
+    </x:node>
+	 
+    <x:node match="learning_objective">
+      <x:role>learning_objective</x:role>      
+      <x:name xml:lang="en">Learning Aim</x:name>
+      <x:description xml:lang="en">Learning Aim</x:description>
+		<x:templates>
+			<x:template>
+				<learning_objective>
+				  <learning_objective_title>
+				  </learning_objective_title>
+					<assessment_criterias>
+					<assessment_criteria>
+					<level_1_criteria>
+					  <criterion_id>
+					  </criterion_id>
+					  <criterion>
+						<paragraph>
+						</paragraph>
+					  </criterion>
+					  <GSCE_english>
+					  </GSCE_english>
+					  <GSCE_math>
+					  </GSCE_math>
+					  <criterion_guidance />					  
+					</level_1_criteria>
+					<pass_criteria>
+					  <criterion_id>
+					  </criterion_id>
+					  <criterion>
+						<paragraph>
+						</paragraph>
+					  </criterion>
+					  <GSCE_english>
+					  </GSCE_english>
+					  <GSCE_math>
+					  </GSCE_math>
+					  <criterion_guidance />
+					</pass_criteria>
+					<merit_criteria>
+					  <criterion_id>
+					  </criterion_id>
+					  <criterion>
+						<paragraph>
+						</paragraph>
+					  </criterion>
+					  <GSCE_english>
+					  </GSCE_english>
+					  <GSCE_math>
+					  </GSCE_math>
+					  <criterion_guidance />
+					</merit_criteria>
+					<distinction_criteria>
+					  <criterion_id>
+					  </criterion_id>
+					  <criterion>
+						<paragraph>
+						</paragraph>
+					  </criterion>
+					  <GSCE_english>
+					  </GSCE_english>
+					  <GSCE_math>
+					  </GSCE_math>
+					  <criterion_guidance />
+					</distinction_criteria>
+					</assessment_criteria>
+					</assessment_criterias>
+				  <assessment_guidance>
+					<paragraph>
+					</paragraph>
+				  </assessment_guidance>
+				  <suggested_assignment>
+					<criteria_covered>
+					  <criterion_id>
+					  </criterion_id>
+					</criteria_covered>
+					<assignment_title>
+					</assignment_title>
+					<scenario>
+					  <paragraph>
+					  </paragraph>
+					</scenario>
+					<assessment_evidence>
+					  <paragraph>
+					  </paragraph>
+					</assessment_evidence>
+				  </suggested_assignment>
+				</learning_objective>
+			</x:template>
+		  </x:templates>      		         
+    </x:node>
+    
+    <x:node match="learning_objective_title">
+      <x:name>Title</x:name>
+      <x:role>learning_objective_title</x:role>      
+      <x:placeholder>Insert learning aim title</x:placeholder>
+    </x:node>
+    
+    <x:node match="learning_objective_content">
+      <x:name xml:lang="en">Content</x:name>
+      <x:role>learning_objective_content</x:role>      
+      <x:placeholder>Insert content</x:placeholder>
+    </x:node>    
+    
+    <x:node match="topic">
+      <x:name xml:lang="en">Topic</x:name>
+      <x:description xml:lang="en"></x:description>      
+      <x:role>topic</x:role>      
+      <x:placeholder>Insert topic</x:placeholder>
+    </x:node>    
+   
+    <x:node match="topic_title">
+      <x:name>Title</x:name>
+      <x:role>hidden-from-ui</x:role>      
+      <x:placeholder>Insert topic title</x:placeholder>
+    </x:node>
+    
+      <x:node match="topic_content">
+      <x:name>Content</x:name>
+      <x:role>hidden-from-ui</x:role>      
+      <x:placeholder>Insert topic content</x:placeholder>
+    </x:node>         
+	  <!-- End Learning Aim section -->
+
+
+
+<!-- Assessment Criteria section -->
+    <x:node match="assessment_criterias">
+      <x:role>assessment_criteria</x:role>      
+      <x:name xml:lang="en">Assessment Criteria</x:name>
+      <x:description xml:lang="en">Assessment Criteria</x:description>
+      <x:placeholder>Insert Assessment Criteria section</x:placeholder>
+     <x:templates>
+        <x:template>
+        <assessment_criterias>
+		<assessment_criteria>
+        <level_1_criteria>
+          <criterion_id>
+          </criterion_id>
+          <criterion>
+            <paragraph>
+            </paragraph>
+          </criterion>
+          <GSCE_english>
+          </GSCE_english>
+          <GSCE_math>
+          </GSCE_math>
+          <criterion_guidance />          
+        </level_1_criteria>
+        <pass_criteria>
+          <criterion_id>
+          </criterion_id>
+          <criterion>
+            <paragraph>
+            </paragraph>
+          </criterion>
+          <GSCE_english>
+          </GSCE_english>
+          <GSCE_math>
+          </GSCE_math>
+          <criterion_guidance />
+        </pass_criteria>
+        <merit_criteria>
+          <criterion_id>
+          </criterion_id>
+          <criterion>
+            <paragraph>
+            </paragraph>
+          </criterion>
+          <GSCE_english>
+          </GSCE_english>
+          <GSCE_math>
+          </GSCE_math>
+          <criterion_guidance />
+        </merit_criteria>
+        <distinction_criteria>
+          <criterion_id>
+          </criterion_id>
+          <criterion>
+            <paragraph>
+            </paragraph>
+          </criterion>
+          <GSCE_english>
+          </GSCE_english>
+          <GSCE_math>
+          </GSCE_math>
+          <criterion_guidance />
+        </distinction_criteria>
+        </assessment_criteria>
+        </assessment_criterias>
+        </x:template>
+      </x:templates>      		
+     </x:node>     
+      
+	<x:node match="criterion_id">
+      <x:role>criterion_id</x:role>      
+      <x:name xml:lang="en">Criterion Id</x:name>
+      <x:description xml:lang="en">Criterion Id</x:description>
+      <x:placeholder>X0.X0</x:placeholder>    
+    </x:node>
+    
+ 	<x:node match="criterion">
+      <x:role>criterion</x:role>      
+      <x:name xml:lang="en">Criterion</x:name>
+      <x:description xml:lang="en">Criterion</x:description>
+    </x:node>   
+    
+    <x:node match="assessment_criteria">
+      <x:role>assessment_criteria</x:role>      
+      <x:name xml:lang="en">Assessment Criteria Row</x:name>
+      <x:description xml:lang="en">Assessment Criteria Row</x:description>
+      <x:placeholder>Insert Assessment Criteria Row</x:placeholder>
+     <x:templates>
+        <x:template>
+		<assessment_criteria>
+        <level_1_criteria>
+          <criterion_id>
+          </criterion_id>
+          <criterion>
+            <paragraph>
+            </paragraph>
+          </criterion>
+          <GSCE_english>
+          </GSCE_english>
+          <GSCE_math>
+          </GSCE_math>
+			 <criterion_guidance>
+			  <paragraph>
+			  </paragraph>
+			</criterion_guidance>                   
+        </level_1_criteria>
+        <pass_criteria>
+          <criterion_id>
+          </criterion_id>
+          <criterion>
+            <paragraph>
+            </paragraph>
+          </criterion>
+          <GSCE_english>
+          </GSCE_english>
+          <GSCE_math>
+          </GSCE_math>
+			 <criterion_guidance>
+			  <paragraph>
+			  </paragraph>
+			</criterion_guidance>         
+        </pass_criteria>
+        <merit_criteria>
+          <criterion_id>
+          </criterion_id>
+          <criterion>
+            <paragraph>
+            </paragraph>
+          </criterion>
+          <GSCE_english>
+          </GSCE_english>
+          <GSCE_math>
+          </GSCE_math>
+			 <criterion_guidance>
+			  <paragraph>
+			  </paragraph>
+			</criterion_guidance>         
+        </merit_criteria>
+        <distinction_criteria>
+          <criterion_id>
+          </criterion_id>
+          <criterion>
+            <paragraph>
+            </paragraph>
+          </criterion>
+          <GSCE_english>
+          </GSCE_english>
+          <GSCE_math>
+          </GSCE_math>
+			 <criterion_guidance>
+			  <paragraph>
+			  </paragraph>
+			</criterion_guidance>         
+        </distinction_criteria>
+        </assessment_criteria>
+        </x:template>
+      </x:templates>
+    </x:node>    
+
+	<x:node match="level_1_criteria">
+      <x:role>level_1_criteria</x:role>      
+      <x:name xml:lang="en">Level 1 Pass</x:name>
+      <x:description xml:lang="en">Level 1  Pass</x:description>
+      <x:placeholder>Insert Level 1  Pass</x:placeholder>    
+    </x:node>
+	<x:node match="pass_criteria">
+      <x:role>pass_criteria</x:role>      
+      <x:name xml:lang="en">Level 2 Pass</x:name>
+      <x:description xml:lang="en">Level 2 Pass</x:description>
+      <x:placeholder>Insert Level 2 Pass</x:placeholder>    
+    </x:node>     
+   	<x:node match="merit_criteria">
+      <x:role>merit_criteria</x:role>      
+      <x:name xml:lang="en">Level 2 Merit</x:name>
+      <x:description xml:lang="en">Level 2 Merit</x:description>
+      <x:placeholder>Insert Level 2 Merit</x:placeholder>    
+    </x:node>     
+	<x:node match="distinction_criteria">
+      <x:role>distinction_criteria</x:role>      
+      <x:name xml:lang="en">Level 2 Distinction</x:name>
+      <x:description xml:lang="en">Level 2 Distinction</x:description>
+      <x:placeholder>Insert Level 2 Distinction</x:placeholder>    
+    </x:node>                
+<!-- End Assessment Criteria section -->
+
+
+
+
+
+<!-- Assessment Guidance -->
+	<x:node match="assessment_guidance">
+      <x:role>assessment_guidance</x:role>      
+      <x:name xml:lang="en">Assessment Guidance</x:name>
+      <x:description xml:lang="en">Assessment Guidance</x:description>
+      <x:placeholder>Insert Assessment Guidance section</x:placeholder>    
+    </x:node>  
+
+	<x:node match="criterion_guidance">
+      <x:role>criterion_guidance</x:role>      
+      <x:name xml:lang="en">Criterion Guidance</x:name>
+      <x:description xml:lang="en">Criterion Guidance</x:description>
+      <x:placeholder>Insert Criterion Guidance section</x:placeholder>    
+    </x:node>  
+
+<!-- Suggest Assignment Outlines -->
+	<x:node match="suggested_assignment">
+      <x:role>suggested_assignment</x:role>      
+      <x:name xml:lang="en">Suggest Assignment Outlines</x:name>
+      <x:description xml:lang="en">Suggest Assignment Outlines</x:description>
+      <x:placeholder>Insert Suggest Assignment Outlines</x:placeholder>
+    </x:node>
+     
+  	<x:node match="scenario">
+      <x:role>scenario</x:role>      
+      <x:name xml:lang="en">Scenario</x:name>
+      <x:description xml:lang="en">Scenario</x:description>
+      <x:placeholder>Insert Scenario</x:placeholder>    
+    </x:node>   
+ 
+ 	<x:node match="assessment_evidence">
+      <x:role>assessment_evidence</x:role>      
+      <x:name xml:lang="en">Assessment  Evidence</x:name>
+      <x:description xml:lang="en">Assessment  Evidence</x:description>
+      <x:placeholder>Insert Assessment  Evidence</x:placeholder>    
+    </x:node>
+     
+	<x:node match="suggest_assignment_summary">
+      <x:role>suggest_assignment_summary</x:role>      
+      <x:name xml:lang="en">Suggest Assignment Summary</x:name>
+      <x:description xml:lang="en">Suggest Assignment Summary</x:description>
+      <x:placeholder>Insert Suggest Assignment Summary</x:placeholder>    
+    </x:node>
+<!-- End Suggest Assignment Outlines -->  
+    
+    
+    
+<!-- Teacher Guidance section -->
+	<x:node match="teacher_guidance">
+      <x:role>teacher_guidance</x:role>      
+      <x:name xml:lang="en">Teacher Guidance</x:name>
+      <x:description xml:lang="en">Teacher Guidance</x:description>
+      <x:placeholder>Insert teacher guidance section</x:placeholder> 
+      <x:templates>
+		  <x:template>
+			<resources />
+			<assessment_guidance_summary />		  
+		  </x:template>
+      </x:templates>   
+    </x:node>  
+
+	<x:node match="resources">
+      <x:role>resources</x:role>      
+      <x:name xml:lang="en">Resources</x:name>
+      <x:description xml:lang="en">Resources</x:description>
+      <x:placeholder>Insert resources text</x:placeholder>    
+    </x:node>
+    
+	<x:node match="assessment_guidance_summary">
+      <x:role>assessment_guidance_summary</x:role>      
+      <x:name xml:lang="en">Assessment guidance summary</x:name>
+      <x:description xml:lang="en">Assessment guidance summary</x:description>
+      <x:placeholder>Insert Assessment guidance summary text</x:placeholder>    
+    </x:node>
+    
+ 	<x:node match="additional_assessment_guidance">
+      <x:role>additional_assessment_guidance</x:role>      
+      <x:name xml:lang="en">Additional Assessment Guidance Information</x:name>
+      <x:description xml:lang="en">Additional Assessment Guidance Information</x:description>
+      <x:placeholder>Insert Additional Assessment Guidance Information text</x:placeholder>    
+    </x:node>   
+<!-- End Teacher Guidance section -->
+
+
+
+
+	  <!-- Section section -->
+
+    <x:node match="title">
+      <x:name xml:lang="en">Title</x:name>
+      <x:description xml:lang="en"></x:description>
+      <x:placeholder>Insert title</x:placeholder>     
+    </x:node>
+
+    <x:node match="paragraph">
+      <x:role>paragraph</x:role>
+      <x:name xml:lang="en">Paragraph</x:name>
+      <x:placeholder>Insert content</x:placeholder>      
+    </x:node>
+    <x:node match="paragraph/@align">
+      <x:role>align</x:role>
+      <x:name xml:lang="en">Alignment</x:name>
+      <x:enumeration value="left">
+        <x:name xml:lang="en">Align Left</x:name>
+      </x:enumeration>
+      <x:enumeration value="center">
+        <x:name xml:lang="en">Center</x:name>
+      </x:enumeration>
+      <x:enumeration value="right">
+        <x:name xml:lang="en">Align Right</x:name>
+      </x:enumeration>
+      <x:enumeration value="justify">
+        <x:name xml:lang="en">Justify</x:name>
+      </x:enumeration>
+    </x:node>
+      
+    <x:node match="emphasis">
+      <x:role>emphasis</x:role>
+      <x:name xml:lang="en">Emphasis</x:name>
+      <x:description xml:lang="en">You can use Emphasis to emphasize a few words. This typically is shown as italic.</x:description>
+    </x:node>
+  
+    <x:node match="strong">
+      <x:role>strong</x:role>
+      <x:name xml:lang="en">Strong Emphasis</x:name>
+      <x:description xml:lang="en">You can use Strong Emphasis to strongly emphasize a few words. This typically is shown as bold.</x:description>
+    </x:node>
+
+    <x:node match="underline">
+      <x:role>underline</x:role>
+      <x:name xml:lang="en">Underline</x:name>
+      <x:description xml:lang="en">You can use Underline to mark up a few words with a line below. If you want to indicate a link or reference, use Hyperlink instead.</x:description>
+    </x:node>
+  
+    <x:node match="subscript">
+      <x:role>subscript</x:role>
+      <x:name xml:lang="en">Subscript</x:name>
+      <x:description xml:lang="en">Display a few characters in a smaller font and placed slightly below the normal text. As in H₂O for example.</x:description>
+    </x:node>
+  
+    <x:node match="superscript">
+      <x:role>superscript</x:role>
+      <x:name xml:lang="en">Superscript</x:name>
+      <x:description xml:lang="en">Display a few characters in a smaller font and placed slightly above the normal text. As in x² for example.</x:description>
+    </x:node>
+  
+    <x:node match="linebreak">
+      <x:role>linebreak</x:role>
+      <x:name xml:lang="en">Line Break</x:name>
+      <x:description xml:lang="en">Use a Line Break if you do not want to start a new paragraph, but do want the rest of the paragraph to start on a new line. Use with caution, in most cases it is better to start a new paragraph.</x:description>      
+    </x:node>
+
+    <x:node match="link">
+      <x:role>hyperlink</x:role>
+      <x:name xml:lang="en">Hyperlink</x:name>
+      <x:description xml:lang="en">Use a Hyperlink to create a reference to another document or website.</x:description>      
+    </x:node>
+    <x:node match="link/@href">
+      <x:role>hyperlinkreference</x:role>
+      <x:lookup 
+        url="../lookup/link/index.html" 
+        forceLookup="false" 
+        autoOpen="true"/>
+      <x:name xml:lang="en">URL</x:name>
+    </x:node>
+    <x:node match="link/@target">
+      <x:name xml:lang="en">Target</x:name>
+      <x:enumeration value="_self">
+        <x:name xml:lang="en">Current Window</x:name>
+      </x:enumeration>
+      <x:enumeration value="_new">
+        <x:name xml:lang="en">New Window</x:name>
+      </x:enumeration>
+    </x:node>
+
+    <x:node match="image">
+      <x:role>image</x:role>
+      <x:role>symbol</x:role>
+      <x:name xml:lang="en">Image</x:name>
+    </x:node>
+    <x:node match="image/@src">
+      <x:role>imagesource</x:role>
+      <x:lookup 
+        url="../lookup/flickr/flickr.html?width=770&amp;height=340" 
+        forceLookup="true" 
+        autoOpen="true"/>
+      <x:name xml:lang="en">Source</x:name>
+    </x:node>
+    <x:node match="image/@width">
+      <x:name xml:lang="en">Width</x:name>
+    </x:node>
+    <x:node match="image/@height">
+      <x:name xml:lang="en">Height</x:name>
+    </x:node>
+    <x:node match="image/@halign">
+      <x:role>mediaalign</x:role>
+      <x:name xml:lang="en">Alignment</x:name>
+      <x:enumeration value="none">
+        <x:name xml:lang="en">No Alignment</x:name>
+      </x:enumeration>
+      <x:enumeration value="left">
+        <x:name xml:lang="en">Align Left</x:name>
+      </x:enumeration>
+      <x:enumeration value="right">
+        <x:name xml:lang="en">Align Right</x:name>
+      </x:enumeration>
+    </x:node>
+
+    <x:node match="unorderedlist">
+      <x:role>list</x:role>
+      <x:role>unorderedlist</x:role>
+      <x:name xml:lang="en">Unordered List</x:name>
+      <x:description xml:lang="en">Use an unordered list to get a bullited list of items</x:description>
+    </x:node>
+
+    <x:node match="orderedlist">
+      <x:role>list</x:role>
+      <x:role>orderedlist</x:role>
+      <x:name xml:lang="en">Ordered List</x:name>
+      <x:description xml:lang="en">Use an ordered list to get a numbered list of items</x:description>
+    </x:node>
+    
+    <x:node match="item">
+      <x:role>listitem</x:role>
+      <x:name xml:lang="en">Item</x:name>
+    </x:node>
+    
+    <x:node match="table">
+      <x:role>table</x:role>
+      <x:name xml:lang="en">Table</x:name>
+      <x:templates>
+        <x:template>
+          <tbody>
+            <tr>
+              <td><paragraph><?start?></paragraph></td>
+              <td><paragraph></paragraph></td>
+              <td><paragraph></paragraph></td>
+             </tr>
+            <tr>
+              <td><paragraph></paragraph></td>
+              <td><paragraph></paragraph></td>
+              <td><paragraph></paragraph></td>
+             </tr>
+            <tr>
+              <td><paragraph></paragraph></td>
+              <td><paragraph></paragraph></td>
+              <td><paragraph></paragraph></td>
+             </tr>
+          </tbody>
+        </x:template>
+      </x:templates>
+    </x:node>
+    <x:node match="table/@width">
+      <x:name xml:lang="en">Width</x:name>
+    </x:node>
+    <x:node match="table/@border">
+      <x:name xml:lang="en">Borders</x:name>
+      <x:enumeration value="no">
+        <x:name xml:lang="en">No Border</x:name>
+      </x:enumeration>
+      <x:enumeration value="row">
+        <x:name xml:lang="en">Borders Under Rows</x:name>
+      </x:enumeration>
+      <x:enumeration value="column">
+        <x:name xml:lang="en">Borders Next To Columns</x:name>
+      </x:enumeration>
+      <x:enumeration value="cell">
+        <x:name xml:lang="en">Borders Around Each Cell</x:name>
+      </x:enumeration>
+    </x:node>
+    <x:node match="table/@color">
+      <x:role>color</x:role>
+      <x:name xml:lang="en">Color Scheme</x:name>
+      <x:enumeration value="blue">
+        <x:name xml:lang="en">Blue</x:name>
+      </x:enumeration>
+      <x:enumeration value="green">
+        <x:name xml:lang="en">Green</x:name>
+      </x:enumeration>
+      <x:enumeration value="orange">
+        <x:name xml:lang="en">Orange</x:name>
+      </x:enumeration>
+      <x:enumeration value="grey">
+        <x:name xml:lang="en">Grey</x:name>
+      </x:enumeration>
+    </x:node>
+    <x:node match="table/@alternaterowcolor">
+      <x:name xml:lang="en">Alternate Row Colors</x:name>
+    </x:node>
+    <x:node match="table/@cellspacing">
+      <x:role>tablecellspacing</x:role>
+      <x:name xml:lang="en">Space Between Cells</x:name>
+    </x:node>
+    <x:node match="table/@cellpadding">
+      <x:role>tablecellpadding</x:role>
+      <x:name xml:lang="en">Space In Cells</x:name>
+    </x:node>
+
+    <x:node match="caption">
+      <x:role>tablecaption</x:role>
+      <x:name xml:lang="en">Caption</x:name>
+    </x:node>
+
+    <x:node match="tbody">
+      <x:role>tablerowcontainer</x:role>
+      <x:role>tablebody</x:role>
+      <x:name xml:lang="en">Table Body</x:name>
+    </x:node>
+
+    <x:node match="tr">
+      <x:role>tablerow</x:role>
+      <x:role>tablecellcontainer</x:role>
+      <x:name xml:lang="en">Row</x:name>
+    </x:node>
+
+    <x:node match="td">
+      <x:role>tablecell</x:role>
+      <x:name xml:lang="en">Cell</x:name>
+    </x:node>
+    <x:node match="th">
+      <x:role>tableheadercell</x:role>
+      <x:name xml:lang="en">Header Cell</x:name>
+    </x:node>
+
+    <x:node match="@colspan">
+      <x:role>cellcolspan</x:role>
+	<x:role>hidden-from-ui</x:role>
+      <x:name xml:lang="en">Column Span</x:name>
+    </x:node>    
+    <x:node match="@rowspan">
+      <x:role>cellrowspan</x:role>
+	<x:role>hidden-from-ui</x:role>
+      <x:name xml:lang="en">Row Span</x:name>
+    </x:node>    
+  </x:nodeConfig>
+
+  <x:changeTracking>
+    <x:enabled>true</x:enabled>
+    <x:visible>true</x:visible>
+    <x:allowAccept>true</x:allowAccept>
+    <x:allowReject>true</x:allowReject>
+  </x:changeTracking> 
+  
+  <x:spellChecker>
+  <x:defaultLanguage>en-gb</x:defaultLanguage>
+</x:spellChecker>
+  
+  <x:miscellaneous>
+    <x:saveWithIndentation>&#9;</x:saveWithIndentation>
+    <x:debugMode>false</x:debugMode>
+    <hideTableToolbar>false</hideTableToolbar>
+  </x:miscellaneous>
+  
+  <x:lookupConfig>
+
+    <x:lookup 
+      parentPattern="self::picture" 
+      name="source"
+      url="lookup/image/index.html" 
+      forceLookup="true" 
+      autoOpen="true"/>
+
+    <x:lookup 
+      parentPattern="self::a" 
+      name="href"
+      url="lookup/link/index.html" 
+      forceLookup="false" 
+      autoOpen="true"/>
+
+	<x:lookup parentPattern="self::mynode" name="date" url="/datelookup.html" forceLookup="true" autoOpen="true"/> 
+
+<x:lookup parentPattern="self::region"
+name="id" 
+url="/cms/lookup/region" 
+forceLookup="true" 
+autoOpen="true"/>
+
+  </x:lookupConfig>
+    
+  
+</x:config>

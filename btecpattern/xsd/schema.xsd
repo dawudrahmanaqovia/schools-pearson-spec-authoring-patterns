@@ -1,0 +1,357 @@
+<?xml version="1.0"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:x="http://www.xopus.com/xmlns/config" elementFormDefault="qualified">
+	<xs:include schemaLocation="schema_common.xsd"/>
+	<!-- TOP LEVEL-->
+	<!-- Unit-->
+	<xs:element name="unit">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="title" minOccurs="0" maxOccurs="1"/>
+				<xs:element ref="meta" minOccurs="0" maxOccurs="1"/>
+				<xs:element ref="introduction" minOccurs="0" maxOccurs="1"/>
+				<xs:element ref="learning_objectives" minOccurs="0" maxOccurs="1"/>
+				<xs:element name="suggest_assignment_summary" type="section_content_type" minOccurs="0" maxOccurs="1"/>
+				<xs:element ref="teacher_guidance" minOccurs="0" maxOccurs="1"/>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<!-- End Unit-->
+	<!-- END TOP LEVEL-->
+	<!-- Meta -->
+	<xs:element name="meta" type="metaType"/>
+	<xs:complexType name="metaType">
+		<xs:sequence>
+			<xs:element name="unit_title" type="xs:string"/>
+			<xs:element name="number" type="xs:int"/>
+			<xs:element name="level" type="level_def"/>
+			<xs:element name="type" type="unit_type_def"/>
+			<xs:element name="guided_learning_hours" type="xs:float"/>
+			<xs:element name="assessment_type" type="unit_assessment_type_def" />
+		</xs:sequence>
+	</xs:complexType>
+	<!-- Introduction -->
+	<xs:element name="introduction" type="introductionType"/>
+	<xs:complexType name="introductionType">
+		<xs:sequence>
+			<xs:choice minOccurs="1" maxOccurs="unbounded">
+				<xs:element ref="paragraph"/>
+				<xs:element ref="table"/>
+				<xs:element ref="unorderedlist"/>
+				<xs:element ref="orderedlist"/>
+			</xs:choice>
+		</xs:sequence>
+	</xs:complexType>
+	<!-- Learning Objectives-->
+	<xs:element name="learning_objectives" type="learning_objectivesType"/>
+	<xs:complexType name="learning_objectivesType">
+		<xs:sequence>
+			<xs:element ref="learning_objective" minOccurs="0" maxOccurs="unbounded"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:element name="learning_objective" type="learning_objectiveType" />
+	<xs:complexType name="learning_objectiveType">
+		<xs:sequence>
+			<!-- Learning Objective title -->
+			<xs:element name="learning_objective_title" type="plainText" minOccurs="0" maxOccurs="1"/>
+			<!-- Learning Objective content -->
+			<xs:element ref="learning_objective_content" minOccurs="1" maxOccurs="1"/>
+			<!-- Assessment Criterias -->
+			<xs:element name="assessment_criterias" type="assessment_criterias_type" minOccurs="0" maxOccurs="1"/>
+			<!-- Assessment Guidance -->
+			<xs:element name="assessment_guidance" type="assessment_guidance_type" minOccurs="0" maxOccurs="1"/>
+			<!-- Suggested Assignment -->
+			<xs:element name="suggested_assignment" type="suggested_assignment_type" minOccurs="0" maxOccurs="1"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:element name="learning_objective_content" type="learning_objective_contentType"/>
+	<xs:complexType name="learning_objective_contentType">
+		<xs:sequence>
+			<xs:choice minOccurs="0" maxOccurs="unbounded">
+				<xs:element name="topic" type="topicType" minOccurs="0" maxOccurs="unbounded"/>
+				<xs:element ref="paragraph"/>
+				<xs:element ref="table"/>
+				<xs:element ref="unorderedlist"/>
+				<xs:element ref="orderedlist"/>
+			</xs:choice>
+		</xs:sequence>
+	</xs:complexType>
+	<!-- Topic -->
+	<xs:complexType name="topicType">
+		<xs:sequence>
+			<xs:element name="topic_title" type="xs:string" minOccurs="1" maxOccurs="1" x:placeholder="Insert topic title"/>
+			<xs:element name="topic_content" type="section_content_type" minOccurs="1" maxOccurs="1" x:placeholder="Insert topic content"/>
+		</xs:sequence>
+	</xs:complexType>
+	
+	<!-- BEGIN ASSESSMENT CRITERIA -->
+	<xs:complexType name="assessment_criterias_type">
+		<xs:sequence>
+			<xs:element name="assessment_criteria" type="assessment_criteria_type" minOccurs="0" maxOccurs="unbounded"/>
+		</xs:sequence>
+	</xs:complexType>				
+	<xs:complexType name="assessment_criteria_type">
+		<xs:sequence>
+			<xs:element name="level_1_criteria" type="assessment_criterion_xtype_relax_validation" minOccurs="0" maxOccurs="1"/>
+			<xs:element name="pass_criteria" type="assessment_criterion_xtype_relax_validation" minOccurs="0" maxOccurs="1"/>
+			<xs:element name="merit_criteria" type="assessment_criterion_xtype_relax_validation" minOccurs="0" maxOccurs="1"/>
+			<xs:element name="distinction_criteria" type="assessment_criterion_xtype_relax_validation" minOccurs="0" maxOccurs="1"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="assessment_criterion_xtype_relax_validation">
+		<xs:sequence>
+			<xs:element name="criterion_id" type="xs:string"/>
+			<xs:element name="criterion" type="section_content_type" x:role="hidden-from-ui" x:placeholder="Insert criterion text"/>
+			<xs:element name="GSCE_english" type="xs:string"/>
+			<xs:element name="GSCE_math" type="xs:string"/>
+			<xs:choice minOccurs="0" maxOccurs="unbounded">
+				<xs:element ref="paragraph" x:placeholder="Paragraph introducing the unit"/>
+			</xs:choice>
+			<!--<xs:element name="pltsvalue" type="plts_value_type"/>-->
+			<xs:element name="criterion_guidance" type="section_content_type" minOccurs="0" maxOccurs="1"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="assessment_criterion_xtype">
+		<xs:sequence>
+			<xs:element name="criterion_id" type="criterion_id__type"/>
+			<xs:element name="criterion" type="section_content_type" x:role="hidden-from-ui" x:placeholder="Insert criterion text"/>
+			<xs:element name="GSCE_english" type="yes_no_type"/>
+			<xs:element name="GSCE_math" type="yes_no_type"/>
+			<xs:choice minOccurs="0" maxOccurs="unbounded">
+				<xs:element ref="paragraph" x:placeholder="Paragraph introducing the unit"/>
+			</xs:choice>
+			<!--<xs:element name="pltsvalue" type="plts_value_type"/>-->
+			<xs:element name="criterion_guidance" type="section_content_type" minOccurs="0" maxOccurs="1"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="criteriontype">
+		<xs:sequence>
+			<xs:choice minOccurs="0" maxOccurs="unbounded">
+				<xs:element ref="paragraph"/>
+				<xs:element ref="table"/>
+				<xs:element ref="unorderedlist"/>
+				<xs:element ref="orderedlist"/>
+			</xs:choice>
+		</xs:sequence>
+	</xs:complexType>
+	<!-- Assessment guidance -->
+	<xs:complexType name="assessment_guidance_type">
+		<xs:sequence>
+			<xs:element ref="title" x:placeholder="Insert title and content of assessment guidance"/>
+			<xs:choice minOccurs="0" maxOccurs="unbounded">
+				<xs:element ref="paragraph"/>
+				<xs:element ref="table"/>
+				<xs:element ref="unorderedlist"/>
+				<xs:element ref="orderedlist"/>
+			</xs:choice>
+		</xs:sequence>
+	</xs:complexType>
+	<!-- Suggested Assignment -->
+	<xs:complexType name="suggested_assignment_type">
+		<xs:sequence>
+			<xs:element name="criteria_covered" type="criteria_covered_type"/>
+			<xs:element name="assignment_title" type="xs:string" x:placeholder="Insert title of assignment " minOccurs="1" maxOccurs="1"/>
+			<xs:element name="scenario" type="section_content_type" minOccurs="1" maxOccurs="1"/>
+			<xs:element name="assessment_evidence" type="section_content_type" minOccurs="1" maxOccurs="1"/>
+		</xs:sequence>
+	</xs:complexType>
+	<!-- Criterion_covered -->
+	<xs:complexType name="criteria_covered_type">
+		<xs:sequence>
+			<xs:element name="criterion_id" type="xs:string" minOccurs="1" maxOccurs="unbounded"/>
+		</xs:sequence>
+	</xs:complexType>
+	<!--  Guidance Section -->
+	<xs:element name="teacher_guidance" type="teacher_guidance_type"/>
+	<xs:complexType name="teacher_guidance_type">
+		<xs:sequence>
+			<xs:element name="resources" type="section_content_type" minOccurs="0" maxOccurs="1"/>
+			<xs:element name="assessment_guidance_summary" type="section_content_type" minOccurs="0" maxOccurs="1"/>
+			<xs:element name="additional_assessment_guidance" type="section_content_type" minOccurs="0" maxOccurs="1"/>
+		</xs:sequence>
+	</xs:complexType>
+	<!-- Section content -->
+	<xs:complexType name="section_content_type">
+		<xs:sequence>
+			<xs:choice minOccurs="1" maxOccurs="unbounded">
+				<xs:element ref="paragraph"/>
+				<xs:element ref="table"/>
+				<xs:element ref="unorderedlist"/>
+				<xs:element ref="orderedlist"/>
+			</xs:choice>
+		</xs:sequence>
+	</xs:complexType>
+	<!-- Section of demo -->
+	<xs:element name="section" type="sectionType"/>
+	<xs:complexType name="sectionType">
+		<xs:sequence>
+			<xs:element ref="title"/>
+			<xs:choice maxOccurs="unbounded">
+				<xs:element ref="paragraph"/>
+				<xs:element ref="table"/>
+				<xs:element ref="unorderedlist"/>
+				<xs:element ref="orderedlist"/>
+			</xs:choice>
+		</xs:sequence>
+	</xs:complexType>
+	<!-- COMMON TYPES -->
+	<xs:element name="title" type="plainText"/>
+	<xs:element name="paragraph">
+		<xs:complexType mixed="true">
+			<xs:complexContent>
+				<xs:extension base="inlineInsideType">
+					<xs:attribute name="align" type="alignType" default="left"/>
+				</xs:extension>
+			</xs:complexContent>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="footer" type="plainText"/>
+	<xs:element name="emphasis" type="inlineInsideType"/>
+	<xs:element name="strong" type="inlineInsideType"/>
+	<xs:element name="underline" type="inlineInsideType"/>
+	<xs:element name="subscript" type="xs:string"/>
+	<xs:element name="superscript" type="xs:string"/>
+	<xs:element name="linebreak">
+		<xs:complexType/>
+	</xs:element>
+	<xs:element name="link">
+		<xs:complexType mixed="true">
+			<xs:complexContent>
+				<xs:extension base="inlineInsideType">
+					<xs:attribute name="href" type="xs:string" use="required"/>
+					<xs:attribute name="target" default="_self">
+						<xs:simpleType>
+							<xs:restriction base="xs:string">
+								<xs:enumeration value="_self"/>
+								<xs:enumeration value="_new"/>
+							</xs:restriction>
+						</xs:simpleType>
+					</xs:attribute>
+				</xs:extension>
+			</xs:complexContent>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="image">
+		<xs:complexType>
+			<xs:attribute name="src" type="xs:string" use="required"/>
+			<xs:attribute name="width">
+				<xs:simpleType>
+					<xs:restriction base="xs:integer"/>
+				</xs:simpleType>
+			</xs:attribute>
+			<xs:attribute name="height">
+				<xs:simpleType>
+					<xs:restriction base="xs:integer"/>
+				</xs:simpleType>
+			</xs:attribute>
+			<xs:attribute name="halign" default="none">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:enumeration value="none"/>
+						<xs:enumeration value="left"/>
+						<xs:enumeration value="right"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:attribute>
+		</xs:complexType>
+	</xs:element>
+	<xs:complexType name="plainText" mixed="true">
+		<xs:choice minOccurs="0" maxOccurs="unbounded">
+			<xs:element ref="subscript"/>
+			<xs:element ref="superscript"/>
+		</xs:choice>
+	</xs:complexType>
+	<xs:complexType name="inlineInsideType" mixed="true">
+		<xs:choice minOccurs="0" maxOccurs="unbounded">
+			<xs:element ref="strong"/>
+			<xs:element ref="emphasis"/>
+			<xs:element ref="underline"/>
+			<xs:element ref="subscript"/>
+			<xs:element ref="superscript"/>
+			<xs:element ref="link"/>
+			<xs:element ref="image"/>
+			<xs:element ref="linebreak"/>
+		</xs:choice>
+	</xs:complexType>
+	<xs:element name="unorderedlist" type="listType"/>
+	<xs:element name="orderedlist" type="listType"/>
+	<xs:complexType name="listType">
+		<xs:sequence>
+			<xs:element name="item" type="listItemType" maxOccurs="unbounded"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="listItemType">
+		<xs:sequence>
+			<xs:element ref="paragraph"/>
+			<xs:group ref="list" minOccurs="0"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:group name="list">
+		<xs:choice>
+			<xs:element ref="unorderedlist"/>
+			<xs:element ref="orderedlist"/>
+		</xs:choice>
+	</xs:group>
+	<xs:element name="table" type="tableType"/>
+	<xs:complexType name="tableType">
+		<xs:sequence>
+			<xs:element name="caption" type="xs:string" minOccurs="0"/>
+			<xs:element name="tbody" type="tbodyType"/>
+		</xs:sequence>
+		<xs:attribute name="width" type="xs:positiveInteger"/>
+		<xs:attribute name="border" type="borderType" default="cell"/>
+		<xs:attribute name="color" type="colorSchemesType" default="grey"/>
+		<xs:attribute name="alternaterowcolor" type="xs:boolean" default="false"/>
+		<xs:attribute name="cellspacing" type="xs:nonNegativeInteger" default="0"/>
+		<xs:attribute name="cellpadding" default="1">
+			<xs:simpleType>
+				<xs:restriction base="xs:nonNegativeInteger">
+					<xs:maxInclusive value="32"/>
+				</xs:restriction>
+			</xs:simpleType>
+		</xs:attribute>
+	</xs:complexType>
+	<xs:complexType name="tbodyType">
+		<xs:sequence>
+			<xs:element name="tr" type="trType" maxOccurs="unbounded"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="trType">
+		<xs:choice maxOccurs="unbounded">
+			<xs:element name="td" type="tdType"/>
+			<xs:element name="th" type="tdType"/>
+		</xs:choice>
+	</xs:complexType>
+	<xs:complexType name="tdType">
+		<xs:choice maxOccurs="unbounded">
+			<xs:element ref="paragraph"/>
+			<xs:element ref="unorderedlist"/>
+			<xs:element ref="orderedlist"/>
+		</xs:choice>
+		<xs:attribute name="colspan" type="xs:positiveInteger"/>
+		<xs:attribute name="rowspan" type="xs:positiveInteger"/>
+	</xs:complexType>
+	<xs:simpleType name="borderType">
+		<xs:restriction base="xs:string">
+			<xs:enumeration value="no"/>
+			<xs:enumeration value="row"/>
+			<xs:enumeration value="column"/>
+			<xs:enumeration value="cell"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:simpleType name="colorSchemesType">
+		<xs:restriction base="xs:string">
+			<xs:enumeration value="blue"/>
+			<xs:enumeration value="green"/>
+			<xs:enumeration value="orange"/>
+			<xs:enumeration value="grey"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:simpleType name="alignType">
+		<xs:restriction base="xs:string">
+			<xs:enumeration value="left"/>
+			<xs:enumeration value="center"/>
+			<xs:enumeration value="right"/>
+			<xs:enumeration value="justify"/>
+		</xs:restriction>
+	</xs:simpleType>
+</xs:schema>

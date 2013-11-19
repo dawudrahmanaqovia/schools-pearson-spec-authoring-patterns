@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<unit xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="file:///D:/AqoviaPearsonXOpus/btecpattern/xsd/schema.xsd">
+  <title>
+  </title>
+  <meta>
+    <unit_title>Computer Software</unit_title>
+    <number>12</number>
+    <level>1</level>
+    <type>Core/Mandatory</type>
+    <guided_learning_hours>0</guided_learning_hours>
+    <assessment_type>Internal</assessment_type>
+  </meta>
+</unit>

@@ -1,0 +1,6 @@
+<list>
+  <data key="level_1_criterion" criteria_text="'Level 1 Pass" criteria_colour="info"/>
+  <data key="pass_criterion" criteria_text="'Level 2 Pass" criteria_colour="danger"/>
+  <data key="merit_criterion" criteria_text="Level 2 Merit'" criteria_colour="warning"/>
+  <data key="distinction_criterion" criteria_text="Level 2 Distinction" criteria_colour="success"/>	
+</list>

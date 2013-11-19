@@ -1,0 +1,812 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- edited with XMLSpy v2013 (http://www.altova.com) by  () -->
+<unit xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="file:///D:/AqoviaPearsonXOpus/btecpattern/xsd/schema.xsd">
+	<title>Unit 11: Computer Networks</title>
+	<meta>
+		<unit_title>Computer Networks</unit_title>
+		<number>11</number>
+		<level>2</level>
+		<type>Mandatory</type>
+		<guided_learning_hours>1</guided_learning_hours>
+		<assessment_type>Internal</assessment_type>
+	</meta>
+	<introduction>
+		<paragraph>Computer networking is an important part of our daily business and personal lives that most people take for granted. Without networks, many of the tools and systems used by business and individuals would not function: we couldn’t surf the worldwide web, send and receive emails, or use a variety of devices such as a smartphone, laptop or games console to communicate with friends and family online.</paragraph>
+		<paragraph>So, what is computer networking? In its simplest form, computer networking is a collection of interconnected, wired or wireless, hardware devices and associated software that allows computers to communicate and share resources with each other.</paragraph>
+	</introduction>
+	<learning_objectives>
+		<learning_objective>
+			<learning_objective_title>Understand the features and benefits of computer networks</learning_objective_title>
+			<learning_objective_content>
+				<topic>
+					<topic_title>Computer Networks</topic_title>
+					<topic_content><paragraph>Computer networks are a collection of interconnected, wired or wireless, hardware components and software that allow computer devices to communicate and share data with each other.</paragraph></topic_content>
+				</topic>
+				<topic>
+					<topic_title>Features of computer networks</topic_title>
+					<topic_content><paragraph>Understand the different features of computer networks:</paragraph>
+					<unorderedlist>
+						<item>
+							<paragraph>Connection method (e.g. wired and wireless)</paragraph>
+						</item>
+						<item>
+							<paragraph>Scope or scale (e.g. Local Area Network (LAN), Wide Area Network (WAN), Metropolitan Area Network (MAN), Personal Area Network (PAN), Storage Area Network (SAN))</paragraph>
+						</item>
+						<item>
+							<paragraph>Architecture (e.g. peer-to-peer, client-server)</paragraph>
+						</item>
+						<item>
+							<paragraph>Topology, including:</paragraph>
+							<unorderedlist>
+								<item>
+									<paragraph>Physical (e.g. star, bus, ring, mesh, tree and point-to-point)</paragraph>
+								</item>
+								<item>
+									<paragraph>Logical (e.g. Ethernet and token ring)</paragraph>
+								</item>
+							</unorderedlist>
+						</item>
+						<item>
+							<paragraph>Protocols and their function (e.g. Ethernet, Internet Protocol (IP), Transmission Control Protocol (TCP))</paragraph>
+						</item>
+						<item>
+							<paragraph>Security (with regard to files, folders, data, network access, resources)</paragraph>
+						</item>
+						<item>
+							<paragraph>Utilities (e.g. virus protection, access control, backup, remote desktop)</paragraph>
+						</item>
+						<item>
+							<paragraph>Services (e.g. login, user account management, file/folder permissions to an individual user/group of users, security, software deployment)</paragraph>
+						</item>
+						<item>
+							<paragraph>Users (e.g. can be used by individuals or groups of people arranged in different ways for different uses).</paragraph>
+						</item>
+					</unorderedlist>
+					</topic_content>
+				</topic>
+			</learning_objective_content>
+			<assessment_criterias>
+			<assessment_criteria>
+				<level_1_criteria>
+					<criterion_id>1A.1
+            </criterion_id>
+					<criterion>
+						<paragraph>Identify the uses and features of a different computer network.
+              </paragraph>
+					</criterion>
+					<GSCE_english>
+            </GSCE_english>
+					<GSCE_math>
+            </GSCE_math>
+					<criterion_guidance>
+						<paragraph>For level 1, as a minimum, learners should have identify uses and features of computer networks. For a given network, they are likely to have identified only the main features and the main uses of the network, without any description which relates the two together.
+              </paragraph>
+					</criterion_guidance>
+				</level_1_criteria>
+				<pass_criteria>
+					<criterion_id>2A.P1
+            </criterion_id>
+					<criterion>
+						<paragraph>Explain the uses and features of a different computer network.
+              </paragraph>
+					</criterion>
+					<GSCE_english>
+            </GSCE_english>
+					<GSCE_math>
+            </GSCE_math>
+					<criterion_guidance>
+						<paragraph>Learners should explain the uses and features of a given computer network. For example, what features a computer network requires, allowing people to play computer games simultaneously in a multi-player gaming environment.
+              </paragraph>
+					</criterion_guidance>
+				</pass_criteria>
+				<merit_criteria>
+					<criterion_id>2A.M1
+            </criterion_id>
+					<criterion>
+						<paragraph>Review how the uses and features of a different computer network affect the user experience.
+              </paragraph>
+					</criterion>
+					<GSCE_english>
+            </GSCE_english>
+					<GSCE_math>
+            </GSCE_math>
+					<criterion_guidance>
+						<paragraph>learners should review how the uses and features of a given computer network could affect the user experience, e.g. reliability (frequency of network failure) and performance (how quickly data is transferred across the network under different conditions). The learner should explain how different features in the network affect the user experience, e.g. speed, connectivity, reliability.
+              </paragraph>
+					</criterion_guidance>
+				</merit_criteria>
+				<distinction_criteria>
+					<criterion_id>2A.D1
+            </criterion_id>
+					<criterion>
+						<paragraph>Discuss the strengths and weaknesses of the network.
+              </paragraph>
+					</criterion>
+					<GSCE_english>
+            </GSCE_english>
+					<GSCE_math>
+            </GSCE_math>
+					<criterion_guidance>
+						<paragraph>Learners should look at one computer network in more detail and discuss the strengths and weaknesses of the product. They should discuss at least one strength and one weakness.
+              </paragraph>
+					</criterion_guidance>
+				</distinction_criteria>
+			</assessment_criteria>
+			</assessment_criterias>			
+			<assessment_guidance>
+				<title>Learners will investigate computer networks, describing the main uses and features of a network</title>
+			</assessment_guidance>
+			<suggested_assignment>
+				<criteria_covered>
+					<criterion_id>2B.P2</criterion_id>
+					<criterion_id>2B.M2</criterion_id>
+					<criterion_id>2B.P3</criterion_id>
+					<criterion_id>2B.D2</criterion_id>
+					<criterion_id>1B.2</criterion_id>
+				</criteria_covered>
+				<assignment_title>Review the Finished Computer Network</assignment_title>
+				<scenario>
+					<paragraph>You have been given a brief by your company, Dayce Networking Solutions.</paragraph>
+					<paragraph>Your task is to design a network solution to fulfil your ‘client’ requirements.</paragraph>
+					<paragraph>Prepare design documentation to include:</paragraph>
+					<unorderedlist>
+						<item>
+							<paragraph>a description of the computer network, and what it will be used for</paragraph>
+						</item>
+						<item>
+							<paragraph>a list of components, with an explanation about their role, and how they will connect/communicate with each other on the computer network</paragraph>
+						</item>
+						<item>
+							<paragraph>the names of all people that will become users of the computer network, and their role in the network</paragraph>
+						</item>
+						<item>
+							<paragraph>details of how the computer network will be configured</paragraph>
+						</item>
+						<item>
+							<paragraph>a network diagram</paragraph>
+						</item>
+						<item>
+							<paragraph>a list of hardware constraints and software availability</paragraph>
+						</item>
+						<item>
+							<paragraph>a test plan.</paragraph>
+						</item>
+					</unorderedlist>
+				</scenario>
+				<assessment_evidence>
+					<unorderedlist>
+						<item>
+							<paragraph>Web page.</paragraph>
+						</item>
+						<item>
+							<paragraph>Report.</paragraph>
+						</item>
+					</unorderedlist>
+				</assessment_evidence>
+			</suggested_assignment>
+		</learning_objective>
+		<learning_objective>
+			<learning_objective_title>Design a computer network</learning_objective_title>
+			<learning_objective_content>
+				<topic>
+					<topic_title>Designing a network</topic_title>
+					<topic_content><paragraph>Requirements of the brief, to include:</paragraph>
+					<unorderedlist>
+						<item>
+							<paragraph>Purpose</paragraph>
+						</item>
+						<item>
+							<paragraph>Requirements/objectives/activities (refer to assessment guidance)</paragraph>
+						</item>
+						<item>
+							<paragraph>Details of the users and their roles/function (including number of users)</paragraph>
+						</item>
+						<item>
+							<paragraph>Size/geographical spread/location</paragraph>
+						</item>
+						<item>
+							<paragraph>Costs (budget)</paragraph>
+						</item>
+						<item>
+							<paragraph>Constraints</paragraph>
+						</item>
+					</unorderedlist>
+					<paragraph>Initial design ideas and alternative solutions to developing the intended computer network. There will be more than one way to develop the same computer network using different topologies, hardware components and network architectures.</paragraph></topic_content>
+				</topic>
+			</learning_objective_content>
+			<assessment_criterias>
+			<assessment_criteria>
+				<level_1_criteria>
+					<criterion_id>1B.1
+            </criterion_id>
+					<criterion>
+						<paragraph>Identify the purpose and ‘client’ requirements for the network.
+              </paragraph>
+					</criterion>
+					<GSCE_english>
+            </GSCE_english>
+					<GSCE_math>
+            </GSCE_math>
+					<criterion_guidance>
+						<paragraph>
+              </paragraph>
+					</criterion_guidance>
+				</level_1_criteria>
+				<pass_criteria>
+					<criterion_id>2B.P2
+            </criterion_id>
+					<criterion>
+						<paragraph>Describe the purpose and ‘client’ requirements for the network.
+              </paragraph>
+					</criterion>
+					<GSCE_english>
+            </GSCE_english>
+					<GSCE_math>
+            </GSCE_math>
+					<criterion_guidance>
+						<paragraph>
+              </paragraph>					
+						</criterion_guidance>
+				</pass_criteria>
+				<merit_criteria>
+					<criterion_id>2B.M2
+            </criterion_id>
+					<criterion>
+						<paragraph>Produce a design for a computer network including:
+              </paragraph>
+						<unorderedlist>
+							<item>
+								<paragraph>a list of sardware and software compnoents, their role, and how they connect and communicate with each other
+                  </paragraph>
+							</item>
+							<item>
+								<paragraph>a network diagram
+                  </paragraph>
+							</item>
+							<item>
+								<paragraph>a test plan.
+                  </paragraph>
+							</item>
+						</unorderedlist>
+					</criterion>
+					<GSCE_english>
+            </GSCE_english>
+					<GSCE_math>
+            </GSCE_math>
+					<criterion_guidance>
+											<paragraph>
+              </paragraph>
+						</criterion_guidance>
+				</merit_criteria>
+				<distinction_criteria>
+					<criterion_id>2B.D2
+            </criterion_id>
+					<criterion>
+						<paragraph>Justify final design decisions, explaining how the computer network will fulfil the stated purpose and ‘client’ requirements, describing the impact of any constraints on the design.
+              </paragraph>
+					</criterion>
+					<GSCE_english>
+            </GSCE_english>
+					<GSCE_math>
+            </GSCE_math>
+					<criterion_guidance>
+											<paragraph>
+              </paragraph>
+						</criterion_guidance>
+				</distinction_criteria>
+			</assessment_criteria>
+			<assessment_criteria>
+				<level_1_criteria>
+					<criterion_id>1B.3
+            </criterion_id>
+					<criterion>
+						<paragraph>Produce a design for a computer network, with guidance, including:
+              </paragraph>
+						<unorderedlist>
+							<item>
+								<paragraph>a list of hardware and software components
+                  </paragraph>
+							</item>
+							<item>
+								<paragraph>the number of network users
+                  </paragraph>
+							</item>
+							<item>
+								<paragraph>an outline network diagram.
+                  </paragraph>
+							</item>
+						</unorderedlist>
+					</criterion>
+					<GSCE_english>
+            </GSCE_english>
+					<GSCE_math>
+            </GSCE_math>
+				</level_1_criteria>
+				<pass_criteria>
+					<criterion_id>2B.P3
+            </criterion_id>
+					<criterion>
+						<paragraph>Produce a design for a computer network including:
+              </paragraph>
+						<unorderedlist>
+							<item>
+								<paragraph>a list of sardware and software compnoents, their role, and how they connect and communicate with each other
+                  </paragraph>
+							</item>
+							<item>
+								<paragraph>a network diagram
+                  </paragraph>
+							</item>
+							<item>
+								<paragraph>a test plan.
+                  </paragraph>
+							</item>
+						</unorderedlist>
+					</criterion>
+					<GSCE_english>
+            </GSCE_english>
+					<GSCE_math>
+            </GSCE_math>
+					<criterion_guidance>
+											<paragraph>
+              </paragraph>
+						</criterion_guidance>
+				</pass_criteria>
+				<merit_criteria>
+					<criterion_id>
+            </criterion_id>
+					<criterion>
+						<paragraph>
+              </paragraph>
+					</criterion>
+					<GSCE_english>
+            </GSCE_english>
+					<GSCE_math>
+            </GSCE_math>
+					<criterion_guidance>
+											<paragraph>
+              </paragraph>
+						</criterion_guidance>
+				</merit_criteria>
+				<distinction_criteria>
+					<criterion_id>
+            </criterion_id>
+					<criterion>
+						<paragraph>
+              </paragraph>
+					</criterion>
+					<GSCE_english>
+            </GSCE_english>
+					<GSCE_math>
+            </GSCE_math>
+					<criterion_guidance>
+											<paragraph>
+              </paragraph>
+						</criterion_guidance>
+				</distinction_criteria>
+			</assessment_criteria>
+			</assessment_criterias>
+			<assessment_guidance>
+				<title>Learners will investigate computer networks......</title>
+			</assessment_guidance>
+			<suggested_assignment>
+				<criteria_covered>
+					<criterion_id>2B.P2</criterion_id>
+					<criterion_id>2B.M2</criterion_id>
+					<criterion_id>2B.P3</criterion_id>
+					<criterion_id>2B.D2</criterion_id>
+					<criterion_id>1B.2</criterion_id>
+				</criteria_covered>
+				<assignment_title>Review the Finished Computer Network</assignment_title>
+				<scenario>
+					<paragraph>You have been given a brief by your company, Dayce Networking Solutions.</paragraph>
+					<paragraph>Your task is to design a network solution to fulfil your ‘client’ requirements.</paragraph>
+					<paragraph>Prepare design documentation to include:</paragraph>
+					<unorderedlist>
+						<item>
+							<paragraph>a description of the computer network, and what it will be used for</paragraph>
+						</item>
+						<item>
+							<paragraph>a list of components, with an explanation about their role, and how they will connect/communicate with each other on the computer network</paragraph>
+						</item>
+						<item>
+							<paragraph>the names of all people that will become users of the computer network, and their role in the network</paragraph>
+						</item>
+						<item>
+							<paragraph>details of how the computer network will be configured</paragraph>
+						</item>
+						<item>
+							<paragraph>a network diagram</paragraph>
+						</item>
+						<item>
+							<paragraph>a list of hardware constraints and software availability</paragraph>
+						</item>
+						<item>
+							<paragraph>a test plan.</paragraph>
+						</item>
+					</unorderedlist>
+				</scenario>
+				<assessment_evidence>
+					<unorderedlist>
+						<item>
+							<paragraph>Web page.</paragraph>
+						</item>
+						<item>
+							<paragraph>Report.</paragraph>
+						</item>
+					</unorderedlist>
+				</assessment_evidence>
+			</suggested_assignment>
+		</learning_objective>
+		<learning_objective>
+			<learning_objective_title>Hardware components in the network</learning_objective_title>
+			<learning_objective_content>
+				<topic>
+					<topic_title>Features of hardware components:</topic_title>
+					<topic_content><unorderedlist>
+						<item>
+							<paragraph>Their role/purpose</paragraph>
+						</item>
+						<item>
+							<paragraph>How they connect</paragraph>
+						</item>
+						<item>
+							<paragraph>How they communicate with other components in the intended computer network.</paragraph>
+						</item>
+					</unorderedlist></topic_content>
+				</topic>
+				<topic>
+					<topic_title>Hardware components, e.g.:
+          </topic_title>
+					<topic_content><unorderedlist>
+						<item>
+							<paragraph>Computer systems/workstations/servers</paragraph>
+						</item>
+						<item>
+							<paragraph>network adapters (wired/wireless)</paragraph>
+						</item>
+						<item>
+							<paragraph>Router (wired/wireless)</paragraph>
+						</item>
+						<item>
+							<paragraph>Hub</paragraph>
+						</item>
+						<item>
+							<paragraph>Switch</paragraph>
+						</item>
+						<item>
+							<paragraph>Network cabling (e.g. fibre optics, UTP, STP, coaxial; connectors)</paragraph>
+						</item>
+						<item>
+							<paragraph>Wireless (e.g. infrared, Bluetooth, laser, narrow-band [single-frequency] radio).</paragraph>
+						</item>
+					</unorderedlist></topic_content>
+				</topic>
+			</learning_objective_content>
+			<assessment_criterias>			
+			<assessment_criteria>
+				<level_1_criteria>
+					<criterion_id>1B.3
+            </criterion_id>
+					<criterion>
+						<paragraph>Produce a design for a computer network, with guidance, including:
+              </paragraph>
+						<unorderedlist>
+							<item>
+								<paragraph>a list of hardware and software components
+                  </paragraph>
+							</item>
+							<item>
+								<paragraph>the number of network users
+                  </paragraph>
+							</item>
+							<item>
+								<paragraph>an outline network diagram.
+                  </paragraph>
+							</item>
+						</unorderedlist>
+					</criterion>
+					<GSCE_english>
+            </GSCE_english>
+					<GSCE_math>
+            </GSCE_math>
+				</level_1_criteria>
+				<pass_criteria>
+					<criterion_id>2B.P3
+            </criterion_id>
+					<criterion>
+						<paragraph>Produce a design for a computer network including:
+              </paragraph>
+						<unorderedlist>
+							<item>
+								<paragraph>a list of sardware and software compnoents, their role, and how they connect and communicate with each other
+                  </paragraph>
+							</item>
+							<item>
+								<paragraph>a network diagram
+                  </paragraph>
+							</item>
+							<item>
+								<paragraph>a test plan.
+                  </paragraph>
+							</item>
+						</unorderedlist>
+					</criterion>
+					<GSCE_english>
+            </GSCE_english>
+					<GSCE_math>
+            </GSCE_math>
+					<criterion_guidance>
+											<paragraph>
+              </paragraph>
+						</criterion_guidance>
+				</pass_criteria>
+				<merit_criteria>
+					<criterion_id>
+            </criterion_id>
+					<criterion>
+						<paragraph>
+              </paragraph>
+					</criterion>
+					<GSCE_english>
+            </GSCE_english>
+					<GSCE_math>
+            </GSCE_math>
+					<criterion_guidance>
+											<paragraph>
+              </paragraph>
+						</criterion_guidance>
+				</merit_criteria>
+				<distinction_criteria>
+					<criterion_id>
+            </criterion_id>
+					<criterion>
+						<paragraph>
+              </paragraph>
+					</criterion>
+					<GSCE_english>
+            </GSCE_english>
+					<GSCE_math>
+            </GSCE_math>
+					<criterion_guidance>
+											<paragraph>
+              </paragraph>
+						</criterion_guidance>
+				</distinction_criteria>
+			</assessment_criteria>
+			</assessment_criterias>
+			<assessment_guidance>
+				<title>Learners will .....</title>
+			</assessment_guidance>
+			<suggested_assignment>
+				<criteria_covered>
+					<criterion_id>2B.P2</criterion_id>
+					<criterion_id>2B.M2</criterion_id>
+					<criterion_id>2B.P3</criterion_id>
+					<criterion_id>2B.D2</criterion_id>
+					<criterion_id>1B.2</criterion_id>
+				</criteria_covered>
+				<assignment_title>Review the Finished Computer Network</assignment_title>
+				<scenario>
+					<paragraph>You have been given a brief by your company, Dayce Networking Solutions.</paragraph>
+					<paragraph>Your task is to design a network solution to fulfil your ‘client’ requirements.</paragraph>
+					<paragraph>Prepare design documentation to include:</paragraph>
+					<unorderedlist>
+						<item>
+							<paragraph>a description of the computer network, and what it will be used for</paragraph>
+						</item>
+						<item>
+							<paragraph>a list of components, with an explanation about their role, and how they will connect/communicate with each other on the computer network</paragraph>
+						</item>
+						<item>
+							<paragraph>the names of all people that will become users of the computer network, and their role in the network</paragraph>
+						</item>
+						<item>
+							<paragraph>details of how the computer network will be configured</paragraph>
+						</item>
+						<item>
+							<paragraph>a network diagram</paragraph>
+						</item>
+						<item>
+							<paragraph>a list of hardware constraints and software availability</paragraph>
+						</item>
+						<item>
+							<paragraph>a test plan.</paragraph>
+						</item>
+					</unorderedlist>
+				</scenario>
+				<assessment_evidence>
+					<unorderedlist>
+						<item>
+							<paragraph>Web page.</paragraph>
+						</item>
+						<item>
+							<paragraph>Report.</paragraph>
+						</item>
+					</unorderedlist>
+				</assessment_evidence>
+			</suggested_assignment>
+		</learning_objective>
+		<learning_objective>
+			<learning_objective_title>Second</learning_objective_title>
+			<learning_objective_content />
+			<assessment_criterias>			
+			<assessment_criteria>
+				<level_1_criteria>
+					<criterion_id>
+            </criterion_id>
+					<criterion>
+						<paragraph>
+              </paragraph>
+					</criterion>
+					<GSCE_english>
+            </GSCE_english>
+					<GSCE_math>
+            </GSCE_math>
+					<criterion_guidance>
+						<paragraph>
+              </paragraph>
+					</criterion_guidance>
+				</level_1_criteria>
+				<pass_criteria>
+					<criterion_id>
+            </criterion_id>
+					<criterion>
+						<paragraph>
+              </paragraph>
+					</criterion>
+					<GSCE_english>
+            </GSCE_english>
+					<GSCE_math>
+            </GSCE_math>
+					<criterion_guidance>
+						<paragraph>
+              </paragraph>
+						<orderedlist>
+							<item>
+								<paragraph>
+                  </paragraph>
+							</item>
+							<item>
+								<paragraph>
+                  </paragraph>
+							</item>
+						</orderedlist>
+						<paragraph>
+              </paragraph>
+					</criterion_guidance>
+				</pass_criteria>
+				<merit_criteria>
+					<criterion_id>
+            </criterion_id>
+					<criterion>
+						<paragraph>
+              </paragraph>
+					</criterion>
+					<GSCE_english>
+            </GSCE_english>
+					<GSCE_math>
+            </GSCE_math>
+					<criterion_guidance>
+						<paragraph>
+              </paragraph>
+						<orderedlist>
+							<item>
+								<paragraph>
+                  </paragraph>
+							</item>
+							<item>
+								<paragraph>
+                  </paragraph>
+							</item>
+						</orderedlist>
+						<paragraph>
+              </paragraph>
+					</criterion_guidance>
+				</merit_criteria>
+				<distinction_criteria>
+					<criterion_id>
+            </criterion_id>
+					<criterion>
+						<paragraph>
+              </paragraph>
+					</criterion>
+					<GSCE_english>
+            </GSCE_english>
+					<GSCE_math>
+            </GSCE_math>
+					<criterion_guidance>
+						<paragraph>
+              </paragraph>
+						<orderedlist>
+							<item>
+								<paragraph>
+                  </paragraph>
+							</item>
+							<item>
+								<paragraph>
+                  </paragraph>
+							</item>
+						</orderedlist>
+						<paragraph>
+              </paragraph>
+					</criterion_guidance>
+				</distinction_criteria>
+			</assessment_criteria>
+			</assessment_criterias>			
+			<assessment_guidance>
+				<title>Assessment guidance title
+        </title>
+			</assessment_guidance>
+			<suggested_assignment>
+				<criteria_covered>
+					<criterion_id>2B.P2</criterion_id>
+					<criterion_id>2B.M2</criterion_id>
+					<criterion_id>2B.P3</criterion_id>
+					<criterion_id>2B.D2</criterion_id>
+					<criterion_id>1B.2</criterion_id>
+				</criteria_covered>
+				<assignment_title>Review the Finished Computer Network</assignment_title>
+				<scenario>
+					<paragraph>You have been given a brief by your company, Dayce Networking Solutions.</paragraph>
+					<paragraph>Your task is to design a network solution to fulfil your ‘client’ requirements.</paragraph>
+					<paragraph>Prepare design documentation to include:</paragraph>
+					<unorderedlist>
+						<item>
+							<paragraph>a description of the computer network, and what it will be used for</paragraph>
+						</item>
+						<item>
+							<paragraph>a list of components, with an explanation about their role, and how they will connect/communicate with each other on the computer network</paragraph>
+						</item>
+						<item>
+							<paragraph>the names of all people that will become users of the computer network, and their role in the network</paragraph>
+						</item>
+						<item>
+							<paragraph>details of how the computer network will be configured</paragraph>
+						</item>
+						<item>
+							<paragraph>a network diagram</paragraph>
+						</item>
+						<item>
+							<paragraph>a list of hardware constraints and software availability</paragraph>
+						</item>
+						<item>
+							<paragraph>a test plan.</paragraph>
+						</item>
+					</unorderedlist>
+				</scenario>
+				<assessment_evidence>
+					<unorderedlist>
+						<item>
+							<paragraph>Web page.</paragraph>
+						</item>
+						<item>
+							<paragraph>Report.</paragraph>
+						</item>
+					</unorderedlist>
+				</assessment_evidence>
+			</suggested_assignment>
+		</learning_objective>
+	</learning_objectives>
+	<suggest_assignment_summary>
+		<paragraph>You now need to review your database solution before you present it to your manager, or roll it out across doctors' surgeries in the local area. Give at least three strengths and one improvement you could make to your database. Does your finished database meet the brief given by the doctor’s surgery? How does it meet the requirements of the brief? How is it suitable for the users? What changes did you make to your designs? Explain any changes made. How would you improve your database to roll it out for other surgeries</paragraph>
+	</suggest_assignment_summary>
+	<teacher_guidance>
+		<resources>
+			<paragraph>The special resource required for this unit is access to networking hardware components and software. Learners can also use network simulators, such as Packet Tracer to develop their understanding of concepts.</paragraph>
+			<paragraph>Hardware and software resources will be needed for the practical aspects of the unit. As a minimum, each learner will need access to two PCs with network adapters, cabling (if wired), wireless router (if wireless) and appropriate software, and simple manuals for the setting up and testing of the computer network. If there are more than two PCs, a hub or router will be required to connect them together.</paragraph>
+			<paragraph>The practical activities, although limited, should take place in a workshop with appropriate tools, and take account of health and safety requirements. Access to technical support is valuable, unless the teacher is very experienced.</paragraph>
+			<paragraph>To illustrate concepts and aid demonstrations, a wide range of current hardware components should be available for learners to study and use.</paragraph>
+			<paragraph>Learners will require an appropriate brief in order to design the network, and access to the ‘client’ (potentially the teacher) in order to get feedback about the network.</paragraph>
+			<paragraph>What they observe and find out during the investigation in learning aim A can be applied in the development of their own computer network.</paragraph>
+			<paragraph>For this unit, learners will need good background materials in the form of handouts, and diagrams of network structures and network operations.</paragraph>
+		</resources>
+		<assessment_guidance_summary>
+			<paragraph>This unit is assessed internally by the centre and externally verified by Edexcel. Please read this guidance in conjunction with <emphasis>
+            Section 8 Internal assessment</emphasis>.</paragraph>
+		</assessment_guidance_summary>
+		<additional_assessment_guidance>
+			<paragraph>You now need to review your database solution before you present it to your manager, or roll it out across doctors' surgeries in the local area. Give at least three strengths and one improvement you could make to your database. Does your finished database meet the brief given by the doctor’s surgery? How does it meet the requirements of the brief? How is it suitable for the users? What changes did you make to your designs? Explain any changes made. How would you improve your database to roll it out for other surgeries</paragraph>
+		</additional_assessment_guidance>
+	</teacher_guidance>
+</unit>
