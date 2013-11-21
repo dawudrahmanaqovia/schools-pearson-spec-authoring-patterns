@@ -788,9 +788,11 @@
 			</suggested_assignment>
 		</learning_objective>
 	</learning_objectives>
-	<suggest_assignment_summary>
-		<paragraph>You now need to review your database solution before you present it to your manager, or roll it out across doctors' surgeries in the local area. Give at least three strengths and one improvement you could make to your database. Does your finished database meet the brief given by the doctor’s surgery? How does it meet the requirements of the brief? How is it suitable for the users? What changes did you make to your designs? Explain any changes made. How would you improve your database to roll it out for other surgeries</paragraph>
-	</suggest_assignment_summary>
+	<suggest_assignment>
+		<suggest_assignment_summary>
+			<paragraph>You now need to review your database solution before you present it to your manager, or roll it out across doctors' surgeries in the local area. Give at least three strengths and one improvement you could make to your database. Does your finished database meet the brief given by the doctor’s surgery? How does it meet the requirements of the brief? How is it suitable for the users? What changes did you make to your designs? Explain any changes made. How would you improve your database to roll it out for other surgeries</paragraph>
+		</suggest_assignment_summary>
+	</suggest_assignment>	
 	<teacher_guidance>
 		<resources>
 			<paragraph>The special resource required for this unit is access to networking hardware components and software. Learners can also use network simulators, such as Packet Tracer to develop their understanding of concepts.</paragraph>

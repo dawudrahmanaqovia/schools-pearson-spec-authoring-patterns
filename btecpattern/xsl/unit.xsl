@@ -26,7 +26,7 @@
 						<xsl:if test="learning_objectives/learning_objective/assessment_criterias">
 							<xsl:apply-templates select="learning_objectives" mode="assessment_criteria"/>
 						</xsl:if>	
-						<xsl:if test="suggest_assignment_summary">
+						<xsl:if test="suggest_assignment">
 							<xsl:apply-templates select="learning_objectives" mode="suggested_assignment"/>
 						</xsl:if>
 					</xsl:if>

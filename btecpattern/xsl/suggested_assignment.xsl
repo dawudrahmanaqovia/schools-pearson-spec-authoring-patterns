@@ -25,7 +25,7 @@
       	<div class="panel panel-default">
 		  <div class="panel-heading">Suggested Assignment Outlines Summary</div>
 		  <div class="panel-body">
-			<xsl:apply-templates select="../suggest_assignment_summary"/>
+			<xsl:apply-templates select="../suggest_assignment/suggest_assignment_summary"/>
 		  </div>
 		</div>
    
@@ -64,7 +64,7 @@
 
 				   	
 			   		
-					<xsl:apply-templates select="assessment_criteria" mode="suggested_assignment"/>	
+					<xsl:apply-templates select="assessment_criterias" mode="suggested_assignment"/>					
 					<xsl:apply-templates select="suggested_assignment"/>
 
 
@@ -76,7 +76,10 @@
 
 
 
-
+	<!-- Assessment Criteria data table -->
+	<xsl:template match="assessment_criteria" mode="suggested_assignment">
+					<xsl:apply-templates select="assessment_criteria" mode="suggested_assignment"/>
+	</xsl:template>
 
 
 
