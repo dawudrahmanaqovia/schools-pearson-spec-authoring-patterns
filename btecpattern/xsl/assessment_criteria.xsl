@@ -92,13 +92,6 @@
 <!-- Assessment Criteria data section table cells -->
 <xsl:template match="level_1_criteria | pass_criteria | merit_criteria | distinction_criteria">
 
-
-<!--<div class="myDropdownCheckboxcat dropdown-checkbox dropdown pull-right">
---><!--		<button class="dropdown-checkbox-toggle btn btn-primary" data-toggle="dropdown" href="#">Dropdown Checkbox <span class="dropdown-checkbox-nbselected"></span></button>
--->		
-
-<!--</div>		
---> 
 	<xsl:call-template name="criterion_id">
 		<xsl:with-param name="criteria_node" select="name()"/>
 	</xsl:call-template>
@@ -106,41 +99,6 @@
 	
 
 	<xsl:apply-templates select="categories"/>
-
-
-		<script type="text/javascript">
-		var myData = [{id: 1, label: "Test" }];
-			$(".myDropdownCheckbox").dropdownCheckbox({
-			  data: myData,
-			  title: "<i class="icon-plus-sign"/>"
-		});
-		
-		
-		var tab = [
-		  { id: "1", label: "Forever.", isChecked: true },
-		  { id: "2", label: "I love cheese.", isChecked: true },
-		  { id: "3", label: "Meat for all", isChecked: false },
-		  { id: "4", label: "Again and again", isChecked: true },
-		  { id: "5", label: "Hey bro!", isChecked: true },
-		  { id: "6", label: "It's working?", isChecked: false },
-		  { id: "7", label: "Horse", isChecked: true },
-		  { id: "8", label: "z-index", isChecked: true },
-		  { id: "9", label: "language scala", isChecked: true },
-		  { id: "10", label: "Yahoo", isChecked: true },
-		  { id: "11", label: "yellow", isChecked: true },
-		  { id: "12", label: "Gooooooooooogle", isChecked: true },
-		  { id: "13", label: "NO WAY!", isChecked: false },
-		  { id: "14", label: "2 times?", isChecked: true }
-		];
-		$('.myDropdownCheckboxcat').dropdownCheckbox({
-		  data: tab,
-		  autosearch: true,
-		  btnClass: "btn btn-primary icon-plus-sign bringtofront",
-		  hideHeader: false,
-		  title: ""
-		});		
-		
-		</script>
 		
 </xsl:template>
 
@@ -154,9 +112,8 @@
       </div>
     </div>
     
-    <div class="myDropdownCheckboxcat pull-right">
-	<!--<button type="button" class="pull-right btn btn-primary" data-placement="auto" data-toggle="dropdown" title="Add"><i class="icon-plus-sign"/></button>-->
-	</div>
+    <div class="acceptance-criteria-dropdown"><!-- dropdown inserted here --></div>
+    
   </xsl:template>
 
   <xsl:template match="category">

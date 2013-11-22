@@ -36,11 +36,21 @@ body.start h1,
 
 */
 
+
+
+.acceptance-criteria-dropdown {position: relative}
+.acceptance-criteria {border:1px solid #808080;position: absolute; left: 0; top:30px; background-color: #fff; display: none;}
+.acceptance-criteria ul {list-style: none; margin:0; padding:20px 15px;}
+.acceptance-criteria p {font-weight: bold; margin: 0 0 5px}
+.acceptance-criteria label {font-weight: normal;}
+
+#collapse_assessment_criteria div  {overflow: visible;}
+tbody.assesmentCriteria td {overflow: visible;}
+tbody.assesmentCriteria td .assassesmentCriteriaDropdown {position: relative;overflow: visible;}
+
 .bringtofront
 {
-z-index: 1;
-display: inline-block;
-position: relative;
+z-index: 10000;
 }
 
 .overflow 
