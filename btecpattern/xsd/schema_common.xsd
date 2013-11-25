@@ -17,6 +17,13 @@
 		</xs:restriction>
 	</xs:simpleType>
 	<!-- END ASSESSMENT CRITERIA -->
+	<xs:simpleType name="qualification_type">
+		<xs:restriction base="xs:string">
+			<xs:enumeration value="BTEC Firsts (NQF) 2012"/>
+			<xs:enumeration value="BTEC Firsts (QCF) 2010"/>			
+			<xs:enumeration value="Self Regulated Framework 2013"/>
+		</xs:restriction>
+	</xs:simpleType>	
 	<xs:simpleType name="unit_assessment_type_def">
 		<xs:restriction base="xs:string">
 			<xs:enumeration value="Internal"/>

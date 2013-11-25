@@ -10,7 +10,7 @@
 				<xs:element ref="meta" minOccurs="0" maxOccurs="1"/>
 				<xs:element ref="introduction" minOccurs="0" maxOccurs="1"/>
 				<xs:element ref="learning_objectives" minOccurs="0" maxOccurs="1"/>
-				<xs:element name="suggest_assignment_summary" type="section_content_type" minOccurs="0" maxOccurs="1"/>
+				<xs:element ref="suggest_assignment" minOccurs="0" maxOccurs="1"/>
 				<xs:element ref="teacher_guidance" minOccurs="0" maxOccurs="1"/>
 			</xs:sequence>
 		</xs:complexType>
@@ -21,10 +21,11 @@
 	<xs:element name="meta" type="metaType"/>
 	<xs:complexType name="metaType">
 		<xs:sequence>
+			<xs:element name="qualificationType" type="qualification_type" x:role="hidden-from-ui" x:placeholder="Right click for drop down list"/>
 			<xs:element name="unit_title" type="xs:string"/>
 			<xs:element name="number" type="xs:int"/>
 			<xs:element name="level" type="level_def"/>
-			<xs:element name="type" type="unit_type_def"/>
+			<xs:element name="type" type="unit_type_def" x:placeholder="Right click for drop down list"/>
 			<xs:element name="guided_learning_hours" type="xs:float"/>
 			<xs:element name="assessment_type" type="unit_assessment_type_def"/>
 		</xs:sequence>
@@ -110,10 +111,9 @@
 			<xs:element name="criterion_guidance" type="section_content_type" minOccurs="0" maxOccurs="1"/>
 		</xs:sequence>
 	</xs:complexType>
-  <xs:element name="categories" type="categories.type"/>
-
-  <xs:element name="category" type="category.type"/>
-  <!-- categories.type -->
+	<xs:element name="categories" type="categories.type"/>
+	<xs:element name="category" type="category.type"/>
+	<!-- categories.type -->
 	<xs:complexType name="categories.type" mixed="false">
 		<xs:sequence>
 			<xs:element ref="category" maxOccurs="unbounded"/>
@@ -163,6 +163,13 @@
 				<xs:element ref="unorderedlist"/>
 				<xs:element ref="orderedlist"/>
 			</xs:choice>
+		</xs:sequence>
+	</xs:complexType>
+	<!-- Suggested Assignment Summary-->
+	<xs:element name="suggest_assignment" type="suggest_assignment_summary"/>
+	<xs:complexType name="suggest_assignment_summary">
+		<xs:sequence>
+			<xs:element name="suggest_assignment_summary" type="section_content_type" minOccurs="0" maxOccurs="1"/>
 		</xs:sequence>
 	</xs:complexType>
 	<!-- Suggested Assignment -->

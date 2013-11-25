@@ -3,6 +3,7 @@
 <unit xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="file:///D:/AqoviaPearsonXOpus/btecpattern/xsd/schema.xsd">
 	<title>Unit 11: Computer Networks</title>
 	<meta>
+    <qualification_type>BTEC Standard</qualification_type>	
 		<unit_title>Computer Networks</unit_title>
 		<number>11</number>
 		<level>2</level>

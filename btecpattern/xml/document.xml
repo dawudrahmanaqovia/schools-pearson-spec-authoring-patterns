@@ -3,6 +3,7 @@
   <title>
   </title>
   <meta>
+    <qualificationType>BTEC Firsts (NQF) 2012</qualificationType>
     <unit_title>Computer Networks</unit_title>
     <number>11</number>
     <level>1</level>
@@ -134,8 +135,7 @@
             <criterion_id>
             </criterion_id>
             <criterion>
-              <paragraph>
-              </paragraph>
+              <paragraph>bvvhvg</paragraph>
             </criterion>
             <GSCE_english>
             </GSCE_english>
@@ -403,10 +403,53 @@
     </learning_objective>
   </learning_objectives>
   <suggest_assignment>
-	  <suggest_assignment_summary>
-		<paragraph>Suggest assignment summary ok
-		</paragraph>
-	  </suggest_assignment_summary>
+    <suggest_assignment_summary>
+      <paragraph>Suggest assignment summary </paragraph>
+      <table>
+        <tbody>
+          <tr>
+            <td>
+              <paragraph>
+              </paragraph>
+            </td>
+            <td>
+              <paragraph>
+              </paragraph>
+            </td>
+            <td rowspan="2">
+              <paragraph>
+              </paragraph>
+              <paragraph>
+              </paragraph>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <paragraph>
+              </paragraph>
+            </td>
+            <td>
+              <paragraph>
+              </paragraph>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <paragraph>
+              </paragraph>
+            </td>
+            <td>
+              <paragraph>
+              </paragraph>
+            </td>
+            <td>
+              <paragraph>
+              </paragraph>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </suggest_assignment_summary>
   </suggest_assignment>
   <teacher_guidance>
     <resources>
