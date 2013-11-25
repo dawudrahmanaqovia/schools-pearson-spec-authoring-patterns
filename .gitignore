@@ -1,0 +1,11 @@
+###############
+#    Files    #
+###############
+*.idea
+.idea/*
+web.config
+###############
+# Directories #
+###############
+Working Docs/
+xopus/
