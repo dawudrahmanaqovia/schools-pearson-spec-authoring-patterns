@@ -109,16 +109,16 @@
         <a href="#" class="category" onmousedown="showOptions(event, this, node);">
           <xsl:apply-templates/>
         </a>
+        <span class="acceptance-criteria-dropdown"><i class="dropdown-checkbox-toggle clickable icon-plus-sign icon-large bringtofront"></i> <!-- dropdown inserted here --></span>
       </div>
     </div>
-    
-    <div class="acceptance-criteria-dropdown"><!-- dropdown inserted here --></div>
-    
+
   </xsl:template>
 
   <xsl:template match="category">
 	  <span class="badge"><xsl:value-of select="string(.)"/></span>
-    <xsl:if test="following-sibling::*[1]">,</xsl:if>    
+    <xsl:if test="following-sibling::*[1]"></xsl:if>
+
   </xsl:template>
 
 
