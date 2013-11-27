@@ -38,16 +38,28 @@ body.start h1,
 .clickable {cursor: pointer;}
 .panel-group .panel {overflow: visible;}
 
+.signpost-container,
 .acceptance-criteria-dropdown {position: relative}
+.signpost-container,
 .acceptance-criteria-dropdown i {color:#428BCA}
 
+.signposting-dropdown ul,
 .acceptance-criteria ul {list-style: none; margin:0; padding:15px;}
+.signposting-dropdown p,
 .acceptance-criteria p {font-weight: bold; margin: 0 0 5px}
-.acceptance-criteria label {font-weight: normal;}
+.signposting-dropdown label,
+.acceptance-criteria label {font-weight: normal; display: inline-block;overflow: hidden;}
+.signposting-dropdown label input,
+.acceptance-criteria label input {vertical-align: top;
+margin-right: 5px;}
+.signposting-dropdown label span,
+.acceptance-criteria label span {display: inline-block; max-width: 195px;}
 
+.signposting-dropdown,
 .acceptance-criteria {
     border:1px solid #ddd;
     position: absolute;
+    z-index: 1;
     left: 0;
     top:28px;
     color:#333;
@@ -71,6 +83,15 @@ body.start h1,
     background: linear-gradient(135deg,  rgba(238,238,238,1) 0%,rgba(255,255,255,1) 50%); /* W3C */
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#eeeeee', endColorstr='#ffffff',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
 }
+
+.plts-criteria-row,
+.ass-criteria-row {margin-right:250px;}
+
+.plts-criteria-row  .signposting-dropdown,
+.ass-criteria-row .signposting-dropdown{
+    min-width: 250px;
+}
+
 
 .btn span {
     font-size: 20px;

@@ -48,7 +48,7 @@
 				<xsl:apply-templates select="unit"/>
 			</body>
 
-            <script type="text/javascript" src="../js/acceptance-criteria-dropdown.js"></script>
+            <script type="text/javascript" src="../js/btechpattern.main.js"></script>
 
 		</html>
 	</xsl:template>

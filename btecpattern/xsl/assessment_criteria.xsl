@@ -109,7 +109,7 @@
         <a href="#" class="category" onmousedown="showOptions(event, this, node);">
           <xsl:apply-templates/>
         </a>
-        <span class="acceptance-criteria-dropdown"><i class="dropdown-checkbox-toggle clickable icon-plus-sign icon-large bringtofront"></i> <!-- dropdown inserted here --></span>
+        <span class="subject-criteria-row signpost-container"><i class="dropdownToggle scddToggle clickable icon-plus-sign icon-large bringtofront"></i> <!-- dropdown inserted here --></span>
       </div>
     </div>
 

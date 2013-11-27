@@ -46,11 +46,13 @@
 	   Learning Aim <xsl:number count="learning_objective" from="/unit/learning_objectives" level="multiple" format="AA"/>: <xsl:apply-templates select="../learning_objective_title"/>
 	</span>
         <span class="pull-right">
-            <i class="icon-plus-sign icon-large clickable"></i>
-            <i class="icon-plus-sign icon-large clickable"></i>
+            <i class="icon-plus-sign icon-large dropdownToggle acddToggle clickable"></i>
+            <i class="icon-plus-sign icon-large dropdownToggle pltsddToggle clickable"></i>
         </span>
     </div>
     <div id="collapse_content{count(preceding::learning_objective)+1}" class="panel-collapse collapse in">
+      <div class="ass-criteria-row"><span class="signpost-container pull-right"></span></div>
+      <div class="plts-criteria-row"><span class="signpost-container pull-right"></span></div>
       <div class="panel-body">
 		<xsl:apply-templates select="node()"/>
 		
