@@ -105,12 +105,12 @@
 
   <xsl:template match="categories">
     <div class="categories">      
-      <div class="categoriesThemselves">
-        <a href="#" class="category" onmousedown="showOptions(event, this, node);">
+      <!--<div class="categoriesThemselves">
+        <a href="#" class="category" onmousedown="showOptions(event, this, node);">-->
           <xsl:apply-templates/>
-        </a>
+        <!--</a>-->
         <span class="subject-criteria-row signpost-container"><i class="dropdownToggle scddToggle clickable icon-plus-sign icon-large bringtofront"></i> <!-- dropdown inserted here --></span>
-      </div>
+        <!--</div>-->
     </div>
 
   </xsl:template>

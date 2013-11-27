@@ -33,8 +33,8 @@
     
     var scddStr = '<div class="signposting-dropdown subject-criteria"><ul>';
     scddStr += '<li><p class="title">GCSE Subject Criteria Signposting</p></li>';
-    scddStr += '<li data-category="ict"><label><input type="checkbox"/> <span>English</span></label></li>';
-    scddStr += '<li data-category="ict"><label><input type="checkbox"/> <span>Mathmatics</span></label></li>';
+    scddStr += '<li data-category="English"><label><input type="checkbox"/> <span>English</span></label></li>';
+    scddStr += '<li data-category="Mathmatics"><label><input type="checkbox"/> <span>Mathmatics</span></label></li>';
     scddStr += '</ul></div>';
 
     //console.log(acddStr) ;
@@ -99,9 +99,20 @@
                 
          });
 
-         /*$('body').on("click", function(){
-            signPostsClose();
-         });*/
+         $('body').on("click", function(e){
+
+            // cloce signpost dropdown when clicked outside 
+            if($(e.target).closest('.signposting-dropdown').length == 0){
+                console.log('outside');
+                signPostsClose();
+                            }
+            else {
+                console.log('inside');
+            }
+            
+            //e.stopPropagation();
+
+         });/**/
 
 
     });

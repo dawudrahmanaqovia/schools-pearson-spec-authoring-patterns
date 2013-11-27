@@ -35,13 +35,15 @@ body.start h1,
 .navigation a:hover {color:Black;}
 
 */
+
+i.icon-collapse,
 .clickable {cursor: pointer;}
 .panel-group .panel {overflow: visible;}
 
 .signpost-container,
 .acceptance-criteria-dropdown {position: relative}
 .signpost-container,
-.acceptance-criteria-dropdown i {color:#428BCA}
+.acceptance-criteria-dropdown i {color:#428BCA; position: relative;top: 2px;}
 
 .signposting-dropdown ul,
 .acceptance-criteria ul {list-style: none; margin:0; padding:15px;}
@@ -84,9 +86,11 @@ margin-right: 5px;}
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#eeeeee', endColorstr='#ffffff',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
 }
 
+.subject-criteria-row,
 .plts-criteria-row,
 .ass-criteria-row {margin-right:250px;}
 
+.subject-criteria-row .signposting-dropdown,
 .plts-criteria-row  .signposting-dropdown,
 .ass-criteria-row .signposting-dropdown{
     min-width: 250px;
