@@ -36,7 +36,8 @@
     scddStr += '<li data-category="ict"><label><input type="checkbox"/> English</label></li>';
     scddStr += '<li data-category="ict"><label><input type="checkbox"/> Mathmatics</label></li>';
     scddStr += '</ul></div>';
-    //console.log(acddStr) ;
+
+    console.log(acddStr) ;
 
     $(document).ready(function(){
 
