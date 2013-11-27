@@ -1,0 +1,948 @@
+<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:fn="http://www.w3.org/2005/xpath-functions">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<title>Pearson Content</title>
+		<script type="text/javascript" src="../js/jquery.min.js"></script>
+		<link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css">
+		<script type="text/javascript" src="../js/bootstrap.min.js"></script>
+		<link rel="stylesheet" type="text/css" href="../css/font-awesome/css/font-awesome.min.css">
+		<!--<script type="text/javascript" src="../js/initialize.js"></script>
+		<script type="text/javascript" src="../js/meta.js"></script> -->
+		<link rel="stylesheet" href="../css/common.css" type="text/css">
+		<link rel="stylesheet" type="text/css" href="../css/bootstrap-dropdown-checkbox.css">
+	</head>
+	<body>
+		<div id="category_options" onclick="event.cancelBubble = true; ;return false;">
+			<div class="boxside-left"></div>
+			<div class="boxside-right"></div>
+		</div>
+		<div class="panel-group" id="accordion">
+			<div class="panel panel-default">
+				<div class="panel-heading">
+					<h1>Unit 11 : Computer Networks</h1>
+				</div>
+				<div class="panel-body">
+					<div class="panel panel-danger">
+						<div class="panel-heading">
+							<span class="panel-title">
+								<i class="icon-collapse accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapseMeta"></i> 
+			  Meta-data 
+		  </span>
+						</div>
+						<div id="collapseMeta" class="panel-collapse collapse in">
+							<div class="panel-body">
+								<form class="form-inline" role="form">
+									<div class="form-group">
+										<div class="row">
+											<div class="col-xs-12">
+												<label for="unit_title" class="control-label">Title: </label>
+												<div class="form-control">Computer Networks<i class="icon-question-sign pull-right" data-toggle="popover" title="" data-content="The title should reflect the learning aims/assessment criteria" data-original-title="Title"></i></div>
+											</div>
+										</div>
+										<div class="row">
+    
+    <div class="col-xs-2">
+												<label for="number" class="control-label">Unit No: </label>
+												<div class="form-control">11</div>
+											</div>
+    <div class="col-xs-2">
+												<label for="level" class="control-label">Level </label>
+												<select onchange="node.setTextContent(this.value)" class="form-control">
+													<option> select </option>
+													<option value="1" selected="true"> 1 </option>
+													<option value="2"> 2 </option>
+													<option value="1 and 2"> 1 and 2 </option>
+												</select>
+											</div>
+    <div class="col-xs-2">
+												<label for="type" class="control-label">Unit Type: </label>
+												<select onchange="node.setTextContent(this.value)" class="form-control">
+													<option> select </option>
+													<option value="Core/Mandatory" selected="true"> Core/Mandatory </option>
+													<option value="Core"> Core </option>
+													<option value="Mandatory"> Mandatory </option>
+													<option value="Optional specialist"> Optional specialist </option>
+												</select>
+											</div>
+    <div class="col-xs-3">
+												<label for="guided_learning_hours" class="control-label">Guided Learning Hours: </label>
+												<div class="form-control">0</div>
+											</div>
+    <div class="col-xs-3">
+												<label for="assessment_type" class="control-label">Assessment Type: </label>
+												<select onchange="node.setTextContent(this.value)" class="form-control">
+													<option> select </option>
+													<option value="Internal" selected="true"> Internal </option>
+													<option value="External"> External </option>
+												</select>
+											</div>
+  </div>
+									</div>
+								</form>
+							</div>
+						</div>
+					</div>
+					<div class="panel panel-primary">
+						<div class="panel-heading">
+							<span class="panel-title">
+								<i class="icon-collapse accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapse2"></i>   
+    Unit Introduction
+	</span>
+							<i class="icon-question-sign pull-right" data-content="The unit introduction should give the reader a snapshot of the purpose of the unit and how it fits into the vocational setting of the qualification" data-original-title="Unit Introduction"></i>
+						</div>
+						<div id="collapse2" class="panel-collapse collapse in">
+							<div class="panel-body">
+    <p>
+    </p>
+  </div>
+						</div>
+					</div>
+					<div class="panel panel-primary">
+						<div class="panel-heading">
+							<span class="panel-title">
+								<i class="icon-collapse accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapseLearningAim"></i>
+    Learning Aims
+	</span>
+						</div>
+						<div id="collapseLearningAim" class="panel-collapse collapse in">
+							<div class="panel-body">
+								<div class="row">
+									<div class="col-xs-12">In this unit, you will:</div>
+								</div>
+								<div class="row">
+									<div class="col-xs-1">
+										<div class="form-control label-primary" style="color: #ffffff; font-weight: bold;">A: </div>
+									</div>
+									<div class="col-xs-11">
+										<div class="form-control">Dawud<i class="icon-question-sign pull-right" data-toggle="popover" title="" data-content="Insert learning aims title here" data-original-title="Learning Aim"></i></div>
+									</div>
+								</div>
+								<br>
+							</div>
+							<div class="row">
+								<div class="col-xs-12">
+									<div class="pull-right">
+										<button type="button" class="btn btn-success" data-placement="auto" data-toggle="tooltip" title="Add" onclick="insert_menu(this, node)">
+											<i class="icon-plus-sign"></i>
+										</button> <button type="button" class="btn btn-primary" data-placement="auto" data-toggle="tooltip" title="Add" onclick="add_button(this, node)">
+											<i class="icon-plus-sign"></i>
+										</button> <button type="button" class="btn btn-danger" data-placement="auto" data-toggle="tooltip" title="Remove" onclick="remove_button(this, node)">
+											<i class="icon-minus-sign"></i>
+										</button></div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="panel panel-primary">
+						<div class="panel-heading">
+							<span class="panel-title">
+								<i class="icon-collapse icon-large clickable accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapseLearningAimContent"></i>
+		Content
+	</span>
+							<i class="icon-question-sign pull-right" data-toggle="popover" title="" data-content="The content can be written in lengthy bulleted phrases/scentences and should not just be a list. The breadth and depth of what the learner needs to learn must be clear." data-original-title="Content"></i>
+
+						</div>
+						<div id="collapseLearningAimContent" class="panel-collapse collapse in">
+							<div class="panel-body">
+								<div class="panel panel-info">
+									<div class="panel-heading">
+										<span class="panel-title">
+											<i class="icon-collapse icon-large clickable accordion-toggle" data-toggle="collapse" href="#collapse_content1"></i>
+	                                        Learning Aim A: Dawud
+                                        </span>
+                                        <span class="pull-right">
+                                            <i class="icon-plus-sign icon-large clickable"></i>
+                                            <i class="icon-plus-sign icon-large clickable"></i>
+                                        </span>
+									</div>
+									<div id="collapse_content1" class="panel-collapse collapse in">
+										<div class="panel-body">
+        <div class="well">
+												<dl>
+													<dt>
+          </dt>
+													<dd>
+          
+          
+            <p>
+            </p>
+          <div class="row">
+															<div class="col-xs-12">
+																<div class="pull-right">
+																	<button type="button" class="btn btn-success" data-placement="auto" data-toggle="tooltip" title="Add" onclick="insert_menu(this, node)">
+																		<i class="icon-plus-sign"></i>
+																	</button> <button type="button" class="btn btn-primary" data-placement="auto" data-toggle="tooltip" title="Add" onclick="add_button(this, node)">
+																		<i class="icon-plus-sign"></i>
+																	</button> <button type="button" class="btn btn-danger" data-placement="auto" data-toggle="tooltip" title="Remove" onclick="remove_button(this, node)">
+																		<i class="icon-minus-sign"></i>
+																	</button></div>
+															</div>
+														</div>
+        </dd>
+												</dl>
+											</div>
+      </div>
+									</div>
+								</div>
+								<div class="row">
+									<div class="col-xs-12">
+										<div class="pull-right">
+											<button type="button" class="btn btn-success" data-placement="auto" data-toggle="tooltip" title="Add" onclick="insert_menu(this, node)">
+												<i class="icon-plus-sign"></i>
+											</button> <button type="button" class="btn btn-primary" data-placement="auto" data-toggle="tooltip" title="Add" onclick="add_button(this, node)">
+												<i class="icon-plus-sign"></i>
+											</button> <button type="button" class="btn btn-danger" data-placement="auto" data-toggle="tooltip" title="Remove" onclick="remove_button(this, node)">
+												<i class="icon-minus-sign"></i>
+											</button></div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="panel panel-primary overflow">
+						<div class="panel-heading">
+							<span class="panel-title">
+								<i class="icon-collapse accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapse_assessment_criteria"></i>
+		Assessment Criteria
+	</span>
+							<i class="icon-question-sign pull-right" data-toggle="popover" title="" data-content="Make sure these are criteria that you can measure against and not a task - if you can't measure it, it isn't a criterion" data-original-title="Assessment Criteria"></i>
+						</div>
+						<div id="collapse_assessment_criteria" class="panel-collapse collapse in">
+							<div class="panel-body overflow">
+								<div class="panel panel-info overflow">
+									<div class="panel-heading">
+										<i class="icon-collapse accordion-toggle" data-toggle="collapse" data-parent="#accordion_assessment_critieria" href="#collapse_assessment_criteria1"></i>   
+		Learning Aim A: Dawud</div>
+									<div id="collapse_assessment_criteria1" class="panel-collapse collapse in">
+										<div class="panel-body overflow">
+											<table class="table table-bordered">
+												<thead>
+													<tr>
+														<th width="25%">
+															<div class="alert alert-info">Level 1 Pass</div>
+														</th>
+														<th width="25%">
+															<div class="alert alert-danger">Level 2 Pass</div>
+														</th>
+														<th width="25%">
+															<div class="alert alert-warning">Level 2 Merit</div>
+														</th>
+														<th width="25%">
+															<div class="alert alert-success">Level 2 Distinction</div>
+														</th>
+													</tr>
+												</thead>
+												<tbody>
+													<tr>
+														<td>
+															<span class="badge">1A.1</span>
+              <p>
+              </p>
+            <div class="categories">
+																<div class="categoriesThemselves">
+																	<a href="#" class="category" onmousedown="showOptions(event, this, node);">
+              <span class="badge">Travel</span>,
+              <span class="badge">Sports</span>
+            </a>
+																</div>
+															</div><div class="acceptance-criteria-dropdown"></div></td>
+														<td>
+															<span class="badge">2A.P1</span>
+              <p>
+              </p>
+            <div class="categories">
+																<div class="categoriesThemselves">
+																	<a href="#" class="category" onmousedown="showOptions(event, this, node);">
+              <span class="badge">Art</span>,
+              <span class="badge">Travel</span>,
+              <span class="badge">Sports</span>
+            </a>
+																</div>
+															</div><div class="acceptance-criteria-dropdown"></div></td>
+														<td>
+															<span class="badge">2A.M1</span>
+              <p>
+              </p>
+            <div class="categories">
+																<div class="categoriesThemselves">
+																	<a href="#" class="category" onmousedown="showOptions(event, this, node);">
+              <span class="badge">Art</span>,
+              <span class="badge">Travel</span>,
+              <span class="badge">Sports</span>
+            </a>
+																</div>
+															</div><div class="acceptance-criteria-dropdown"></div></td>
+														<td>
+															<span class="badge">2A.D1</span>
+              <p>
+              </p>
+            <div class="categories">
+																<div class="categoriesThemselves">
+																	<a href="#" class="category" onmousedown="showOptions(event, this, node);">
+              <span class="badge">Art</span>,
+              <span class="badge">Travel</span>,
+              <span class="badge">Sports</span>
+            </a>
+																</div>
+															</div><div class="acceptance-criteria-dropdown"></div></td>
+													</tr>
+													<tr>
+														<td>
+															<span class="badge">1A.2</span>
+              <p>
+              </p>
+            </td>
+														<td>
+															<span class="badge">2A.P2</span>
+              <p>
+              </p>
+            </td>
+														<td>
+															<span class="badge">2A.M2</span>
+              <p>
+              </p>
+            </td>
+														<td>
+															<span class="badge">2A.D2</span>
+              <p>
+              </p>
+            </td>
+													</tr>
+													<tr>
+														<td>
+															<span class="badge">1A.3</span>
+              <p>
+              </p>
+            </td>
+														<td>
+															<span class="badge">2A.P3</span>
+              <p>
+              </p>
+            </td>
+														<td>
+															<span class="badge">2A.M3</span>
+              <p>
+              </p>
+            </td>
+														<td>
+															<span class="badge">2A.D3</span>
+              <p>
+              </p>
+            </td>
+													</tr>
+													<tr>
+														<td>
+															<span class="badge">1A.4</span>
+              <p>
+              </p>
+            </td>
+														<td>
+															<span class="badge">2A.P4</span>
+              <p>
+              </p>
+            </td>
+														<td>
+															<span class="badge">2A.M4</span>
+              <p>
+              </p>
+            </td>
+														<td>
+															<span class="badge">2A.D4</span>
+              <p>
+              </p>
+            </td>
+													</tr>
+													<tr>
+														<td>
+															<span class="badge">1A.5</span>
+              <p>
+              </p>
+            </td>
+														<td>
+															<span class="badge">2A.P5</span>
+              <p>
+              </p>
+            </td>
+														<td>
+															<span class="badge">2A.M5</span>
+              <p>
+              </p>
+            </td>
+														<td>
+															<span class="badge">2A.D5</span>
+              <p>
+              </p>
+            </td>
+													</tr>
+												</tbody>
+											</table>
+										</div>
+									</div>
+								</div>
+								<br>
+							</div>
+						</div>
+					</div>
+					<div class="panel panel-primary">
+						<div class="panel-heading">
+							<span class="panel-title">
+								<i class="icon-collapse accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapse_suggested_assignment"></i>
+		Suggested Assignment Outlines
+	</span>
+							<i class="icon-question-sign pull-right" data-toggle="popover" title="" data-content="Please include where applicable if evidence would need witness or observation records, videos etc to support the decision made." data-original-title="Assessment Guidance"></i>
+						</div>
+						<div id="collapse_suggested_assignment" class="panel-collapse collapse in">
+							<div class="panel-body">
+								<div class="panel panel-default">
+									<div class="panel-heading">Suggested Assignment Outlines Summary</div>
+									<div class="panel-body">
+		<p>Suggest assignment summary ok
+		</p>
+	  </div>
+								</div>
+								<div class="panel panel-default">
+									<div class="panel-heading">Suggested Assignment Outlines for Learning Aim(s)</div>
+									<div class="panel-body">
+										<div class="panel panel-info">
+											<div class="panel-heading">
+												<i class="icon-collapse accordion-toggle" data-toggle="collapse" data-parent="#accordion_suggested_assignment" href="#collapse_suggested_assignment1"></i>   
+  Learning Aim A: Dawud</div>
+											<div id="collapse_suggested_assignment1" class="panel-collapse collapse in">
+												<div class="panel-body">
+        <div class="row">
+														<table class="table">
+															<thead></thead>
+															<tbody>
+																<tr>
+																	<td width="25%" valign="top" style="background-color:#d9edf7">
+																		<div align="center">Level 1 Pass</div>
+																		<span class="badge">1A.1</span>
+              <p>
+              </p>
+            </td>
+																	<td width="25%" valign="top" class="danger">
+																		<div align="center">Level 2 Pass</div>
+																		<span class="badge">2A.P1</span>
+              <p>
+              </p>
+            </td>
+																	<td width="25%" valign="top" class="warning">
+																		<div align="center">Level 2 Merit</div>
+																		<span class="badge">2A.M1</span>
+              <p>
+              </p>
+            </td>
+																	<td width="25%" valign="top" class="success">
+																		<div align="center">Level 2 Distinction</div>
+																		<span class="badge">2A.D1</span>
+              <p>
+              </p>
+            </td>
+																</tr>
+															</tbody>
+														</table>
+													</div>
+        <div class="row">
+														<table class="table">
+															<thead></thead>
+															<tbody>
+																<tr>
+																	<td width="25%" valign="top" style="background-color:#d9edf7">
+																		<div align="center">Level 1 Pass</div>
+																		<span class="badge">1A.2</span>
+              <p>
+              </p>
+            </td>
+																	<td width="25%" valign="top" class="danger">
+																		<div align="center">Level 2 Pass</div>
+																		<span class="badge">2A.P2</span>
+              <p>
+              </p>
+            </td>
+																	<td width="25%" valign="top" class="warning">
+																		<div align="center">Level 2 Merit</div>
+																		<span class="badge">2A.M2</span>
+              <p>
+              </p>
+            </td>
+																	<td width="25%" valign="top" class="success">
+																		<div align="center">Level 2 Distinction</div>
+																		<span class="badge">2A.D2</span>
+              <p>
+              </p>
+            </td>
+																</tr>
+															</tbody>
+														</table>
+													</div>
+        <div class="row">
+														<table class="table">
+															<thead></thead>
+															<tbody>
+																<tr>
+																	<td width="25%" valign="top" style="background-color:#d9edf7">
+																		<div align="center">Level 1 Pass</div>
+																		<span class="badge">1A.3</span>
+              <p>
+              </p>
+            </td>
+																	<td width="25%" valign="top" class="danger">
+																		<div align="center">Level 2 Pass</div>
+																		<span class="badge">2A.P3</span>
+              <p>
+              </p>
+            </td>
+																	<td width="25%" valign="top" class="warning">
+																		<div align="center">Level 2 Merit</div>
+																		<span class="badge">2A.M3</span>
+              <p>
+              </p>
+            </td>
+																	<td width="25%" valign="top" class="success">
+																		<div align="center">Level 2 Distinction</div>
+																		<span class="badge">2A.D3</span>
+              <p>
+              </p>
+            </td>
+																</tr>
+															</tbody>
+														</table>
+													</div>
+        <div class="row">
+														<table class="table">
+															<thead></thead>
+															<tbody>
+																<tr>
+																	<td width="25%" valign="top" style="background-color:#d9edf7">
+																		<div align="center">Level 1 Pass</div>
+																		<span class="badge">1A.4</span>
+              <p>
+              </p>
+            </td>
+																	<td width="25%" valign="top" class="danger">
+																		<div align="center">Level 2 Pass</div>
+																		<span class="badge">2A.P4</span>
+              <p>
+              </p>
+            </td>
+																	<td width="25%" valign="top" class="warning">
+																		<div align="center">Level 2 Merit</div>
+																		<span class="badge">2A.M4</span>
+              <p>
+              </p>
+            </td>
+																	<td width="25%" valign="top" class="success">
+																		<div align="center">Level 2 Distinction</div>
+																		<span class="badge">2A.D4</span>
+              <p>
+              </p>
+            </td>
+																</tr>
+															</tbody>
+														</table>
+													</div>
+        <div class="row">
+														<table class="table">
+															<thead></thead>
+															<tbody>
+																<tr>
+																	<td width="25%" valign="top" style="background-color:#d9edf7">
+																		<div align="center">Level 1 Pass</div>
+																		<span class="badge">1A.5</span>
+              <p>
+              </p>
+            </td>
+																	<td width="25%" valign="top" class="danger">
+																		<div align="center">Level 2 Pass</div>
+																		<span class="badge">2A.P5</span>
+              <p>
+              </p>
+            </td>
+																	<td width="25%" valign="top" class="warning">
+																		<div align="center">Level 2 Merit</div>
+																		<span class="badge">2A.M5</span>
+              <p>
+              </p>
+            </td>
+																	<td width="25%" valign="top" class="success">
+																		<div align="center">Level 2 Distinction</div>
+																		<span class="badge">2A.D5</span>
+              <p>
+              </p>
+            </td>
+																</tr>
+															</tbody>
+														</table>
+													</div>
+      <div class="row">
+														<div class="col-xs-12">
+															<label for="suggested_assignment" class="control-label">Assignment Title: </label>
+															<div class="form-control">
+        <i class="icon-question-sign pull-right" data-toggle="popover" title="" data-content="The title should reflect the Suggested Assignment" data-original-title="Assignment Title"></i></div>
+														</div>
+													</div><br><div class="row">
+														<div class="col-xs-6">
+															<div class="panel panel-info">
+																<div class="panel-heading">
+																	<span class="panel-title">Scenario </span>
+																</div>
+																<div class="panel-body">
+          <p>
+          </p>
+        </div>
+															</div>
+														</div>
+														<div class="col-xs-6">
+															<div class="panel panel-info">
+																<div class="panel-heading">
+																	<span class="panel-title">Assignment Evidence </span>
+																</div>
+																<div class="panel-body">
+          <p>
+          </p>
+        </div>
+															</div>
+														</div>
+													</div></div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="panel panel-primary">
+						<div class="panel-heading">
+							<span class="panel-title">
+								<i class="icon-collapse accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapse_teacher_guidance"></i>   
+    Teacher Guidance
+	</span>
+							<i class="icon-question-sign pull-right" data-content="The unit introduction should give the reader a snapshot of the purpose of the unit and how it fits into the vocational setting of the qualification" data-original-title="Unit Introduction"></i>
+						</div>
+						<div id="collapse_teacher_guidance" class="panel-collapse collapse in">
+							<div class="panel-body">
+    <div class="panel panel-success">
+									<div class="panel-heading">Resources</div>
+									<div class="panel-body">
+      <p>
+      </p>
+    </div>
+								</div>
+    <div class="panel panel-success">
+									<div class="panel-heading">Assessment Guidance Summary</div>
+									<div class="panel-body">
+      <p>
+      </p>
+    </div>
+								</div>
+  <div class="panel panel-success">
+									<div class="panel-heading">
+										<span class="panel-title">
+											<i class="icon-collapse accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapse_assessment_guidance"></i>
+			Assessment Guidance for Learning Aim(s)
+		</span>
+										<i class="icon-question-sign pull-right" data-toggle="popover" title="" data-content="Please include where applicable if evidence would need witness or observation records, videos etc to support the decision made." data-original-title="Assessment Guidance"></i>
+									</div>
+									<div id="collapse_assessment_guidance" class="panel-collapse collapse in">
+										<div class="panel-body">
+											<div class="panel panel-info">
+												<div class="panel-heading">
+													<i class="icon-collapse accordion-toggle" data-toggle="collapse" data-parent="#accordion_assessment_guidance" href="#collapse_assessment_guidance1"></i>   
+	  Learning Aim A: Dawud</div>
+												<div id="collapse_assessment_guidance1" class="panel-collapse collapse in">
+													<div class="panel-body">
+        <table class="table table-bordered">
+															<tbody>
+																<tr>
+																	<td colspan="2">
+        </td>
+																</tr>
+																<tr>
+																	<td width="25%" style="background-color:#d9edf7">
+																		<div align="center">Level 1 Pass</div>
+																		<span class="badge">1A.1</span>
+              <p>
+              </p>
+            </td>
+																	<td width="75%">
+              <p>
+              </p>
+            </td>
+																</tr>
+																<tr>
+																	<td width="25%" class="danger">
+																		<div align="center">Level 2 Pass</div>
+																		<span class="badge">2A.P1</span>
+              <p>
+              </p>
+            </td>
+																	<td width="75%">
+              <p>
+              </p>
+            </td>
+																</tr>
+																<tr>
+																	<td width="25%" class="warning">
+																		<div align="center">Level 2 Merit</div>
+																		<span class="badge">2A.M1</span>
+              <p>
+              </p>
+            </td>
+																	<td width="75%">
+              <p>
+              </p>
+            </td>
+																</tr>
+																<tr>
+																	<td width="25%" class="success">
+																		<div align="center">Level 2 Distinction</div>
+																		<span class="badge">2A.D1</span>
+              <p>
+              </p>
+            </td>
+																	<td width="75%">
+              <p>
+              </p>
+            </td>
+																</tr>
+															</tbody>
+														</table>
+        <table class="table table-bordered">
+															<tbody>
+																<tr>
+																	<td colspan="2">
+        </td>
+																</tr>
+																<tr>
+																	<td width="25%" style="background-color:#d9edf7">
+																		<div align="center">Level 1 Pass</div>
+																		<span class="badge">1A.2</span>
+              <p>
+              </p>
+            </td>
+																	<td width="75%">
+              <p>
+              </p>
+            </td>
+																</tr>
+																<tr>
+																	<td width="25%" class="danger">
+																		<div align="center">Level 2 Pass</div>
+																		<span class="badge">2A.P2</span>
+              <p>
+              </p>
+            </td>
+																	<td width="75%">
+              <p>
+              </p>
+            </td>
+																</tr>
+																<tr>
+																	<td width="25%" class="warning">
+																		<div align="center">Level 2 Merit</div>
+																		<span class="badge">2A.M2</span>
+              <p>
+              </p>
+            </td>
+																	<td width="75%">
+              <p>
+              </p>
+            </td>
+																</tr>
+																<tr>
+																	<td width="25%" class="success">
+																		<div align="center">Level 2 Distinction</div>
+																		<span class="badge">2A.D2</span>
+              <p>
+              </p>
+            </td>
+																	<td width="75%">
+              <p>
+              </p>
+            </td>
+																</tr>
+															</tbody>
+														</table>
+        <table class="table table-bordered">
+															<tbody>
+																<tr>
+																	<td colspan="2">
+        </td>
+																</tr>
+																<tr>
+																	<td width="25%" style="background-color:#d9edf7">
+																		<div align="center">Level 1 Pass</div>
+																		<span class="badge">1A.3</span>
+              <p>
+              </p>
+            </td>
+																	<td width="75%">
+              <p>
+              </p>
+            </td>
+																</tr>
+																<tr>
+																	<td width="25%" class="danger">
+																		<div align="center">Level 2 Pass</div>
+																		<span class="badge">2A.P3</span>
+              <p>
+              </p>
+            </td>
+																	<td width="75%">
+              <p>
+              </p>
+            </td>
+																</tr>
+																<tr>
+																	<td width="25%" class="warning">
+																		<div align="center">Level 2 Merit</div>
+																		<span class="badge">2A.M3</span>
+              <p>
+              </p>
+            </td>
+																	<td width="75%">
+              <p>
+              </p>
+            </td>
+																</tr>
+																<tr>
+																	<td width="25%" class="success">
+																		<div align="center">Level 2 Distinction</div>
+																		<span class="badge">2A.D3</span>
+              <p>
+              </p>
+            </td>
+																	<td width="75%">
+              <p>
+              </p>
+            </td>
+																</tr>
+															</tbody>
+														</table>
+        <table class="table table-bordered">
+															<tbody>
+																<tr>
+																	<td colspan="2">
+        </td>
+																</tr>
+																<tr>
+																	<td width="25%" style="background-color:#d9edf7">
+																		<div align="center">Level 1 Pass</div>
+																		<span class="badge">1A.4</span>
+              <p>
+              </p>
+            </td>
+																	<td width="75%">
+              <p>
+              </p>
+            </td>
+																</tr>
+																<tr>
+																	<td width="25%" class="danger">
+																		<div align="center">Level 2 Pass</div>
+																		<span class="badge">2A.P4</span>
+              <p>
+              </p>
+            </td>
+																	<td width="75%">
+              <p>
+              </p>
+            </td>
+																</tr>
+																<tr>
+																	<td width="25%" class="warning">
+																		<div align="center">Level 2 Merit</div>
+																		<span class="badge">2A.M4</span>
+              <p>
+              </p>
+            </td>
+																	<td width="75%">
+              <p>
+              </p>
+            </td>
+																</tr>
+																<tr>
+																	<td width="25%" class="success">
+																		<div align="center">Level 2 Distinction</div>
+																		<span class="badge">2A.D4</span>
+              <p>
+              </p>
+            </td>
+																	<td width="75%">
+              <p>
+              </p>
+            </td>
+																</tr>
+															</tbody>
+														</table>
+        <table class="table table-bordered">
+															<tbody>
+																<tr>
+																	<td colspan="2">
+        </td>
+																</tr>
+																<tr>
+																	<td width="25%" style="background-color:#d9edf7">
+																		<div align="center">Level 1 Pass</div>
+																		<span class="badge">1A.5</span>
+              <p>
+              </p>
+            </td>
+																	<td width="75%">
+              <p>
+              </p>
+            </td>
+																</tr>
+																<tr>
+																	<td width="25%" class="danger">
+																		<div align="center">Level 2 Pass</div>
+																		<span class="badge">2A.P5</span>
+              <p>
+              </p>
+            </td>
+																	<td width="75%">
+              <p>
+              </p>
+            </td>
+																</tr>
+																<tr>
+																	<td width="25%" class="warning">
+																		<div align="center">Level 2 Merit</div>
+																		<span class="badge">2A.M5</span>
+              <p>
+              </p>
+            </td>
+																	<td width="75%">
+              <p>
+              </p>
+            </td>
+																</tr>
+																<tr>
+																	<td width="25%" class="success">
+																		<div align="center">Level 2 Distinction</div>
+																		<span class="badge">2A.D5</span>
+              <p>
+              </p>
+            </td>
+																	<td width="75%">
+              <p>
+              </p>
+            </td>
+																</tr>
+															</tbody>
+														</table>
+      </div>
+												</div>
+											</div>
+											<br>
+										</div>
+									</div>
+								</div></div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+	<script type="text/javascript" src="../js/acceptance-criteria-dropdown.js"></script>
+</html>
