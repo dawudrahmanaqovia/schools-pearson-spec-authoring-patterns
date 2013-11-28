@@ -37,15 +37,14 @@
     scddStr += '<li data-category="Mathmatics"><label><input type="checkbox"/> <span>Mathmatics</span></label></li>';
     scddStr += '</ul></div>';
 
-    //console.log(acddStr) ;
-
     $(document).ready(function(){
 
         var $asddContainers = $('.ass-criteria-row .signpost-container'),
             $pltsddContainers = $('.plts-criteria-row .signpost-container'),
             $scddContainers = $('.subject-criteria-row.signpost-container'),
             $signpostDropdown = $('.signposting-dropdown'),
-            $signpostContainer = $('.signpost-container');
+            $signpostContainer = $('.signpost-container'),
+            $criteriaContainer;
 
          if($asddContainers.length > 0){
             $asddContainers.append(acddStr);
@@ -60,9 +59,28 @@
          };
 
          var signPostsClose = function(){
-            //console.log('signposts close');
 
             $('.signposting-dropdown').hide(500);
+         };
+
+         var initDropdown = function($criteriaContainer){
+
+            var $collection = $criteriaContainer.find('button');
+
+            if($collection.length > 0){
+                console.log('the collection contains ',$collection.length ,' items.')
+
+                var collectionItems = [];
+                for (var i = 0; i < $collection.length;  i++) {
+                    collectionItems[i] = $($collection[i]).text();
+                };
+                console.log('collection = ',collectionItems);
+                return;
+            }
+            else {
+                console.log('collection is empty ',$collection.length );
+            }
+
          };
 
 
@@ -74,13 +92,22 @@
                 $dropdown;
 
             if($this.hasClass('acddToggle')){
+                
                 $dropdown = $this.parents('.panel-heading').siblings('.panel-collapse').find(".ass-criteria-row .signposting-dropdown");
+                $criteriaContainer = $dropdown.parents('.ass-criteria-row');
             }
             else if($this.hasClass('pltsddToggle')){
+                
                 $dropdown = $this.parents('.panel-heading').siblings('.panel-collapse').find(".plts-criteria-row .signposting-dropdown");
+                $criteriaContainer = $dropdown.parents('.plts-criteria-row');
             }
             else if($this.hasClass('scddToggle')){
+                
                 $dropdown = $this.siblings(".signposting-dropdown");
+                $criteriaContainer = $criteriaContainer = $dropdown.parents('.categories');
+
+                initDropdown($criteriaContainer);
+
             }
             else{
                 return;
@@ -92,7 +119,7 @@
             }
             else{
                 signPostsClose();
-                $dropdown.toggle(500);
+                $dropdown.show(500);
             }
 
             e.stopPropagation();

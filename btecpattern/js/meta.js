@@ -1,4 +1,5 @@
 
+/*
 //This function shows options for the categories
 function showOptions(e, el, node)
 {
@@ -55,7 +56,7 @@ function showOptions(e, el, node)
     e.cancelBubble = true;
   }
   return false;
-}
+}*/
 
 function hideOptions()
 {

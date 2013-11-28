@@ -104,19 +104,16 @@
 
 
   <xsl:template match="categories">
-    <div class="categories">      
-      <!--<div class="categoriesThemselves">
-        <a href="#" class="category" onmousedown="showOptions(event, this, node);">-->
-          <xsl:apply-templates/>
-        <!--</a>-->
+    <div class="categories">
+        <xsl:apply-templates/>
         <span class="subject-criteria-row signpost-container"><i class="dropdownToggle scddToggle clickable icon-plus-sign icon-large bringtofront"></i> <!-- dropdown inserted here --></span>
-        <!--</div>-->
     </div>
 
   </xsl:template>
 
   <xsl:template match="category">
-	  <span class="badge"><xsl:value-of select="string(.)"/></span>
+      <xsl:variable name="test" select="string(.)"/>
+	  <button class="badge" data-criteria="{$test}"><xsl:value-of select="string(.)"/></button>
     <xsl:if test="following-sibling::*[1]"></xsl:if>
 
   </xsl:template>
