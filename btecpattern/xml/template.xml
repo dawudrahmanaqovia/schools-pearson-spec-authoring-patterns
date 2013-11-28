@@ -3,9 +3,69 @@
   <title>
   </title>
   <meta>
-    <unit_title></unit_title>
+    <qualificationframework>BTEC Firsts (NQF) 2012</qualificationframework>
+    <regulatoryframework>Regulated</regulatoryframework>
+    <regulatorystatus>Accredited</regulatorystatus>
+    <unitrestrictions>Public</unitrestrictions>
+    <QSRcompliancestatus>
+    </QSRcompliancestatus>
+    <author>
+    </author>
+    <qualificationdeveloper>
+    </qualificationdeveloper>
+    <portfoliomanager>
+    </portfoliomanager>
+    <productmanagement>
+    </productmanagement>
+    <vocationalgqassessment>
+    </vocationalgqassessment>
+    <qualitystandardsresearch>
+    </qualitystandardsresearch>
+    <assessmentdesign>
+    </assessmentdesign>
+    <qualitystandardsresearch>
+    </qualitystandardsresearch>
+    <reviewers>
+    </reviewers>
+    <editors>
+    </editors>
+    <proofreader>
+    </proofreader>
+    <pqsproductid>0</pqsproductid>
+    <unitowningorganisation>
+    </unitowningorganisation>
+    <ofqualreferencenumber>
+    </ofqualreferencenumber>
+    <unitssa>
+    </unitssa>
+    <unitssasublevel>
+    </unitssasublevel>
+    <unitgradingstructure>Pass only</unitgradingstructure>
+    <primarylanguage>
+    </primarylanguage>
+    <assessment_method>Coursework</assessment_method>
+    <nationaloccupationalstandard>
+    </nationaloccupationalstandard>
+    <operationalstartdate>
+    </operationalstartdate>
+    <operationalenddate>
+    </operationalenddate>
+    <operationalreviewdate>
+    </operationalreviewdate>
+    <accreditationdate>
+    </accreditationdate>
+    <signoffdate>
+    </signoffdate>
+    <reviewdate>
+    </reviewdate>
+    <nationaloccupationalstandard>
+    </nationaloccupationalstandard>
+    <equalityimpactassessment>
+    </equalityimpactassessment>
+    <unit_title>
+    </unit_title>
     <number>0</number>
-    <level>0</level>
+    <level>1</level>
     <type>Core/Mandatory</type>
     <guided_learning_hours>0</guided_learning_hours>
     <assessment_type>Internal</assessment_type>

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:kode="http://kode1100.com" xmlns:x="http://www.xopus.com/xmlns/config" xmlns:xopus="http://www.xopus.com/xmlns/xsd" xmlns:xml="http://www.w3.org/XML/1998/namespace" elementFormDefault="qualified">
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:kode="http://pearson.com" xmlns:x="http://www.xopus.com/xmlns/config" xmlns:xopus="http://www.xopus.com/xmlns/xsd" xmlns:xml="http://www.w3.org/XML/1998/namespace" elementFormDefault="qualified">
 	<xs:simpleType name="criterion_id__type" kode:doc="2D.P7">
 		<xs:restriction base="xs:string">
 			<xs:pattern value="^\s*\(([0-9][A-Z]\.(P|M|D)?[0-9][0-9]?|,|\s)+\)|([0-9][A-Z]\.(P|M|D)?[0-9][0-9]?)\s*$"/>
@@ -17,38 +17,10 @@
 		</xs:restriction>
 	</xs:simpleType>
 	<!-- END ASSESSMENT CRITERIA -->
-	<xs:simpleType name="qualification_type">
-		<xs:restriction base="xs:string">
-			<xs:enumeration value="BTEC Firsts (NQF) 2012"/>
-			<xs:enumeration value="BTEC Firsts (QCF) 2010"/>			
-			<xs:enumeration value="Self Regulated Framework 2013"/>
-		</xs:restriction>
-	</xs:simpleType>	
-	<xs:simpleType name="unit_assessment_type_def">
-		<xs:restriction base="xs:string">
-			<xs:enumeration value="Internal"/>
-			<xs:enumeration value="External"/>
-		</xs:restriction>
-	</xs:simpleType>
 	<xs:simpleType name="checked_unchecked_type">
 		<xs:restriction base="xs:string">
 			<xs:enumeration value="Checked"/>
 			<xs:enumeration value="Unchecked"/>
-		</xs:restriction>
-	</xs:simpleType>
-	<xs:simpleType name="level_def">
-		<xs:restriction base="xs:string">
-			<xs:enumeration value="1"/>
-			<xs:enumeration value="2"/>
-			<xs:enumeration value="1 and 2"/>
-		</xs:restriction>
-	</xs:simpleType>
-	<xs:simpleType name="unit_type_def">
-		<xs:restriction base="xs:string">
-			<xs:enumeration value="Core/Mandatory"/>
-			<xs:enumeration value="Core"/>
-			<xs:enumeration value="Mandatory"/>
-			<xs:enumeration value="Optional specialist"/>
 		</xs:restriction>
 	</xs:simpleType>
 	<xs:simpleType name="year_type">

@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:kode="http://pearson.com" xmlns:x="http://www.xopus.com/xmlns/config" xmlns:xopus="http://www.xopus.com/xmlns/xsd" xmlns:xml="http://www.w3.org/XML/1998/namespace" elementFormDefault="qualified">
+	<!-- META DATA -->
+	<xs:complexType name="metaType">
+		<xs:sequence>
+			<xs:element name="qualificationframework" type="qualification_framework" x:role="hidden-from-ui" x:placeholder="Right click for drop down list"/>
+			<xs:element name="regulatoryframework" type="regulatory_framework" x:role="hidden-from-ui" x:placeholder="Right click for drop down list"/>
+			<xs:element name="regulatorystatus" type="regulatory_status" x:role="hidden-from-ui" x:placeholder="Right click for drop down list"/>
+			<xs:element name="unitrestrictions" type="unit_restrictions" x:role="hidden-from-ui" x:placeholder="Right click for drop down list"/>
+			<xs:element name="QSRcompliancestatus" type="xs:string" x:role="hidden-from-ui"/>
+			<xs:element name="author" type="xs:string" x:role="hidden-from-ui"/>
+			<xs:element name="qualificationdeveloper" type="xs:string" x:role="hidden-from-ui"/>
+			<xs:element name="portfoliomanager" type="xs:string" x:role="hidden-from-ui"/>
+			<xs:element name="productmanagement" type="xs:string" x:role="hidden-from-ui"/>
+			<xs:element name="vocationalgqassessment" type="xs:string" x:role="hidden-from-ui"/>
+			<xs:element name="qualitystandardsresearch" type="xs:string" x:role="hidden-from-ui"/>
+			<xs:element name="assessmentdesign" type="xs:string" x:role="hidden-from-ui"/>
+			<xs:element name="qualitystandardsresearch" type="xs:string" x:role="hidden-from-ui"/>
+			<xs:element name="reviewers" type="xs:string" x:role="hidden-from-ui"/>
+			<xs:element name="editors" type="xs:string" x:role="hidden-from-ui"/>
+			<xs:element name="proofreader" type="xs:string" x:role="hidden-from-ui"/>
+			<xs:element name="pqsproductid" type="xs:int" x:role="hidden-from-ui"/>
+			<xs:element name="unitowningorganisation" type="xs:string" x:role="hidden-from-ui"/>
+			<xs:element name="ofqualreferencenumber" type="xs:string" x:role="hidden-from-ui"/>
+			<xs:element name="unitssa" type="xs:string" x:role="hidden-from-ui"/>
+			<xs:element name="unitssasublevel" type="xs:string" x:role="hidden-from-ui"/>
+			<xs:element name="unitgradingstructure" type="unit_grading_structure" x:role="hidden-from-ui" x:placeholder="Right click for drop down list"/>
+			<xs:element name="primarylanguage" type="xs:string" x:role="hidden-from-ui"/>
+			<xs:element name="assessment_method" type="unit_assessment_method_def" x:role="hidden-from-ui"/>
+			<xs:element name="nationaloccupationalstandard" type="xs:string" x:role="hidden-from-ui"/>
+			<xs:element name="operationalstartdate" type="xs:string" x:role="hidden-from-ui"/>
+			<xs:element name="operationalenddate" type="xs:string" x:role="hidden-from-ui"/>
+			<xs:element name="operationalreviewdate" type="xs:string" x:role="hidden-from-ui"/>
+			<xs:element name="accreditationdate" type="xs:string" x:role="hidden-from-ui"/>
+			<xs:element name="signoffdate" type="xs:string" x:role="hidden-from-ui"/>
+			<xs:element name="reviewdate" type="xs:string" x:role="hidden-from-ui"/>
+			<xs:element name="nationaloccupationalstandard" type="xs:string" x:role="hidden-from-ui"/>
+			<xs:element name="equalityimpactassessment" type="xs:string" x:role="hidden-from-ui"/>
+			<xs:element name="unit_title" type="xs:string"/>
+			<xs:element name="number" type="xs:int"/>
+			<xs:element name="level" type="level_def"/>
+			<xs:element name="type" type="unit_type_def" x:placeholder="Right click for drop down list"/>
+			<xs:element name="guided_learning_hours" type="xs:float"/>
+			<xs:element name="assessment_type" type="unit_assessment_type_def"/>
+		</xs:sequence>
+	</xs:complexType>	
+	
+	<xs:simpleType name="qualification_framework">
+		<xs:restriction base="xs:string">
+			<xs:enumeration value="BTEC Firsts (NQF) 2012"/>
+			<xs:enumeration value="BTEC Firsts (QCF) 2010"/>
+			<xs:enumeration value="Self Regulated Framework (SRF) 2013"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:simpleType name="regulatory_framework">
+		<xs:restriction base="xs:string">
+			<xs:enumeration value="Regulated"/>
+			<xs:enumeration value="Self Regulated Framework"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:simpleType name="regulatory_status">
+		<xs:restriction base="xs:string">
+			<xs:enumeration value="Accredited"/>
+			<xs:enumeration value="Non-Accredited"/>
+		</xs:restriction>
+	</xs:simpleType>	
+	<xs:simpleType name="unit_restrictions">
+		<xs:restriction base="xs:string">
+			<xs:enumeration value="Public"/>
+			<xs:enumeration value="Protected"/>
+			<xs:enumeration value="Private"/>			
+		</xs:restriction>
+	</xs:simpleType>			
+	<xs:simpleType name="unit_grading_structure">
+		<xs:restriction base="xs:string">
+			<xs:enumeration value="Pass only"/>
+			<xs:enumeration value="Graded"/>
+			<xs:enumeration value="Private"/>			
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:simpleType name="unit_assessment_method_def">
+		<xs:restriction base="xs:string">
+			<xs:enumeration value="Coursework"/>
+			<xs:enumeration value="e-Assessment"/>
+			<xs:enumeration value="portfolio of evidence"/>			
+		</xs:restriction>
+	</xs:simpleType>	
+	<xs:simpleType name="unit_assessment_type_def">
+		<xs:restriction base="xs:string">
+			<xs:enumeration value="Internal"/>
+			<xs:enumeration value="External"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:simpleType name="level_def">
+		<xs:restriction base="xs:string">
+			<xs:enumeration value="1"/>
+			<xs:enumeration value="2"/>
+			<xs:enumeration value="1 and 2"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:simpleType name="unit_type_def">
+		<xs:restriction base="xs:string">
+			<xs:enumeration value="Core/Mandatory"/>
+			<xs:enumeration value="Core"/>
+			<xs:enumeration value="Mandatory"/>
+			<xs:enumeration value="Optional specialist"/>
+		</xs:restriction>
+	</xs:simpleType>
+</xs:schema>

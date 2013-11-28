@@ -1,6 +1,7 @@
 <?xml version="1.0"?>
 <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:x="http://www.xopus.com/xmlns/config" elementFormDefault="qualified">
 	<xs:include schemaLocation="schema_common.xsd"/>
+	<xs:include schemaLocation="schema_metadata.xsd"/>	
 	<!-- TOP LEVEL-->
 	<!-- Unit-->
 	<xs:element name="unit">
@@ -19,17 +20,6 @@
 	<!-- END TOP LEVEL-->
 	<!-- Meta -->
 	<xs:element name="meta" type="metaType"/>
-	<xs:complexType name="metaType">
-		<xs:sequence>
-			<xs:element name="qualificationType" type="qualification_type" x:role="hidden-from-ui" x:placeholder="Right click for drop down list"/>
-			<xs:element name="unit_title" type="xs:string"/>
-			<xs:element name="number" type="xs:int"/>
-			<xs:element name="level" type="level_def"/>
-			<xs:element name="type" type="unit_type_def" x:placeholder="Right click for drop down list"/>
-			<xs:element name="guided_learning_hours" type="xs:float"/>
-			<xs:element name="assessment_type" type="unit_assessment_type_def"/>
-		</xs:sequence>
-	</xs:complexType>
 	<!-- Introduction -->
 	<xs:element name="introduction" type="introductionType"/>
 	<xs:complexType name="introductionType">
