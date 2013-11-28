@@ -6,7 +6,175 @@
       <x:placeholder>{name}</x:placeholder>
     </x:node>
   
-      <x:node match="unit">
+    <x:node match="qualificationframework">
+      <x:name>Qualification Framework</x:name>
+      <x:placeholder>Right click for drop down list</x:placeholder>
+    </x:node> 
+    
+    <x:node match="regulatoryframework">
+      <x:name>Regulatory Framework</x:name>
+      <x:placeholder>Right click for drop down list</x:placeholder>
+    </x:node>  
+ 
+    <x:node match="regulatorystatus">
+      <x:name>Regulatory Status</x:name>
+      <x:placeholder>Right click for drop down list</x:placeholder>
+    </x:node>  
+ 
+    <x:node match="unitrestrictions">
+      <x:name>Unit Restrictions</x:name>
+      <x:placeholder>Right click for drop down list</x:placeholder>
+    </x:node>  
+
+    <x:node match="unitgradingstructure">
+      <x:name>Unit Grading Structure</x:name>
+      <x:placeholder>Right click for drop down list</x:placeholder>
+    </x:node>      
+    
+    <x:node match="assessment_method">
+      <x:name></x:name>
+      <x:placeholder>Right click for drop down list</x:placeholder>
+    </x:node>  
+    
+    <x:node match="">
+      <x:name></x:name>
+      <x:placeholder>Right click for drop down list</x:placeholder>
+    </x:node>     
+
+    <x:node match="QSRcompliancestatus">
+      <x:name>QSR Compliance Status</x:name>
+      <x:placeholder>Enter QSR Compliance Status</x:placeholder>
+    </x:node>
+    
+    <x:node match="author">
+      <x:name>Author</x:name>
+      <x:placeholder>Enter Author</x:placeholder>
+    </x:node> 
+    
+    <x:node match="qualificationdeveloper">
+      <x:name>Qualification Developer</x:name>
+      <x:placeholder>Enter Qualification Developer</x:placeholder>
+    </x:node> 
+    
+    <x:node match="portfoliomanager">
+      <x:name>Portfolio Manager</x:name>
+      <x:placeholder>Enter Portfolio Manager</x:placeholder>
+    </x:node> 
+     
+    <x:node match="productmanagement">
+      <x:name>Product Management</x:name>
+      <x:placeholder>Enter Product Management</x:placeholder>
+    </x:node> 
+         
+    <x:node match="vocationalgqassessment">
+      <x:name>Vocational/GQ Assessment</x:name>
+      <x:placeholder>Enter Vocational/GQ Assessment</x:placeholder>
+    </x:node> 
+    <x:node match="qualitystandardsresearch">
+      <x:name>Quality Standards Research</x:name>
+      <x:placeholder>Enter Quality Standards Research</x:placeholder>
+    </x:node> 
+    <x:node match="assessmentdesign">
+      <x:name>Assessment Design</x:name>
+      <x:placeholder>Enter Assessment Design</x:placeholder>
+    </x:node> 
+    <x:node match="qualitystandardsresearch">
+      <x:name>Product Management</x:name>
+      <x:placeholder>Enter Product Management</x:placeholder>
+    </x:node> 
+    <x:node match="reviewers">
+      <x:name>Reviewer(s)</x:name>
+      <x:placeholder>Enter Reviewer(s)</x:placeholder>
+    </x:node> 
+    <x:node match="editors">
+      <x:name>Editor</x:name>
+      <x:placeholder>Enter Editor</x:placeholder>
+    </x:node> 
+    <x:node match="proofreader">
+      <x:name>Proofreader</x:name>
+      <x:placeholder>Enter Proofreader</x:placeholder>
+    </x:node> 
+    <x:node match="pqsproductid">
+      <x:name>PQS Product ID</x:name>
+      <x:placeholder>Enter PQS Product ID</x:placeholder>
+    </x:node> 
+    
+    <x:node match="unitowningorganisation">
+      <x:name>Unit Owning Organisation</x:name>
+      <x:placeholder>Enter Unit Owning Organisation</x:placeholder>
+    </x:node> 
+    
+    <x:node match="ofqualreferencenumber">
+      <x:name>Ofqual Reference Number</x:name>
+      <x:placeholder>Enter Ofqual Reference Number</x:placeholder>
+    </x:node>    
+      
+    <x:node match="unitssa">
+      <x:name>Unit SSA</x:name>
+      <x:placeholder>Enter Unit SSA</x:placeholder>
+    </x:node>
+        
+    <x:node match="unitssasublevel">
+      <x:name>Unit SSA Sub Level</x:name>
+      <x:placeholder>Enter Unit SSA Sub Level</x:placeholder>
+    </x:node>
+    
+    <x:node match="primarylanguage">
+      <x:name>Primary Language</x:name>
+      <x:placeholder>Enter Primary Language</x:placeholder>
+    </x:node>
+        
+    <x:node match="nationaloccupationalstandard">
+      <x:name>Product Management</x:name>
+      <x:placeholder>Enter Product Management</x:placeholder>
+    </x:node>      
+      
+    <x:node match="operationalstartdate">
+      <x:name>Product Management</x:name>
+      <x:placeholder>Enter Product Management</x:placeholder>
+    </x:node>      
+      
+    <x:node match="operationalenddate">
+      <x:name>Product Management</x:name>
+      <x:placeholder>Enter Product Management</x:placeholder>
+    </x:node>      
+      
+    <x:node match="operationalstartdate">
+      <x:name>Product Management</x:name>
+      <x:placeholder>Enter Product Management</x:placeholder>
+    </x:node>      
+      
+    <x:node match="operationalreviewdate">
+      <x:name>Product Management</x:name>
+      <x:placeholder>Enter Product Management</x:placeholder>
+    </x:node>      
+      
+    <x:node match="accreditationdate">
+      <x:name>Product Management</x:name>
+      <x:placeholder>Enter Product Management</x:placeholder>
+    </x:node>      
+      
+    <x:node match="signoffdate">
+      <x:name>Product Management</x:name>
+      <x:placeholder>Enter Product Management</x:placeholder>
+    </x:node>      
+      
+    <x:node match="reviewdate">
+      <x:name>Product Management</x:name>
+      <x:placeholder>Enter Product Management</x:placeholder>
+    </x:node>      
+      
+    <x:node match="nationaloccupationalstandard">
+      <x:name>National Occupational Standard(s)</x:name>
+      <x:placeholder>Enter National Occupational Standard(s)</x:placeholder>
+    </x:node>      
+      
+    <x:node match="equalityimpactassessment">
+      <x:name>Equality Impact Assessment</x:name>
+      <x:placeholder>Enter Equality Impact Assessment</x:placeholder>
+    </x:node>      
+   
+    <x:node match="unit">
       <x:role>unit</x:role>
       <x:name xml:lang="en">Unit</x:name>
       <x:description xml:lang="en">Unit</x:description>

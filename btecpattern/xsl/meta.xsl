@@ -27,7 +27,7 @@
 					
   					<div class="row">
   					
-						<xsl:apply-templates select="node()[not(self::unit_title)]"/>
+						<xsl:apply-templates select="number | level | type | guided_learning_hours | assessment_type"/>
   					
 					</div>
 					
