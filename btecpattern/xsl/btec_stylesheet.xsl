@@ -2,39 +2,40 @@
 <xsl:stylesheet version="2.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform" xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:fn="http://www.w3.org/2005/xpath-functions">
 	<!-- COMPONENT SECTIONS TO IMPORT -->
 	<!-- Unit data section -->
-	<xsl:import href="unit.xsl"/>	
+	<xsl:import href="btec_unit.xsl"/>	
 	<!-- Meta data section -->
-	<xsl:import href="meta.xsl"/>
+	<xsl:import href="btec_meta.xsl"/>
 	<!-- Introduction data section -->	
-	<xsl:import href="introduction.xsl"/>
+	<xsl:import href="btec_introduction.xsl"/>
 	<!-- Learning Aim data section -->	
-	<xsl:import href="learning_objective.xsl"/>
+	<xsl:import href="btec_learning_objective.xsl"/>
 	<!-- Content data section -->	
-	<xsl:import href="content.xsl"/>
+	<xsl:import href="btec_content.xsl"/>
 	<!-- Assessment Criteria data section -->
-	<xsl:import href="assessment_criteria.xsl"/>
+	<xsl:import href="btec_assessment_criteria.xsl"/>
 	<!-- Suggested Assignment data section -->
-	<xsl:import href="suggested_assignment.xsl"/>
+	<xsl:import href="btec_suggested_assignment.xsl"/>
 	<!-- Teacher Guidance data section -->
-	<xsl:import href="teacher_guidance.xsl"/>
+	<xsl:import href="btec_teacher_guidance.xsl"/>
 								
 	<!-- Root node -->
 	<xsl:template match="/">
 		<html>
 			<head>
 				<title>Pearson Content</title>
+                		<link rel="stylesheet" href="/api/objects/thumbnail/btec_common.css" type="text/css"/>
 				<!-- JQuery 2.0 -->
-				<script type="text/javascript" src="../js/jquery.min.js"/>
+				<script type="text/javascript" src="/api/objects/thumbnail/btec_jquery.min.js"/>
 				<!-- Bootstrap -->
-				<link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css"/>
-				<script type="text/javascript" src="../js/bootstrap.min.js"/>
+				<link rel="stylesheet" href="/api/objects/thumbnail/btec_bootstrap.min.css" type="text/css"/>
+				<script type="text/javascript" src="/api/objects/thumbnail/btec_bootstrap.min.js"/>
 
-				<link rel="stylesheet" type="text/css" href="../css/font-awesome/css/font-awesome.min.css"/>
-				<script type="text/javascript" src="../js/initialize.js"/>
-				
+				<link rel="stylesheet" href="/api/objects/thumbnail/font-awesome.css" type="text/css"/>
+				<script type="text/javascript" src="/api/objects/thumbnail/btec_initialize.js"/>
+                		<script type="text/javascript" src="/api/objects/thumbnail/btec_navigation.js"/>
+                
 				<script type="text/javascript" src="../js/meta.js"/>
-				<link rel="stylesheet" href="../css/common.css" type="text/css"/>
-				
+
 				
 				<link rel="stylesheet" type="text/css" href="../css/bootstrap-dropdown-checkbox.css"/>
 				
