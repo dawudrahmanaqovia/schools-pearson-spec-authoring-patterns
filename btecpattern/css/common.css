@@ -89,7 +89,11 @@ margin-right: 5px;}
 }
 
 .plts-criteria-row,
-.ass-criteria-row {margin-right:250px;}
+.ass-criteria-row {margin:5px 250px 5px 0;}
+
+.subject-criteria-row button,
+.plts-criteria-row button,
+.ass-criteria-row button {margin: 0 3px; overflow: hidden; text-overflow: ellipsis; max-width: 150px; padding:2PX 5px;}
 
 .subject-criteria-row .signposting-dropdown,
 .plts-criteria-row  .signposting-dropdown,
