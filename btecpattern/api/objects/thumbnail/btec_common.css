@@ -1,0 +1,209 @@
+/*
+
+html {
+  margin: 0; padding: 0;
+}
+
+body 
+{
+  font-family: arial;
+  margin:0;padding:2.5em;
+  font-size: 0.8em;
+  line-height:1.5em;
+  background-color:White;
+}
+
+body.start {
+  background: #e9f2f5 url("../img/side-bg.png") repeat-y;
+  padding:0;
+}
+
+body.navigation-body
+{
+  padding:0.5em;
+}
+
+
+.navigation 
+{
+  padding: 0.5em;
+  margin-bottom:2em;
+}
+body.start h1,
+.navigation h2 {color:#007DAD;font-family: "TW Cen MT", "Gill Sans MT", "Century Gothic", "Trebuchet MS", Arial, Sans-Serif;}
+.navigation a {cursor:pointer;cursor:hand;}
+.navigation a:hover {color:Black;}
+
+*/
+
+i.icon-collapse,
+i.icon-question-sign,
+.clickable {cursor: pointer;}
+
+.panel-group .panel {overflow: visible;}
+
+.signpost-container,
+.acceptance-criteria-dropdown {position: relative}
+.signpost-container,
+.acceptance-criteria-dropdown i {color:#428BCA; position: relative;top: 2px;}
+
+.signposting-dropdown ul,
+.acceptance-criteria ul {list-style: none; margin:0; padding:15px;}
+.signposting-dropdown p,
+.acceptance-criteria p {font-weight: bold; margin: 0 0 5px}
+.signposting-dropdown label,
+.acceptance-criteria label {font-weight: normal; display: inline-block;overflow: hidden;}
+.signposting-dropdown label input,
+.acceptance-criteria label input {vertical-align: top;
+margin-right: 5px;}
+.signposting-dropdown label span,
+.acceptance-criteria label span {display: inline-block; max-width: 195px;}
+
+.signposting-dropdown,
+.acceptance-criteria {
+    border:1px solid #ddd;
+    position: absolute;
+    z-index: 1;
+    left: 0;
+    top:28px;
+    color:#333;
+    background-color: #fff;
+    display: none;
+    font-size: 12px;
+
+    /* border radius */
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+    /* box shadow */
+    -webkit-box-shadow:  3px 3px 3px 3px rgba(0, 0, 0, 0.2);
+    box-shadow:  3px 3px 3px 3px rgba(0, 0, 0, 0.2);
+    /* gradient */
+    background: rgb(238,238,238); /* Old browsers */
+    background: -moz-linear-gradient(-45deg,  rgba(238,238,238,1) 0%, rgba(255,255,255,1) 50%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, right bottom, color-stop(0%,rgba(238,238,238,1)), color-stop(50%,rgba(255,255,255,1))); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(-45deg,  rgba(238,238,238,1) 0%,rgba(255,255,255,1) 50%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(-45deg,  rgba(238,238,238,1) 0%,rgba(255,255,255,1) 50%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(-45deg,  rgba(238,238,238,1) 0%,rgba(255,255,255,1) 50%); /* IE10+ */
+    background: linear-gradient(135deg,  rgba(238,238,238,1) 0%,rgba(255,255,255,1) 50%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#eeeeee', endColorstr='#ffffff',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+}
+
+.plts-criteria-row,
+.ass-criteria-row {margin-right:250px;}
+
+.subject-criteria-row .signposting-dropdown,
+.plts-criteria-row  .signposting-dropdown,
+.ass-criteria-row .signposting-dropdown{
+    min-width: 250px;
+}
+
+button.badge {
+    border:none;
+}
+
+.btn span {
+    font-size: 20px;
+}
+
+.drop-shadow {
+    -webkit-box-shadow:  3px 3px 3px 3px rgba(0, 0, 0, 0.2);
+    box-shadow:  3px 3px 3px 3px rgba(0, 0, 0, 0.2);
+}
+
+#collapse_assessment_criteria div  {overflow: visible;}
+tbody.assesmentCriteria td {overflow: visible;}
+tbody.assesmentCriteria td .assassesmentCriteriaDropdown {position: relative;overflow: visible;}
+
+.bringtofront
+{
+z-index: 10000;
+}
+
+.overflow 
+{
+z-index: -1;
+overflow: hidden;
+}
+
+
+
+#category_options a,
+.categoriesThemselves a,
+a
+{
+  color: #05F;
+  color: #388ccc; /* multiple of header, more saturated and darker */
+  text-decoration: none;
+}
+
+
+.categories
+{
+  /*position: absolute;*/
+  bottom: 5px; left:0;
+  width: 60%;
+}
+
+.categoriesThemselves
+{
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+#category_options
+{
+  position: absolute;
+  top: 100px; 
+  left: 100px;
+  z-index: 100000;
+  border: 1px solid #828b94;
+  border-left: none;
+  border-right: none;
+  background-image: url(catlist.png);
+  background-repeat: no-repeat;
+  background-position: top left;
+  display: none;
+  padding: 1em;
+}
+
+#category_options li,
+#category_options ul 
+{
+margin: 0;
+padding: 0;
+list-style-type: none;
+}
+
+#category_options label 
+{
+cursor: pointer;
+cursor: hand;
+}
+
+.boxc
+{
+  clear: both;
+  padding: 0em 0.3em;
+  text-align: center;
+}
+
+.boxside-left
+{
+  width: 1px;
+  height: 100%;
+  background-color: #828b94;
+  position: absolute;
+  top: 0px;
+  left: -1px;
+}
+
+.boxside-right
+{
+  width: 1px;
+  height: 100%;
+  background-color: #828b94;
+  position: absolute;
+  top: 0px;
+  right: -1px;
+}
