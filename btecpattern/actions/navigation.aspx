@@ -7,23 +7,20 @@
 <head>
   <title>Content Management Navigation</title>
   <link rel="stylesheet" type="text/css" href="../css/common.css"/>
-  <style type="text/css">
-    button, body {font-family:Verdana;}
-    h1, h2, h3 {color:#007dad;font-family:Verdana;}
-    button {cursor:pointer;cursor:hand;}
-  </style>
   <script type="text/javascript" src="../js/navigation.js"></script>
 </head>
-<body class="navigation-body">
+	<body>
+		<div class="divDemoBody">	
   <%
     String path = HttpContext.Current.Server.MapPath("..") +"/xml/";
     DirectoryInfo documentationInfo = new DirectoryInfo(path);
     FileInfo[] files = documentationInfo.GetFiles();
     
   %>
-  <div class="navigation">
   <h2>Options</h2>
+  
   <ul>
+    <li><a href="new-document.aspx?id=test" onclick="return newDocument(this.href);">New Document</a></li>
     <li><a href="new-document.aspx?id=<%=files.Length.ToString() %>" onclick="return newDocument(this.href);">New document</a></li>
     <li><a href="#" onclick="return exitFromNavigation();">Exit</a></li>
   </ul>  
@@ -31,8 +28,6 @@
     <li><a href="#" onclick="return setView('WYSIWYG View');">WYSIWYG View</a></li>
     <li><a href="#" onclick="return setView('Xml View');">XML View</a></li>
   </ul>  
-  </div>
-  <div class="navigation">
   <h2>Documents</h2>
   <ul>
   <% 
@@ -55,5 +50,6 @@
   %>
   </ul>
 </div>
+
 </body>
 </html>
