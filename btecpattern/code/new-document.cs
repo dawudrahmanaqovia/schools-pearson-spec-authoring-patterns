@@ -11,11 +11,12 @@ public partial class LoadXml : System.Web.UI.Page
         //newDoc.LoadXml("<article xml:lang=\"en-us\"><title></title><paragraph></paragraph></article>");
         
         //figure out a number for the file
-        Int32 lastId = Int32.Parse(Request.QueryString["id"].ToString());
-        lastId = lastId+1;
+        //Int32 lastId = Int32.Parse(Request.QueryString["id"].ToString());
+        //lastId = lastId+1;
+		String name = (Request.QueryString["id"].ToString()) + ".xml";
 
-        String name = "doc_" + string.Format("{0:yyMMddHHmmss}",DateTime.Now) +".xml";  	
-        
+        //String name = "doc_" + string.Format("{0:yyMMddHHmmss}",DateTime.Now) +".xml";  	
+
         //save the xml document
         newDoc.Save(Server.MapPath("")+"/../xml/"+name);
         

@@ -1,12 +1,25 @@
 <%@ Page Language="C#" ValidateRequest="false" %>
 <%
-  String changeTracking = "false";
+  String changeTracking = "true";
   if (Request["changetracking"] != null)
     changeTracking = Request["changetracking"];
+
+  String username = HttpContext.Current.User.Identity.Name;
+	if (username == null) {
+		username = "Anonymous";
+	} 
 %>
+  
+<%--
+	if (Request["username"] == null {
+		username = "Anonymous";
+	} else {
+		username = Request["username"];
+	}
+--%>
 <html>
   <head>
-    <title>Xopus ASP.NET Example</title>
+	<title>Pearson Content</title>
     <!--<link rel="stylesheet" type="text/css" href="../css/common.css"/>-->
 	
     <!-- Start Xopus -->
@@ -29,9 +42,9 @@
           <x:javascript src="../js/editing.js"/>
 
           <!-- Here we pass the fileId parameter to LoadXml.aspx. -->
-          <x:pipeline xml="load-xml.aspx?fileId=<%= Request["fileId"] %>" xsd="../xsd/schema.xsd">
+          <x:pipeline xml="load-xml.aspx?fileId=<%= Request["fileId"] %>" xsd="../xsd/btec_schema.xsd">
             <x:view name="WYSIWYG View">
-              <x:transform xsl="../xsl/stylesheet.xsl" />
+              <x:transform xsl="../xsl/btec_stylesheet.xsl" />
             </x:view>
             <x:view name="Tags On View">
               <x:transform xsl="../xsl/tagson.xsl"/>
@@ -41,7 +54,7 @@
             </x:view>
           </x:pipeline>
           <% if (changeTracking == "true"){ %>
-          <x:javascript>Editor.ChangeTracking.setUserName("Dawud Rahman");</x:javascript>
+          <x:javascript>Editor.ChangeTracking.setUserName("<%= username %>");</x:javascript>
           <%} %>          
           <!-- import a configuration file -->
           <x:import src="../config/config.xml"/>
@@ -49,10 +62,6 @@
           <x:import src="../config/toolbar.xml"/>
           <!-- Register the toolbar commands.js script. -->
           <x:javascript src="../config/commands.js"/>
-          
-          <x:changeTracking>
-            <x:enabled><%=changeTracking %></x:enabled>
-          </x:changeTracking>
           
         </x:config>		
       </xml>
