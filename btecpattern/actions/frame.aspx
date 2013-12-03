@@ -19,42 +19,52 @@
 <head>
     <title>Pearson Content Management</title>
     <style type="text/css">
-.linearBg {
-  /* fallback */
-  background-color: #007D54;
-  background-repeat: repeat-y;
+        .linearBg {
+          /* fallback */
+          background-color: #007D54;
+          background-repeat: repeat-y;
 
-  /* Safari 4-5, Chrome 1-9 */
-  background: -webkit-gradient(linear, left top, right top, from(#007D54), to(#F8F8F8));
+          /* Safari 4-5, Chrome 1-9 */
+          background: -webkit-gradient(linear, left top, right top, from(#007D54), to(#F8F8F8));
 
-  /* Safari 5.1, Chrome 10+ */
-  background: -webkit-linear-gradient(left, #007D54, #F8F8F8);
+          /* Safari 5.1, Chrome 10+ */
+          background: -webkit-linear-gradient(left, #007D54, #F8F8F8);
 
-  /* Firefox 3.6+ */
-  background: -moz-linear-gradient(left, #007D54, #F8F8F8);
+          /* Firefox 3.6+ */
+          background: -moz-linear-gradient(left, #007D54, #F8F8F8);
 
-  /* IE 10 */
-  background: -ms-linear-gradient(left, #007D54, #F8F8F8);
+          /* IE 10 */
+          background: -ms-linear-gradient(left, #007D54, #F8F8F8);
 
-  /* Opera 11.10+ */
-  background: -o-linear-gradient(left, #007D54, #F8F8F8);
-}
+          /* Opera 11.10+ */
+          background: -o-linear-gradient(left, #007D54, #F8F8F8);
+        }
 
-.navbar-override {
-position: relative;
-z-index: 1000;
-min-height: 50px;
-margin-bottom: 0px;
-border: 1px solid transparent;
-}
+        .navbar-override {
+        position: relative;
+        z-index: 1000;
+        min-height: 50px;
+        margin-bottom: 0px;
+        border: 1px solid transparent;
+        }
 
-.navbar-nav-override {
-	li {
-		a {
-			color: #FFFFFF;
-		}
-	}
-}
+        nav.navbar-default .navbar-nav li.logoff a {
+          color: #333 ;
+          font-weight: bold;
+        }
+
+        nav.navbar-default .navbar-nav > li > a {
+          color: #ffffff;
+          font-weight: bold;
+        }
+        nav.navbar-default .navbar-nav > li > a i {
+        font-size: 20px;
+        }
+
+        nav.navbar-default .navbar-nav > .dropdown > a .caret {
+          border-bottom-color: #FFFFFF;
+          border-top-color: #FFFFFF;
+        }
 
     </style>
 
@@ -149,7 +159,7 @@ border: 1px solid transparent;
                 <% } %>
 
                 <li class="active"><a href="#"><i class="icon-user"></i> <%= username %></a></li>
-                <li><a href="login.aspx?logoff=true">Logoff <i class="icon-signout"></i></a></li>
+                <li class="logoff"><a href="login.aspx?logoff=true">Logoff <i class="icon-signout"></i></a></li>
             </ul>
         </div>
         <!-- /.navbar-collapse -->
