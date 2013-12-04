@@ -35,6 +35,10 @@ body.start h1,
 .navigation a:hover {color:Black;}
 
 */
+.panel-heading i,
+.categories i{
+    font-size: 24px;
+}
 
 i.icon-collapse,
 i.icon-question-sign,
