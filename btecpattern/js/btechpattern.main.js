@@ -91,8 +91,8 @@
                         var $thisButton = $buttons[i],
                             buttonData = $($buttons[i]).data('criteria');
 
-                        console.log(buttonData);
-                        console.log($checkboxData);
+                       //console.log(buttonData);
+                        //console.log($checkboxData);
 
                         if(buttonData === $checkboxData){
                             $thisButton.remove();
@@ -132,12 +132,12 @@
                         var $criteria = $($checkboxes[x]).data('criteria');
 
                         if(collectionItems[i] === $criteria){
-                            console.log('true');
+                            //console.log('true');
                             // set checkbox
                             $($checkboxes[x]).attr('checked','checked');
                         }
                         else {
-                            console.log('false')
+                            //console.log('false')
                         }
                     };
                 };
@@ -145,7 +145,7 @@
                 return;
             }
             else {
-                console.log('collection is empty ',$collection.length );
+                //console.log('collection is empty ',$collection.length );
             }
 
          };
@@ -153,7 +153,7 @@
 
          $('body').on('change', '.signposting-dropdown li input', function(e){
 
-            console.log('changed checkbox')
+            //console.log('changed checkbox')
 
             var $this = $(this).parents('li'),
                 $dropdown = $this.parents('.signposting-dropdown'),
@@ -233,7 +233,7 @@
 
             // cloce signpost dropdown when clicked outside 
             if($(e.target).closest('.signposting-dropdown').length == 0){
-                console.log('outside');
+                //console.log('outside');
                 signPostsClose();
             }
 
