@@ -106,7 +106,7 @@
   <xsl:template match="categories">
     <div class="categories">
         <xsl:apply-templates/>
-        <span class="subject-criteria-row signpost-container"><i class="dropdownToggle scddToggle clickable icon-plus-sign icon-large bringtofront"></i> <!-- dropdown inserted here --></span>
+        <span class="subject-criteria-row signpost-container"><i class="dropdownToggle scddToggle clickable icon-plus-sign bringtofront"></i> <!-- dropdown inserted here --></span>
     </div>
 
   </xsl:template>

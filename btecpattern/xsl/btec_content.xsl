@@ -6,7 +6,7 @@
   <div class="panel panel-primary">
     <div class="panel-heading">
     <span class="panel-title">
-    <i class="icon-collapse accordion-toggle icon-large" data-toggle="collapse" data-parent="#accordion" href="#collapseLearningAimContent"/>
+    <i class="icon-collapse accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapseLearningAimContent"/>
 		Content
 	</span>
 	<i class="icon-question-sign pull-right" data-toggle="popover" title="" data-content="The content can be written in lengthy bulleted phrases/scentences and should not just be a list. The breadth and depth of what the learner needs to learn must be clear." data-original-title="Content"/>
@@ -46,8 +46,8 @@
 	   Learning Aim <xsl:number count="learning_objective" from="/unit/learning_objectives" level="multiple" format="AA"/>: <xsl:apply-templates select="../learning_objective_title"/>
 	</span>
         <span class="pull-right">
-            <i class="icon-plus-sign icon-large dropdownToggle acddToggle clickable"></i>
-            <i class="icon-plus-sign icon-large dropdownToggle pltsddToggle clickable"></i>
+            <i class="icon-plus-sign dropdownToggle acddToggle clickable"></i>
+            <i class="icon-plus-sign dropdownToggle pltsddToggle clickable"></i>
         </span>
     </div>
     <div id="collapse_content{count(preceding::learning_objective)+1}" class="panel-collapse collapse in">
