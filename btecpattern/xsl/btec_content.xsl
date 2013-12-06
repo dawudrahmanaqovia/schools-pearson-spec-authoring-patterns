@@ -58,13 +58,7 @@
 		
       </div>
     </div>
-  </div>
-  
-<div class="row"><div class="col-xs-12"><div class="pull-right">
-	<button type="button" class="btn btn-success" data-placement="auto" data-toggle="tooltip" title="Add" onclick="insert_menu(this, node)"><i class="icon-plus-sign"/></button><xsl:text> </xsl:text>	
-	<button type="button" class="btn btn-primary" data-placement="auto" data-toggle="tooltip" title="Add" onclick="add_button(this, node)"><i class="icon-plus-sign"/></button><xsl:text> </xsl:text>
-	<button type="button" class="btn btn-danger" data-placement="auto" data-toggle="tooltip" title="Remove" onclick="remove_button(this, node)"><i class="icon-minus-sign"/></button>
-</div></div></div>	  
+  </div>  
 </xsl:template>	
 <!-- End Learning Aim Content data section -->
 
@@ -86,13 +80,6 @@
 
 <xsl:template match="topic_content">
 	<xsl:apply-templates select="node()"/>
-
-<div class="row"><div class="col-xs-12"><div class="pull-right">
-	<button type="button" class="btn btn-success" data-placement="auto" data-toggle="tooltip" title="Add" onclick="insert_menu(this, node)"><i class="icon-plus-sign"/></button><xsl:text> </xsl:text>	
-	<button type="button" class="btn btn-primary" data-placement="auto" data-toggle="tooltip" title="Add" onclick="add_button(this, node)"><i class="icon-plus-sign"/></button><xsl:text> </xsl:text>
-	<button type="button" class="btn btn-danger" data-placement="auto" data-toggle="tooltip" title="Remove" onclick="remove_button(this, node)"><i class="icon-minus-sign"/></button>
-</div></div></div>	
-
 </xsl:template>
 
 

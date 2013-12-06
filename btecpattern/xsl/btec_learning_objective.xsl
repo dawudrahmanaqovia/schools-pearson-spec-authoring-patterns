@@ -12,15 +12,9 @@
     </div>
     <div id="collapseLearningAim" class="panel-collapse collapse in">
       <div class="panel-body">
-		<div class="row"><div class="col-xs-12">In this unit, you will:</div></div>
-		
+		<div class="row"><div class="col-xs-12">In this unit, you will:</div></div>		
 			<xsl:apply-templates select="learning_objective" mode="learningaims"/>
-      </div>
-		<div class="row"><div class="col-xs-12"><div class="pull-right">
-			<button type="button" class="btn btn-success" data-placement="auto" data-toggle="tooltip" title="Add" onclick="insert_menu(this, node)"><i class="icon-plus-sign"/></button><xsl:text> </xsl:text>	
-			<button type="button" class="btn btn-primary" data-placement="auto" data-toggle="tooltip" title="Add" onclick="add_button(this, node)"><i class="icon-plus-sign"/></button><xsl:text> </xsl:text>
-			<button type="button" class="btn btn-danger" data-placement="auto" data-toggle="tooltip" title="Remove" onclick="remove_button(this, node)"><i class="icon-minus-sign"/></button>
-		</div></div></div>		  
+      </div>	  
     </div>
   </div>		
 </xsl:template>
