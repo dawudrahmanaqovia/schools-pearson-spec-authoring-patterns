@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!-- edited with XMLSpy v2013 (http://www.altova.com) by  () -->
-<unit xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="file:///D:/AqoviaPearsonXOpus/btecpattern/xsd/schema.xsd">
-	<title>Unit 11: Computer Networks</title>
+<unit xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="file:///D:/dawudrahmanaqoviaGithub/btecpattern/xsd/btec_schema.xsd">
+<title>Unit 11: Computer Networks</title>
   <meta>
     <qualificationframework>BTEC Firsts (NQF) 2012</qualificationframework>
     <regulatoryframework>Regulated</regulatoryframework>
@@ -77,7 +77,7 @@
 	<learning_objectives>
 		<learning_objective>
 			<learning_objective_title>Understand the features and benefits of computer networks</learning_objective_title>
-			<learning_objective_content>
+						<functional_skill_categories/><plts_categories/><learning_objective_content>
 				<topic>
 					<topic_title>Computer Networks</topic_title>
 					<topic_content><paragraph>Computer networks are a collection of interconnected, wired or wireless, hardware components and software that allow computer devices to communicate and share data with each other.</paragraph></topic_content>
@@ -134,10 +134,7 @@
 						<paragraph>Identify the uses and features of a different computer network.
               </paragraph>
 					</criterion>
-					<GSCE_english>
-            </GSCE_english>
-					<GSCE_math>
-            </GSCE_math>
+						<gcse_subject_categories/>
 					<criterion_guidance>
 						<paragraph>For level 1, as a minimum, learners should have identify uses and features of computer networks. For a given network, they are likely to have identified only the main features and the main uses of the network, without any description which relates the two together.
               </paragraph>
@@ -150,10 +147,7 @@
 						<paragraph>Explain the uses and features of a different computer network.
               </paragraph>
 					</criterion>
-					<GSCE_english>
-            </GSCE_english>
-					<GSCE_math>
-            </GSCE_math>
+						<gcse_subject_categories/>
 					<criterion_guidance>
 						<paragraph>Learners should explain the uses and features of a given computer network. For example, what features a computer network requires, allowing people to play computer games simultaneously in a multi-player gaming environment.
               </paragraph>
@@ -166,10 +160,7 @@
 						<paragraph>Review how the uses and features of a different computer network affect the user experience.
               </paragraph>
 					</criterion>
-					<GSCE_english>
-            </GSCE_english>
-					<GSCE_math>
-            </GSCE_math>
+						<gcse_subject_categories/>
 					<criterion_guidance>
 						<paragraph>learners should review how the uses and features of a given computer network could affect the user experience, e.g. reliability (frequency of network failure) and performance (how quickly data is transferred across the network under different conditions). The learner should explain how different features in the network affect the user experience, e.g. speed, connectivity, reliability.
               </paragraph>
@@ -182,10 +173,7 @@
 						<paragraph>Discuss the strengths and weaknesses of the network.
               </paragraph>
 					</criterion>
-					<GSCE_english>
-            </GSCE_english>
-					<GSCE_math>
-            </GSCE_math>
+						<gcse_subject_categories/>
 					<criterion_guidance>
 						<paragraph>Learners should look at one computer network in more detail and discuss the strengths and weaknesses of the product. They should discuss at least one strength and one weakness.
               </paragraph>
@@ -247,7 +235,7 @@
 		</learning_objective>
 		<learning_objective>
 			<learning_objective_title>Design a computer network</learning_objective_title>
-			<learning_objective_content>
+						<functional_skill_categories/><plts_categories/><learning_objective_content>
 				<topic>
 					<topic_title>Designing a network</topic_title>
 					<topic_content><paragraph>Requirements of the brief, to include:</paragraph>
@@ -283,10 +271,7 @@
 						<paragraph>Identify the purpose and ‘client’ requirements for the network.
               </paragraph>
 					</criterion>
-					<GSCE_english>
-            </GSCE_english>
-					<GSCE_math>
-            </GSCE_math>
+						<gcse_subject_categories/>
 					<criterion_guidance>
 						<paragraph>
               </paragraph>
@@ -299,10 +284,7 @@
 						<paragraph>Describe the purpose and ‘client’ requirements for the network.
               </paragraph>
 					</criterion>
-					<GSCE_english>
-            </GSCE_english>
-					<GSCE_math>
-            </GSCE_math>
+						<gcse_subject_categories/>
 					<criterion_guidance>
 						<paragraph>
               </paragraph>					
@@ -329,10 +311,7 @@
 							</item>
 						</unorderedlist>
 					</criterion>
-					<GSCE_english>
-            </GSCE_english>
-					<GSCE_math>
-            </GSCE_math>
+						<gcse_subject_categories/>
 					<criterion_guidance>
 											<paragraph>
               </paragraph>
@@ -345,10 +324,7 @@
 						<paragraph>Justify final design decisions, explaining how the computer network will fulfil the stated purpose and ‘client’ requirements, describing the impact of any constraints on the design.
               </paragraph>
 					</criterion>
-					<GSCE_english>
-            </GSCE_english>
-					<GSCE_math>
-            </GSCE_math>
+						<gcse_subject_categories/>
 					<criterion_guidance>
 											<paragraph>
               </paragraph>
@@ -377,10 +353,7 @@
 							</item>
 						</unorderedlist>
 					</criterion>
-					<GSCE_english>
-            </GSCE_english>
-					<GSCE_math>
-            </GSCE_math>
+						<gcse_subject_categories/>
 				</level_1_criteria>
 				<pass_criteria>
 					<criterion_id>2B.P3
@@ -403,10 +376,7 @@
 							</item>
 						</unorderedlist>
 					</criterion>
-					<GSCE_english>
-            </GSCE_english>
-					<GSCE_math>
-            </GSCE_math>
+						<gcse_subject_categories/>
 					<criterion_guidance>
 											<paragraph>
               </paragraph>
@@ -419,10 +389,7 @@
 						<paragraph>
               </paragraph>
 					</criterion>
-					<GSCE_english>
-            </GSCE_english>
-					<GSCE_math>
-            </GSCE_math>
+						<gcse_subject_categories/>
 					<criterion_guidance>
 											<paragraph>
               </paragraph>
@@ -435,10 +402,7 @@
 						<paragraph>
               </paragraph>
 					</criterion>
-					<GSCE_english>
-            </GSCE_english>
-					<GSCE_math>
-            </GSCE_math>
+						<gcse_subject_categories/>
 					<criterion_guidance>
 											<paragraph>
               </paragraph>
@@ -500,7 +464,7 @@
 		</learning_objective>
 		<learning_objective>
 			<learning_objective_title>Hardware components in the network</learning_objective_title>
-			<learning_objective_content>
+						<functional_skill_categories/><plts_categories/><learning_objective_content>
 				<topic>
 					<topic_title>Features of hardware components:</topic_title>
 					<topic_content><unorderedlist>
@@ -566,10 +530,8 @@
 							</item>
 						</unorderedlist>
 					</criterion>
-					<GSCE_english>
-            </GSCE_english>
-					<GSCE_math>
-            </GSCE_math>
+						<gcse_subject_categories/>
+
 				</level_1_criteria>
 				<pass_criteria>
 					<criterion_id>2B.P3
@@ -592,10 +554,7 @@
 							</item>
 						</unorderedlist>
 					</criterion>
-					<GSCE_english>
-            </GSCE_english>
-					<GSCE_math>
-            </GSCE_math>
+						<gcse_subject_categories/>
 					<criterion_guidance>
 											<paragraph>
               </paragraph>
@@ -608,10 +567,7 @@
 						<paragraph>
               </paragraph>
 					</criterion>
-					<GSCE_english>
-            </GSCE_english>
-					<GSCE_math>
-            </GSCE_math>
+						<gcse_subject_categories/>
 					<criterion_guidance>
 											<paragraph>
               </paragraph>
@@ -624,10 +580,7 @@
 						<paragraph>
               </paragraph>
 					</criterion>
-					<GSCE_english>
-            </GSCE_english>
-					<GSCE_math>
-            </GSCE_math>
+						<gcse_subject_categories/>
 					<criterion_guidance>
 											<paragraph>
               </paragraph>
@@ -689,7 +642,7 @@
 		</learning_objective>
 		<learning_objective>
 			<learning_objective_title>Second</learning_objective_title>
-			<learning_objective_content />
+						<functional_skill_categories/><plts_categories/><learning_objective_content/>
 			<assessment_criterias>			
 			<assessment_criteria>
 				<level_1_criteria>
@@ -699,10 +652,7 @@
 						<paragraph>
               </paragraph>
 					</criterion>
-					<GSCE_english>
-            </GSCE_english>
-					<GSCE_math>
-            </GSCE_math>
+						<gcse_subject_categories/>
 					<criterion_guidance>
 						<paragraph>
               </paragraph>
@@ -715,10 +665,7 @@
 						<paragraph>
               </paragraph>
 					</criterion>
-					<GSCE_english>
-            </GSCE_english>
-					<GSCE_math>
-            </GSCE_math>
+						<gcse_subject_categories/>
 					<criterion_guidance>
 						<paragraph>
               </paragraph>
@@ -743,10 +690,7 @@
 						<paragraph>
               </paragraph>
 					</criterion>
-					<GSCE_english>
-            </GSCE_english>
-					<GSCE_math>
-            </GSCE_math>
+						<gcse_subject_categories/>
 					<criterion_guidance>
 						<paragraph>
               </paragraph>
@@ -771,10 +715,7 @@
 						<paragraph>
               </paragraph>
 					</criterion>
-					<GSCE_english>
-            </GSCE_english>
-					<GSCE_math>
-            </GSCE_math>
+						<gcse_subject_categories/>
 					<criterion_guidance>
 						<paragraph>
               </paragraph>

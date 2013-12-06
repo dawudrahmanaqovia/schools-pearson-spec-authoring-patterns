@@ -20,8 +20,8 @@
   <h2>Options</h2>
   
   <ul>
-    <li><a href="new-document.aspx?id=test" onclick="return newDocument(this.href);">New Document</a></li>
-    <li><a href="new-document.aspx?id=<%=files.Length.ToString() %>" onclick="return newDocument(this.href);">New document</a></li>
+    <li><a href="new-document.aspx?fileId=test" onclick="return newDocument(this.href);">New Document</a></li>
+    <li><a href="new-document.aspx?fileId=<%=files.Length.ToString() %>" onclick="return newDocument(this.href);">New document</a></li>
     <li><a href="#" onclick="return exitFromNavigation();">Exit</a></li>
   </ul>  
   <ul>

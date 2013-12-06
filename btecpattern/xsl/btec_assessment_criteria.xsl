@@ -98,12 +98,12 @@
 	<xsl:apply-templates select="criterion"/>
 	
 
-	<xsl:apply-templates select="categories"/>
+	<xsl:apply-templates select="gcse_subject_categories"/>
 		
 </xsl:template>
 
 
-  <xsl:template match="categories">
+  <xsl:template match="gcse_subject_categories">
     <div class="categories">
         <xsl:apply-templates/>
         <span class="subject-criteria-row signpost-container"><i class="dropdownToggle scddToggle clickable icon-plus-sign icon-large bringtofront"></i> <!-- dropdown inserted here --></span>
@@ -111,7 +111,7 @@
 
   </xsl:template>
 
-  <xsl:template match="category">
+  <xsl:template match="gcse_subject_category">
       <xsl:variable name="test" select="string(.)"/>
 	  <button class="badge" data-criteria="{$test}"><xsl:value-of select="string(.)"/></button>
     <xsl:if test="following-sibling::*[1]"></xsl:if>
