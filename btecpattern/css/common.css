@@ -118,6 +118,12 @@ button.badge {
     box-shadow:  3px 3px 3px 3px rgba(0, 0, 0, 0.2);
 }
 
+div.panel,
+div#collapse_content,
+div#collapse_content1,
+div#collapse_content2,
+div.panel-body {overflow: visible;}
+
 #collapse_assessment_criteria div  {overflow: visible;}
 tbody.assesmentCriteria td {overflow: visible;}
 tbody.assesmentCriteria td .assassesmentCriteriaDropdown {position: relative;overflow: visible;}
