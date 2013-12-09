@@ -13,14 +13,22 @@ public partial class LoadXml : System.Web.UI.Page
         //figure out a number for the file
         //Int32 lastId = Int32.Parse(Request.QueryString["id"].ToString());
         //lastId = lastId+1;
-		String name = (Request.QueryString["id"].ToString()) + ".xml";
+		//String fileId = (Request.QueryString["id"].ToString()) + ".xml";
+		//string fileId = (Request.QueryString["fileId"].ToString()) + ".xml";
+		string fileId = Request["fileId"] + ".xml";
 
-        //String name = "doc_" + string.Format("{0:yyMMddHHmmss}",DateTime.Now) +".xml";  	
+        //String fileId = "doc_" + string.Format("{0:yyMMddHHmmss}",DateTime.Now) +".xml";  	
 
         //save the xml document
-        newDoc.Save(Server.MapPath("")+"/../xml/"+name);
+        newDoc.Save(Server.MapPath("../xml/" +fileId));
         
         //redirect to the island to start editing the file
-        Response.Redirect("xopus-island.aspx?fileId="+name);
+        Response.Redirect("xopus-island.aspx?fileId="+fileId);
+		
+        // Load and send the XML. .NET will handle Unicode transcoding for us.
+        // This code would typically interact with some sort of database.
+        XmlDocument documentToLoad = new XmlDocument();
+        documentToLoad.Load(Server.MapPath("../xml/" + fileId));
+        Response.Write(documentToLoad.OuterXml);		
     }
 }

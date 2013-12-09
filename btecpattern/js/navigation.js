@@ -42,19 +42,6 @@ function exitFromNavigation()
   return false;
 }
 
-function setView(name)
-{
-  var editor = parent.document.getElementById('xopusFrame').contentWindow.Editor
-  if(editor)
-  {
-    //get the canvas 
-    var canvas = editor.Canvas.getCanvasCollection()[0];
-    //change the view 
-    if(canvas)
-      canvas.setActiveView(name);
-  }
-  return false;
-}
 
 function openDocument(url)
 {

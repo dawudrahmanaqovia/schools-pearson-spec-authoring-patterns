@@ -243,94 +243,102 @@
       <x:description xml:lang="en">Learning Aims</x:description>
     <x:templates>
         <x:template>
-			<learning_objectives>        
-			<learning_objective>
-			  <learning_objective_title>
-			  </learning_objective_title>
-				<learning_objective_content>
-					<topic>
-						<topic_title></topic_title>
-						<topic_content><paragraph></paragraph></topic_content>
-					</topic>
-				</learning_objective_content>
-				<assessment_criterias>
-				<assessment_criteria>
-				<level_1_criteria>
-				  <criterion_id>
-				  </criterion_id>
-				  <criterion>
-					<paragraph>
-					</paragraph>
-				  </criterion>
-				  <GSCE_english>
-				  </GSCE_english>
-				  <GSCE_math>
-				  </GSCE_math>
-				  <criterion_guidance />				  
-				</level_1_criteria>
-				<pass_criteria>
-				  <criterion_id>
-				  </criterion_id>
-				  <criterion>
-					<paragraph>
-					</paragraph>
-				  </criterion>
-				  <GSCE_english>
-				  </GSCE_english>
-				  <GSCE_math>
-				  </GSCE_math>
-				  <criterion_guidance />
-				</pass_criteria>
-				<merit_criteria>
-				  <criterion_id>
-				  </criterion_id>
-				  <criterion>
-					<paragraph>
-					</paragraph>
-				  </criterion>
-				  <GSCE_english>
-				  </GSCE_english>
-				  <GSCE_math>
-				  </GSCE_math>
-				  <criterion_guidance />
-				</merit_criteria>
-				<distinction_criteria>
-				  <criterion_id>
-				  </criterion_id>
-				  <criterion>
-					<paragraph>
-					</paragraph>
-				  </criterion>
-				  <GSCE_english>
-				  </GSCE_english>
-				  <GSCE_math>
-				  </GSCE_math>
-				  <criterion_guidance />
-				</distinction_criteria>
-				</assessment_criteria>
-				</assessment_criterias>
-			  <assessment_guidance>
-				<paragraph>
-				</paragraph>
-			  </assessment_guidance>
-			  <suggested_assignment>
-				<criteria_covered>
-				  <criterion_id>
-				  </criterion_id>
-				</criteria_covered>
-				<assignment_title>
-				</assignment_title>
-				<scenario>
-				  <paragraph>
-				  </paragraph>
-				</scenario>
-				<assessment_evidence>
-				  <paragraph>
-				  </paragraph>
-				</assessment_evidence>
-			  </suggested_assignment>
-			</learning_objective>
-			</learning_objectives>			
+  <learning_objectives>
+    <learning_objective>
+      <learning_objective_title>
+      </learning_objective_title>
+      <functional_skill_categories />
+      <plts_categories />
+      <learning_objective_content>
+        <topic>
+          <topic_title>
+          </topic_title>
+          <topic_content>
+            <paragraph>
+            </paragraph>
+          </topic_content>
+        </topic>
+      </learning_objective_content>
+      <assessment_criterias>
+        <assessment_criteria>
+          <level_1_criteria>
+            <criterion_id>
+            </criterion_id>
+            <criterion>
+              <paragraph>
+              </paragraph>
+            </criterion>
+            <gcse_subject_categories />
+            <criterion_guidance>
+              <paragraph>
+              </paragraph>
+            </criterion_guidance>
+          </level_1_criteria>
+          <pass_criteria>
+            <criterion_id>
+            </criterion_id>
+            <criterion>
+              <paragraph>
+              </paragraph>
+            </criterion>
+            <gcse_subject_categories />
+            <criterion_guidance>
+              <paragraph>
+              </paragraph>
+            </criterion_guidance>
+          </pass_criteria>
+          <merit_criteria>
+            <criterion_id>
+            </criterion_id>
+            <criterion>
+              <paragraph>
+              </paragraph>
+            </criterion>
+            <gcse_subject_categories />
+            <criterion_guidance>
+              <paragraph>
+              </paragraph>
+            </criterion_guidance>
+          </merit_criteria>
+          <distinction_criteria>
+            <criterion_id>
+            </criterion_id>
+            <criterion>
+              <paragraph>
+              </paragraph>
+            </criterion>
+            <gcse_subject_categories />
+            <criterion_guidance>
+              <paragraph>
+              </paragraph>
+            </criterion_guidance>
+          </distinction_criteria>
+        </assessment_criteria>
+      </assessment_criterias>
+      <assessment_guidance>
+        <title>
+        </title>
+        <paragraph>
+        </paragraph>
+      </assessment_guidance>
+      <suggested_assignment>
+        <criteria_covered>
+          <criterion_id>
+          </criterion_id>
+        </criteria_covered>
+        <assignment_title>
+        </assignment_title>
+        <scenario>
+          <paragraph>
+          </paragraph>
+        </scenario>
+        <assessment_evidence>
+          <paragraph>
+          </paragraph>
+        </assessment_evidence>
+      </suggested_assignment>
+    </learning_objective>
+  </learning_objectives>		
         </x:template>
       </x:templates>                 
     </x:node>
@@ -341,86 +349,100 @@
       <x:description xml:lang="en">Learning Aim</x:description>
 		<x:templates>
 			<x:template>
-				<learning_objective>
-				  <learning_objective_title>
-				  </learning_objective_title>
-					<assessment_criterias>
-					<assessment_criteria>
-					<level_1_criteria>
-					  <criterion_id>
-					  </criterion_id>
-					  <criterion>
-						<paragraph>
-						</paragraph>
-					  </criterion>
-					  <GSCE_english>
-					  </GSCE_english>
-					  <GSCE_math>
-					  </GSCE_math>
-					  <criterion_guidance />					  
-					</level_1_criteria>
-					<pass_criteria>
-					  <criterion_id>
-					  </criterion_id>
-					  <criterion>
-						<paragraph>
-						</paragraph>
-					  </criterion>
-					  <GSCE_english>
-					  </GSCE_english>
-					  <GSCE_math>
-					  </GSCE_math>
-					  <criterion_guidance />
-					</pass_criteria>
-					<merit_criteria>
-					  <criterion_id>
-					  </criterion_id>
-					  <criterion>
-						<paragraph>
-						</paragraph>
-					  </criterion>
-					  <GSCE_english>
-					  </GSCE_english>
-					  <GSCE_math>
-					  </GSCE_math>
-					  <criterion_guidance />
-					</merit_criteria>
-					<distinction_criteria>
-					  <criterion_id>
-					  </criterion_id>
-					  <criterion>
-						<paragraph>
-						</paragraph>
-					  </criterion>
-					  <GSCE_english>
-					  </GSCE_english>
-					  <GSCE_math>
-					  </GSCE_math>
-					  <criterion_guidance />
-					</distinction_criteria>
-					</assessment_criteria>
-					</assessment_criterias>
-				  <assessment_guidance>
-					<paragraph>
-					</paragraph>
-				  </assessment_guidance>
-				  <suggested_assignment>
-					<criteria_covered>
-					  <criterion_id>
-					  </criterion_id>
-					</criteria_covered>
-					<assignment_title>
-					</assignment_title>
-					<scenario>
-					  <paragraph>
-					  </paragraph>
-					</scenario>
-					<assessment_evidence>
-					  <paragraph>
-					  </paragraph>
-					</assessment_evidence>
-				  </suggested_assignment>
-				</learning_objective>
+    <learning_objective>
+      <learning_objective_title>
+      </learning_objective_title>
+      <functional_skill_categories />
+      <plts_categories />
+      <learning_objective_content>
+        <topic>
+          <topic_title>
+          </topic_title>
+          <topic_content>
+            <paragraph>
+            </paragraph>
+          </topic_content>
+        </topic>
+      </learning_objective_content>
+      <assessment_criterias>
+        <assessment_criteria>
+          <level_1_criteria>
+            <criterion_id>
+            </criterion_id>
+            <criterion>
+              <paragraph>
+              </paragraph>
+            </criterion>
+            <gcse_subject_categories />
+            <criterion_guidance>
+              <paragraph>
+              </paragraph>
+            </criterion_guidance>
+          </level_1_criteria>
+          <pass_criteria>
+            <criterion_id>
+            </criterion_id>
+            <criterion>
+              <paragraph>
+              </paragraph>
+            </criterion>
+            <gcse_subject_categories />
+            <criterion_guidance>
+              <paragraph>
+              </paragraph>
+            </criterion_guidance>
+          </pass_criteria>
+          <merit_criteria>
+            <criterion_id>
+            </criterion_id>
+            <criterion>
+              <paragraph>
+              </paragraph>
+            </criterion>
+            <gcse_subject_categories />
+            <criterion_guidance>
+              <paragraph>
+              </paragraph>
+            </criterion_guidance>
+          </merit_criteria>
+          <distinction_criteria>
+            <criterion_id>
+            </criterion_id>
+            <criterion>
+              <paragraph>
+              </paragraph>
+            </criterion>
+            <gcse_subject_categories />
+            <criterion_guidance>
+              <paragraph>
+              </paragraph>
+            </criterion_guidance>
+          </distinction_criteria>
+        </assessment_criteria>
+      </assessment_criterias>
+      <assessment_guidance>
+        <title>
+        </title>
+        <paragraph>
+        </paragraph>
+      </assessment_guidance>
+      <suggested_assignment>
+        <criteria_covered>
+          <criterion_id>
+          </criterion_id>
+        </criteria_covered>
+        <assignment_title>
+        </assignment_title>
+        <scenario>
+          <paragraph>
+          </paragraph>
+        </scenario>
+        <assessment_evidence>
+          <paragraph>
+          </paragraph>
+        </assessment_evidence>
+      </suggested_assignment>
+    </learning_objective>
 			</x:template>
 		  </x:templates>      		         
     </x:node>
@@ -435,7 +457,7 @@
       <x:name xml:lang="en">Content</x:name>
       <x:role>learning_objective_content</x:role>      
       <x:placeholder>Insert content</x:placeholder>
-    </x:node>    
+    </x:node>        
     
     <x:node match="topic">
       <x:name xml:lang="en">Topic</x:name>
@@ -467,62 +489,62 @@
       <x:placeholder>Insert Assessment Criteria section</x:placeholder>
      <x:templates>
         <x:template>
-        <assessment_criterias>
-		<assessment_criteria>
-        <level_1_criteria>
-          <criterion_id>
-          </criterion_id>
-          <criterion>
-            <paragraph>
-            </paragraph>
-          </criterion>
-          <GSCE_english>
-          </GSCE_english>
-          <GSCE_math>
-          </GSCE_math>
-          <criterion_guidance />          
-        </level_1_criteria>
-        <pass_criteria>
-          <criterion_id>
-          </criterion_id>
-          <criterion>
-            <paragraph>
-            </paragraph>
-          </criterion>
-          <GSCE_english>
-          </GSCE_english>
-          <GSCE_math>
-          </GSCE_math>
-          <criterion_guidance />
-        </pass_criteria>
-        <merit_criteria>
-          <criterion_id>
-          </criterion_id>
-          <criterion>
-            <paragraph>
-            </paragraph>
-          </criterion>
-          <GSCE_english>
-          </GSCE_english>
-          <GSCE_math>
-          </GSCE_math>
-          <criterion_guidance />
-        </merit_criteria>
-        <distinction_criteria>
-          <criterion_id>
-          </criterion_id>
-          <criterion>
-            <paragraph>
-            </paragraph>
-          </criterion>
-          <GSCE_english>
-          </GSCE_english>
-          <GSCE_math>
-          </GSCE_math>
-          <criterion_guidance />
-        </distinction_criteria>
+      <assessment_criterias>
+        <assessment_criteria>
+          <level_1_criteria>
+            <criterion_id>
+            </criterion_id>
+            <criterion>
+              <paragraph>
+              </paragraph>
+            </criterion>
+            <gcse_subject_categories />
+            <criterion_guidance>
+              <paragraph>
+              </paragraph>
+            </criterion_guidance>
+          </level_1_criteria>
+          <pass_criteria>
+            <criterion_id>
+            </criterion_id>
+            <criterion>
+              <paragraph>
+              </paragraph>
+            </criterion>
+            <gcse_subject_categories />
+            <criterion_guidance>
+              <paragraph>
+              </paragraph>
+            </criterion_guidance>
+          </pass_criteria>
+          <merit_criteria>
+            <criterion_id>
+            </criterion_id>
+            <criterion>
+              <paragraph>
+              </paragraph>
+            </criterion>
+            <gcse_subject_categories />
+            <criterion_guidance>
+              <paragraph>
+              </paragraph>
+            </criterion_guidance>
+          </merit_criteria>
+          <distinction_criteria>
+            <criterion_id>
+            </criterion_id>
+            <criterion>
+              <paragraph>
+              </paragraph>
+            </criterion>
+            <gcse_subject_categories />
+            <criterion_guidance>
+              <paragraph>
+              </paragraph>
+            </criterion_guidance>
+          </distinction_criteria>
         </assessment_criteria>
-        </assessment_criterias>
+      </assessment_criterias>
         </x:template>
       </x:templates>      		
      </x:node>     
@@ -547,71 +569,59 @@
       <x:placeholder>Insert Assessment Criteria Row</x:placeholder>
      <x:templates>
         <x:template>
-		<assessment_criteria>
-        <level_1_criteria>
-          <criterion_id>
-          </criterion_id>
-          <criterion>
-            <paragraph>
-            </paragraph>
-          </criterion>
-          <GSCE_english>
-          </GSCE_english>
-          <GSCE_math>
-          </GSCE_math>
-			 <criterion_guidance>
-			  <paragraph>
-			  </paragraph>
-			</criterion_guidance>                   
-        </level_1_criteria>
-        <pass_criteria>
-          <criterion_id>
-          </criterion_id>
-          <criterion>
-            <paragraph>
-            </paragraph>
-          </criterion>
-          <GSCE_english>
-          </GSCE_english>
-          <GSCE_math>
-          </GSCE_math>
-			 <criterion_guidance>
-			  <paragraph>
-			  </paragraph>
-			</criterion_guidance>         
-        </pass_criteria>
-        <merit_criteria>
-          <criterion_id>
-          </criterion_id>
-          <criterion>
-            <paragraph>
-            </paragraph>
-          </criterion>
-          <GSCE_english>
-          </GSCE_english>
-          <GSCE_math>
-          </GSCE_math>
-			 <criterion_guidance>
-			  <paragraph>
-			  </paragraph>
-			</criterion_guidance>         
-        </merit_criteria>
-        <distinction_criteria>
-          <criterion_id>
-          </criterion_id>
-          <criterion>
-            <paragraph>
-            </paragraph>
-          </criterion>
-          <GSCE_english>
-          </GSCE_english>
-          <GSCE_math>
-          </GSCE_math>
-			 <criterion_guidance>
-			  <paragraph>
-			  </paragraph>
-			</criterion_guidance>         
-        </distinction_criteria>
+        <assessment_criteria>
+          <level_1_criteria>
+            <criterion_id>
+            </criterion_id>
+            <criterion>
+              <paragraph>
+              </paragraph>
+            </criterion>
+            <gcse_subject_categories />
+            <criterion_guidance>
+              <paragraph>
+              </paragraph>
+            </criterion_guidance>
+          </level_1_criteria>
+          <pass_criteria>
+            <criterion_id>
+            </criterion_id>
+            <criterion>
+              <paragraph>
+              </paragraph>
+            </criterion>
+            <gcse_subject_categories />
+            <criterion_guidance>
+              <paragraph>
+              </paragraph>
+            </criterion_guidance>
+          </pass_criteria>
+          <merit_criteria>
+            <criterion_id>
+            </criterion_id>
+            <criterion>
+              <paragraph>
+              </paragraph>
+            </criterion>
+            <gcse_subject_categories />
+            <criterion_guidance>
+              <paragraph>
+              </paragraph>
+            </criterion_guidance>
+          </merit_criteria>
+          <distinction_criteria>
+            <criterion_id>
+            </criterion_id>
+            <criterion>
+              <paragraph>
+              </paragraph>
+            </criterion>
+            <gcse_subject_categories />
+            <criterion_guidance>
+              <paragraph>
+              </paragraph>
+            </criterion_guidance>
+          </distinction_criteria>
         </assessment_criteria>
         </x:template>
       </x:templates>
@@ -640,7 +650,12 @@
       <x:name xml:lang="en">Level 2 Distinction</x:name>
       <x:description xml:lang="en">Level 2 Distinction</x:description>
       <x:placeholder>Insert Level 2 Distinction</x:placeholder>    
-    </x:node>                
+    </x:node>
+	<x:node match="gcse_subject_categories">
+      <x:role>assessment_criteria</x:role>      
+      <x:name xml:lang="en">GCSE Subject Criteria</x:name>
+      <x:description xml:lang="en">GCSE Subject Criteria</x:description>
+    </x:node>  	
 <!-- End Assessment Criteria section -->
 
 
@@ -717,7 +732,7 @@
     
 	<x:node match="assessment_guidance_summary">
       <x:role>assessment_guidance_summary</x:role>      
-      <x:name xml:lang="en">Assessment guidance summary</x:name>
+      <x:name xml:lang="en">Assessmet guidance summary</x:name>
       <x:description xml:lang="en">Assessment guidance summary</x:description>
       <x:placeholder>Insert Assessment guidance summary text</x:placeholder>    
     </x:node>

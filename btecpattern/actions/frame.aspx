@@ -1,4 +1,8 @@
 <%@ Page Language="C#" ContentType="text/html" %>
+<%@ Import Namespace="System" %>
+<%@ Import Namespace="System.Web" %>
+<%@ Import Namespace="System.IO" %>
+<%@ Import Namespace="System.Xml" %>
 
 <%
   String username = HttpContext.Current.User.Identity.Name;
@@ -45,20 +49,18 @@
         z-index: 1000;
         min-height: 50px;
         margin-bottom: 0px;
-        border: 1px solid transparent;
+        border: 0px solid transparent;
         }
 
         nav.navbar-default .navbar-nav li.logoff a {
           color: #333 ;
-          font-weight: bold;
         }
 
         nav.navbar-default .navbar-nav > li > a {
           color: #ffffff;
-          font-weight: bold;
         }
         nav.navbar-default .navbar-nav > li > a i {
-        font-size: 20px;
+        font-size: 14px;
         }
 
         nav.navbar-default .navbar-nav > .dropdown > a .caret {
@@ -69,35 +71,29 @@
     </style>
 
     <!-- Bootstrap -->
-    <link href="../css/bootstrap.min.css" rel="stylesheet" media="screen">
-    <link rel="stylesheet" href="../css/font-awesome/css/font-awesome.min.css" type="text/css">
-
-    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!--[if lt IE 9]>
-      <script src="../../assets/js/html5shiv.js"></script>
-      <script src="../../assets/js/respond.min.js"></script>
-    <![endif]-->
-  <script type="text/javascript" src="../js/frame.js"></script>
+    <link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="../css/font-awesome/css/font-awesome.min.css">	
+    <link rel="stylesheet" type="text/css" href="../css/bootstrap-multiselect.css">	
+	<script type="text/javascript" src="../js/jquery.min.js"></script>
+    <script type="text/javascript" src="../js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="../js/frame.js"></script>
+	<script type="text/javascript" src="../js/bootstrap-multiselect.js"></script>
 </head>
 <body>
-    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    <script type="text/javascript" src="../js/jquery.min.js"></script>
-    <!-- Include all compiled plugins (below), or include individual files as needed -->
-    <script src="../js/bootstrap.min.js"></script>
 
-
-        <!-- Modal -->
+	
+        <!-- New Document Modal -->
         <div class="modal fade" id="newFileModal" tabindex="-1" role="dialog" aria-labelledby="newFileModalLabel" aria-hidden="true">
           <div class="modal-dialog">
             <div class="modal-content">
               <div class="modal-header">
                 <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-                <h4 class="modal-title" id="myModalLabel">Create New Document</h4>
+                <h4 class="modal-title" id="newFileModalLabel">Create New Document</h4>
               </div>
               <div class="modal-body">
                 <div class="form-group">
                     <label for="newFileName">Document Name</label>
-                    <input type="email" class="form-control" id="newFileName" placeholder="Enter document name">
+                    <input type="text" class="form-control" id="newFileName" placeholder="Enter document name">
                 </div>      
             </div>
               <div class="modal-footer">
@@ -108,7 +104,55 @@
           </div><!-- /.modal-dialog -->
         </div><!-- /.modal -->
 
+		
+		
+        <!-- Open Document Modal -->
+        <div class="modal fade" id="openFileModal" tabindex="-1" role="dialog" aria-labelledby="openFileModalLabel" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                <h4 class="modal-title" id="openFileModalLabel">Open Document</h4>
+              </div>
+              <div class="modal-body">
+                <div class="form-group">
+                    <label for="openFileName">Document Name</label>
+                    <input type="text" class="form-control" id="openFileName" placeholder="Select document ">
 
+<div class="well">
+<%
+    String path = HttpContext.Current.Server.MapPath("..") +"/xml/";
+    DirectoryInfo documentationInfo = new DirectoryInfo(path);
+    FileInfo[] files = documentationInfo.GetFiles(); 
+%>			
+					<select id="documentlist" multiple="multiple" class="form-control">
+<% 
+	foreach (FileInfo file in files)
+	{
+	XmlDocument doc = new XmlDocument();
+	doc.Load(Server.MapPath("..")+"/xml/" + file.Name);
+	String title = file.Name; //"<span style='color:gray;'>(New Document)</span>";
+	//if (doc.SelectSingleNode("//meta/unit_title[1]").InnerText != "")
+	  //title = doc.SelectSingleNode("//meta/unit_title[1]").InnerText;
+
+	  Response.Write("<option>" + file.Name + "</option>");
+	} 
+%>					
+					</select>	
+</div>	
+					
+                </div>      
+            </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-primary" onclick="openDocument();">OK</button>
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+              </div>
+            </div><!-- /.modal-content -->
+          </div><!-- /.modal-dialog -->
+        </div><!-- /.modal -->		
+
+		
+		
 
     <nav class="navbar-override navbar-default linearBg" role="navigation">
         <!-- Brand and toggle get grouped for better mobile display -->
@@ -128,10 +172,10 @@
         <div class="collapse navbar-collapse navbar-ex1-collapse">
             <ul class="nav navbar-nav">
                 <li class="dropdown">
-                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Document <b class="caret"></b></a>
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="icon-folder-close"></i> Document <b class="caret"></b></a>
                     <ul class="dropdown-menu">
                         <li><a href="#" data-toggle="modal" data-target="#newFileModal">New</a></li>
-                        <li><a href="#">Open</a></li>
+                        <li><a href="#" data-toggle="modal" data-target="#openFileModal">Open</a></li>
                         <li role="presentation" class="divider"></li>
                         <li><a href="#">Edit</a></li>
                         <li><a href="#">Duplicate</a></li>
@@ -141,14 +185,16 @@
                         <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Download</a></li>
                     </ul>
                 </li>
-                <li><a href="#" onclick="return setView('WYSIWYG View');"><i class="icon-file-text"></i> WYSIWYG View</a></li>
-                <li><a href="#" onclick="return setView('Xml View');"><i class="icon-code"></i> XML View</a></li>
+                <li><a href="#" onclick="return setView('WYSIWYG View');"><i class="icon-picture"></i> WYSIWYG View</a></li>
+                <li><a href="#" onclick="return setView('Xml View');"><i class="icon-code"></i> XML View</a></li>				
+                <li><a href="#" onclick="return setView('Print preview');"><i class="icon-print"></i> Print preview</a></li>				
+                <li><a href="#"><i class="icon-download-alt"></i> Download</a></li>
             </ul>
             <form class="navbar-form navbar-left" role="search">
                 <div class="form-group">
-                    <input type="text" class="form-control" placeholder="Search">
+                    <input type="text" size="30" class="form-control" placeholder="Enter keywords">
                 </div>
-                <button type="submit" class="btn btn-default">Submit</button>
+                <button type="submit" class="btn btn-default"><i class="icon-search"></i></button>
             </form>
             <ul class="nav navbar-nav navbar-right">
 
@@ -158,7 +204,7 @@
                     <li class="disabled"><a href="#"> <%= authtoken %></a></li>
                 <% } %>
 
-                <li class="active"><a href="#"><i class="icon-user"></i> <%= username %></a></li>
+                <li class="logoff"><a href="#"><i class="icon-user"></i> <%= username %></a></li>
                 <li class="logoff"><a href="login.aspx?logoff=true">Logoff <i class="icon-signout"></i></a></li>
             </ul>
         </div>

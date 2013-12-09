@@ -6,7 +6,7 @@
   <div class="panel panel-primary">
     <div class="panel-heading">
     <span class="panel-title">
-    <i class="icon-collapse accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapseLearningAimContent"/>
+    <i class="icon-collapse accordion-toggle icon-large" data-toggle="collapse" data-parent="#accordion" href="#collapseLearningAimContent"/>
 		Content
 	</span>
 	<i class="icon-question-sign pull-right" data-toggle="popover" title="" data-content="The content can be written in lengthy bulleted phrases/scentences and should not just be a list. The breadth and depth of what the learner needs to learn must be clear." data-original-title="Content"/>
@@ -46,8 +46,8 @@
 	   Learning Aim <xsl:number count="learning_objective" from="/unit/learning_objectives" level="multiple" format="AA"/>: <xsl:apply-templates select="../learning_objective_title"/>
 	</span>
         <span class="pull-right">
-            <i class="icon-plus-sign dropdownToggle acddToggle clickable"></i>
-            <i class="icon-plus-sign dropdownToggle pltsddToggle clickable"></i>
+            <i class="icon-plus-sign icon-large dropdownToggle acddToggle clickable"></i>
+            <i class="icon-plus-sign icon-large dropdownToggle pltsddToggle clickable"></i>
         </span>
     </div>
     <div id="collapse_content{count(preceding::learning_objective)+1}" class="panel-collapse collapse in">
@@ -58,13 +58,7 @@
 		
       </div>
     </div>
-  </div>
-  
-<div class="row"><div class="col-xs-12"><div class="pull-right">
-	<button type="button" class="btn btn-success" data-placement="auto" data-toggle="tooltip" title="Add" onclick="insert_menu(this, node)"><i class="icon-plus-sign"/></button><xsl:text> </xsl:text>	
-	<button type="button" class="btn btn-primary" data-placement="auto" data-toggle="tooltip" title="Add" onclick="add_button(this, node)"><i class="icon-plus-sign"/></button><xsl:text> </xsl:text>
-	<button type="button" class="btn btn-danger" data-placement="auto" data-toggle="tooltip" title="Remove" onclick="remove_button(this, node)"><i class="icon-minus-sign"/></button>
-</div></div></div>	  
+  </div>  
 </xsl:template>	
 <!-- End Learning Aim Content data section -->
 
@@ -86,13 +80,6 @@
 
 <xsl:template match="topic_content">
 	<xsl:apply-templates select="node()"/>
-
-<div class="row"><div class="col-xs-12"><div class="pull-right">
-	<button type="button" class="btn btn-success" data-placement="auto" data-toggle="tooltip" title="Add" onclick="insert_menu(this, node)"><i class="icon-plus-sign"/></button><xsl:text> </xsl:text>	
-	<button type="button" class="btn btn-primary" data-placement="auto" data-toggle="tooltip" title="Add" onclick="add_button(this, node)"><i class="icon-plus-sign"/></button><xsl:text> </xsl:text>
-	<button type="button" class="btn btn-danger" data-placement="auto" data-toggle="tooltip" title="Remove" onclick="remove_button(this, node)"><i class="icon-minus-sign"/></button>
-</div></div></div>	
-
 </xsl:template>
 
 

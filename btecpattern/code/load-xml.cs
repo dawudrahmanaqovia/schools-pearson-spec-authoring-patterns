@@ -23,12 +23,12 @@ public partial class LoadXml : System.Web.UI.Page
 
         // Retrieve the file id from the request. This code would typically
         // have some error handling to cope with invalid input.
-        string fileId = Request["fileId"];
+        string filename = Request["fileId"];
 
         // Load and send the XML. .NET will handle Unicode transcoding for us.
         // This code would typically interact with some sort of database.
         XmlDocument documentToLoad = new XmlDocument();
-        documentToLoad.Load(Server.MapPath("../xml/" + fileId));
+        documentToLoad.Load(Server.MapPath("../xml/" + filename));
         Response.Write(documentToLoad.OuterXml);
     }
 }

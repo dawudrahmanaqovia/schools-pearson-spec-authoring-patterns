@@ -1,20 +1,50 @@
+$(document).ready(function() {
+	$('#documentlist').multiselect({
+		includeSelectAllOption: false,
+		enableFiltering: true,
+		maxHeight: 350,
+		buttonClass: 'btn-primary btn-lg',
+		buttonContainer: '<div class="form-group">',
+		onChange: function(options, select) {
+		    var label = '';
+		    options.each(function() {
+		      var label = ($(this).attr('label') !== undefined) ? $(this).attr('label') : $(this).html();
+				console.log(label);
+				$('#openFileName').val(label);
+		    });
+		}
+	});
+});
+
 function newDocument() {
 	var newfilename = document.getElementById("newFileName").value;
 	console.log(newfilename);
 	$('#newFileModal').modal('hide');
-	//window.location.href("new-document.aspx?id="+newfilename);
-
+	
 	//test if the editor is loaded
 	var editor = parent.document.getElementById('xopusFrame').contentWindow.Editor
 	if(editor)  
 	{
 	//create and load the new document
-	editor.setURL("new-document.aspx?id="+newfilename);
+	editor.setURL("/actions/new-document.aspx?fileId="+newfilename);
 	//reload navigation
-	document.location.reload();
+	//document.location.reload();
 	}
 	return false;	
 };
+
+function openDocument()
+{
+  //test if the editor is loaded
+  var editor = parent.document.getElementById('xopusFrame').contentWindow.Editor
+  if(editor)
+  {
+    //open another file
+    editor.setURL(url);
+  }
+  return false;
+}
+
 
 function setView(name)
 {

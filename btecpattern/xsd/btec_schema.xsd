@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:x="http://www.xopus.com/xmlns/config" elementFormDefault="qualified">
 	<xs:include schemaLocation="schema_common.xsd"/>
-	<xs:include schemaLocation="schema_metadata.xsd"/>	
+	<xs:include schemaLocation="schema_metadata.xsd"/>
 	<!-- TOP LEVEL-->
 	<!-- Unit-->
 	<xs:element name="unit">
@@ -39,11 +39,15 @@
 			<xs:element ref="learning_objective" minOccurs="0" maxOccurs="unbounded"/>
 		</xs:sequence>
 	</xs:complexType>
-	<xs:element name="learning_objective" type="learning_objectiveType"/>
+	<xs:element name="learning_objective" type="learning_objectiveType"/>	
 	<xs:complexType name="learning_objectiveType">
 		<xs:sequence>
 			<!-- Learning Objective title -->
 			<xs:element name="learning_objective_title" type="plainText" minOccurs="0" maxOccurs="1"/>
+			<!-- Functional Skills Signposting -->
+			<xs:element ref="functional_skill_categories" minOccurs="1" maxOccurs="1"/>
+			<!-- PLTS  -->
+			<xs:element ref="plts_categories" minOccurs="1" maxOccurs="1"/>
 			<!-- Learning Objective content -->
 			<xs:element ref="learning_objective_content" minOccurs="1" maxOccurs="1"/>
 			<!-- Assessment Criterias -->
@@ -91,9 +95,7 @@
 		<xs:sequence>
 			<xs:element name="criterion_id" type="xs:string"/>
 			<xs:element name="criterion" type="section_content_type" x:role="hidden-from-ui" x:placeholder="Insert criterion text"/>
-			<xs:element name="GSCE_english" type="xs:string"/>
-			<xs:element name="GSCE_math" type="xs:string"/>
-			<xs:element ref="categories" minOccurs="0" maxOccurs="1"/>
+			<xs:element ref="gcse_subject_categories" minOccurs="1" maxOccurs="1"/>
 			<xs:choice minOccurs="0" maxOccurs="unbounded">
 				<xs:element ref="paragraph" x:placeholder="Paragraph introducing the unit"/>
 			</xs:choice>
@@ -101,23 +103,58 @@
 			<xs:element name="criterion_guidance" type="section_content_type" minOccurs="0" maxOccurs="1"/>
 		</xs:sequence>
 	</xs:complexType>
-	<xs:element name="categories" type="categories.type"/>
-	<xs:element name="category" type="category.type"/>
 	<!-- categories.type -->
-	<xs:complexType name="categories.type" mixed="false">
+	<xs:element name="functional_skill_categories" type="functional_skill_categories.type"/>
+	<xs:element name="functional_skill_category" type="functional_skill_category.type"/>
+	<xs:element name="plts_categories" type="plts_categories.type"/>
+	<xs:element name="plts_category" type="plts_category.type"/>	
+	<xs:element name="gcse_subject_categories" type="gcse_subject_categories.type"/>
+	<xs:element name="gcse_subject_category" type="gcse_subject_category.type"/>				
+	<xs:complexType name="functional_skill_categories.type" mixed="false">
 		<xs:sequence>
-			<xs:element ref="category" maxOccurs="unbounded"/>
+			<xs:element ref="functional_skill_category" minOccurs="0" maxOccurs="unbounded"/>
 		</xs:sequence>
 	</xs:complexType>
-	<!-- category.type -->
-	<xs:simpleType name="category.type">
+	<xs:complexType name="plts_categories.type" mixed="false">
+		<xs:sequence>
+			<xs:element ref="plts_category" minOccurs="0"  maxOccurs="unbounded"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="gcse_subject_categories.type" mixed="false">
+		<xs:sequence>
+			<xs:element ref="gcse_subject_category" minOccurs="0"  maxOccurs="unbounded"/>
+		</xs:sequence>
+	</xs:complexType>	
+	<!-- functional_skill_categories.type -->
+	<xs:simpleType name="functional_skill_category.type">
 		<xs:restriction base="xs:string">
-			<xs:enumeration value="Art"/>
-			<xs:enumeration value="Culture"/>
-			<xs:enumeration value="Design"/>
-			<xs:enumeration value="Media"/>
-			<xs:enumeration value="Sports"/>
-			<xs:enumeration value="Travel"/>
+			<xs:enumeration value="Speaking, listening and communication"/>
+			<xs:enumeration value="Reading"/>
+			<xs:enumeration value="Writing"/>
+			<xs:enumeration value="Representing"/>
+			<xs:enumeration value="Analysing"/>
+			<xs:enumeration value="Interpreting"/>
+			<xs:enumeration value="Using ICT"/>
+			<xs:enumeration value="Finding and selecting information"/>
+			<xs:enumeration value="Developing, presenting and communicating information"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<!-- plts_categories.type -->
+	<xs:simpleType name="plts_category.type">
+		<xs:restriction base="xs:string">
+			<xs:enumeration value="Independent Enquiries"/>
+			<xs:enumeration value="Creative Thinkers"/>
+			<xs:enumeration value="Reflective Learners"/>
+			<xs:enumeration value="Team Workers"/>
+			<xs:enumeration value="Self Managers"/>
+			<xs:enumeration value="Effective Participants"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<!-- gcse_subject_category.type -->
+	<xs:simpleType name="gcse_subject_category.type">
+		<xs:restriction base="xs:string">
+			<xs:enumeration value="English"/>
+			<xs:enumeration value="Mathematics"/>
 		</xs:restriction>
 	</xs:simpleType>
 	<xs:complexType name="assessment_criterion_xtype">
