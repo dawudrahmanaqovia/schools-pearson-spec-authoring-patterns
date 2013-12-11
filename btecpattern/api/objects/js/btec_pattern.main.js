@@ -60,7 +60,7 @@
          };
 
          var signPostsClose = function(){
-
+            console.log('signPostsClose function');
             $('.signposting-dropdown').hide(500);
          };
 
@@ -187,7 +187,10 @@
          });
 
     
-         $('body').on("click", ".dropdownToggle", function(e){
+        //$('body').on("click", ".dropdownToggle", function(e){
+        $(".dropdownToggle").on("click", function(e){
+
+            console.log("clicked dropdown toggle");
 
             var $this = $(this),
                 $dropdown,
@@ -213,17 +216,23 @@
 
             }
             else{
+                console.log('returning');
                 return;
             }
 
             if($dropdown.is(':visible')){
                 //console.log('I can see you');
+                console.log("closing");
                 signPostsClose();
             }
             else{
+                console.log("closing");
                 signPostsClose();
+                console.log("opening");
                 $dropdown.show(500);
             }
+
+            console.log('end click event');
 
             e.stopPropagation();
                 

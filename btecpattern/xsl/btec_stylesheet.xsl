@@ -33,10 +33,10 @@
                 <!-- JavaScript section -->
                 <!-- Scripts should be declared last for optimisation  -->
 				<script type="text/javascript" src="/api/objects/thumbnail/btec_jquery.min.js"/><!-- jQuery 2.0 -->
-				<script type="text/javascript" src="/api/objects/thumbnail/btec_bootstrap.min.js"/>
+				<!--<script type="text/javascript" src="/api/objects/thumbnail/btec_bootstrap.min.js"/>
 				<script type="text/javascript" src="/api/objects/thumbnail/btec_initialize.js"/>
                 <script type="text/javascript" src="/api/objects/thumbnail/btec_navigation.js"/>
-				<script type="text/javascript" src="../js/meta.js"/>
+				<script type="text/javascript" src="../js/meta.js"/>    -->
                 <script type="text/javascript" src="../js/btechpattern.main.js"></script>
 
 				
