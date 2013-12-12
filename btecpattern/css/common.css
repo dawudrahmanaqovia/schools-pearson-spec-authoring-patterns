@@ -35,6 +35,10 @@ body.start h1,
 .navigation a:hover {color:Black;}
 
 */
+.panel-heading i,
+.categories i{
+    font-size: 24px;
+}
 
 i.icon-collapse,
 i.icon-question-sign,
@@ -113,6 +117,12 @@ button.badge {
     -webkit-box-shadow:  3px 3px 3px 3px rgba(0, 0, 0, 0.2);
     box-shadow:  3px 3px 3px 3px rgba(0, 0, 0, 0.2);
 }
+
+div.panel,
+div#collapse_content,
+div#collapse_content1,
+div#collapse_content2,
+div.panel-body {overflow: visible;}
 
 #collapse_assessment_criteria div  {overflow: visible;}
 tbody.assesmentCriteria td {overflow: visible;}

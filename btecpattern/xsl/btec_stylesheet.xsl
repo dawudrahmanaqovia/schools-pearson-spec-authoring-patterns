@@ -23,21 +23,21 @@
 		<html>
 			<head>
 				<title>Pearson Content</title>
-                		<link rel="stylesheet" href="/api/objects/thumbnail/btec_common.css" type="text/css"/>
-				<!-- JQuery 2.0 -->
-				<script type="text/javascript" src="/api/objects/thumbnail/btec_jquery.min.js"/>
-				<!-- Bootstrap -->
-				<link rel="stylesheet" href="/api/objects/thumbnail/btec_bootstrap.min.css" type="text/css"/>
-				<script type="text/javascript" src="/api/objects/thumbnail/btec_bootstrap.min.js"/>
 
-				<link rel="stylesheet" href="/api/objects/thumbnail/font-awesome.css" type="text/css"/>
-				<script type="text/javascript" src="/api/objects/thumbnail/btec_initialize.js"/>
-                		<script type="text/javascript" src="/api/objects/thumbnail/btec_navigation.js"/>
-                
-				<script type="text/javascript" src="../js/meta.js"/>
+                <!-- Stylesheet section -->
+                <link rel="stylesheet" href="/api/objects/css/btec_bootstrap.min.css" type="text/css"/><!-- Bootstrap -->
+                <link rel="stylesheet" href="/api/objects/css/font-awesome.css" type="text/css"/><!-- Font awesome font based icons  -->
+                <link rel="stylesheet" href="/api/objects/css/btec_common.css" type="text/css"/>
 
-				
-				<link rel="stylesheet" type="text/css" href="../css/bootstrap-dropdown-checkbox.css"/>
+                <!-- JavaScript section -->
+                <!-- Scripts should be declared last for optimisation  -->
+				<script type="text/javascript" src="/api/objects/js/btec_jquery.min.js"/><!-- jQuery 2.0 -->
+				<script type="text/javascript" src="/api/objects/js/btec_bootstrap.min.js"/>
+				<script type="text/javascript" src="/api/objects/js/btec_initialize.js"/>
+                <script type="text/javascript" src="/api/objects/js/btec_navigation.js"/>
+				<script type="text/javascript" src="/api/objects/js/btec_meta.js"/>
+                <script type="text/javascript" src="/api/objects/js/btec_pattern.main.js"></script>
+
 				
 			</head>
 						<body>
@@ -45,7 +45,7 @@
                                 <xsl:apply-templates select="unit"/>
                         </body>
 
-            <script type="text/javascript" src="../js/btechpattern.main.js"></script>
+
 
                 </html>
         </xsl:template>
