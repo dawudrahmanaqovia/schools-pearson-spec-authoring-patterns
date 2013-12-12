@@ -40,11 +40,7 @@
 				<link rel="stylesheet" type="text/css" href="../css/bootstrap-dropdown-checkbox.css"/>
 				
 			</head>
-			<body>
-    <div id="category_options" onclick="event.cancelBubble = true; ;return false;">
-      <div class="boxside-left"></div>
-      <div class="boxside-right"></div>
-    </div>                        
+						<body>
                                 <!-- Unit section -->
                                 <xsl:apply-templates select="unit"/>
                         </body>

@@ -19,6 +19,12 @@
    }
 %>
 
+<%
+    String path = HttpContext.Current.Server.MapPath("..") +"/xml/";
+    DirectoryInfo documentationInfo = new DirectoryInfo(path);
+    FileInfo[] files = documentationInfo.GetFiles(); 
+%>  
+
 <html>
 <head>
     <title>Pearson Content Management</title>
@@ -83,76 +89,22 @@
 
 	
         <!-- New Document Modal -->
-        <div class="modal fade" id="newFileModal" tabindex="-1" role="dialog" aria-labelledby="newFileModalLabel" aria-hidden="true">
-          <div class="modal-dialog">
-            <div class="modal-content">
-              <div class="modal-header">
-                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-                <h4 class="modal-title" id="newFileModalLabel">Create New Document</h4>
-              </div>
-              <div class="modal-body">
-                <div class="form-group">
-                    <label for="newFileName">Document Name</label>
-                    <input type="text" class="form-control" id="newFileName" placeholder="Enter document name">
-                </div>      
-            </div>
-              <div class="modal-footer">
-                <button type="button" class="btn btn-primary" onclick="newDocument();">OK</button>
-                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-              </div>
-            </div><!-- /.modal-content -->
-          </div><!-- /.modal-dialog -->
-        </div><!-- /.modal -->
+      <!-- #include file ="frame_newFileModal.aspx" -->
+
+
+        <!-- SaveAs Document Modal -->
+      <!-- #include file ="frame_saveAsFileModal.aspx" -->
 
 		
+        <!-- Open File Modal -->
+      <!-- #include file ="frame_openFileModal.aspx" -->
+
 		
+
         <!-- Open Document Modal -->
-        <div class="modal fade" id="openFileModal" tabindex="-1" role="dialog" aria-labelledby="openFileModalLabel" aria-hidden="true">
-          <div class="modal-dialog">
-            <div class="modal-content">
-              <div class="modal-header">
-                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-                <h4 class="modal-title" id="openFileModalLabel">Open Document</h4>
-              </div>
-              <div class="modal-body">
-                <div class="form-group">
-                    <label for="openFileName">Document Name</label>
-                    <input type="text" class="form-control" id="openFileName" placeholder="Select document ">
+      <!-- #include file ="frame_openDocumentModal.aspx" -->
 
-<div class="well">
-<%
-    String path = HttpContext.Current.Server.MapPath("..") +"/xml/";
-    DirectoryInfo documentationInfo = new DirectoryInfo(path);
-    FileInfo[] files = documentationInfo.GetFiles(); 
-%>			
-					<select id="documentlist" multiple="multiple" class="form-control">
-<% 
-	foreach (FileInfo file in files)
-	{
-	XmlDocument doc = new XmlDocument();
-	doc.Load(Server.MapPath("..")+"/xml/" + file.Name);
-	String title = file.Name; //"<span style='color:gray;'>(New Document)</span>";
-	//if (doc.SelectSingleNode("//meta/unit_title[1]").InnerText != "")
-	  //title = doc.SelectSingleNode("//meta/unit_title[1]").InnerText;
 
-	  Response.Write("<option>" + file.Name + "</option>");
-	} 
-%>					
-					</select>	
-</div>	
-					
-                </div>      
-            </div>
-              <div class="modal-footer">
-                <button type="button" class="btn btn-primary" onclick="openDocument();">OK</button>
-                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-              </div>
-            </div><!-- /.modal-content -->
-          </div><!-- /.modal-dialog -->
-        </div><!-- /.modal -->		
-
-		
-		
 
     <nav class="navbar-override navbar-default linearBg" role="navigation">
         <!-- Brand and toggle get grouped for better mobile display -->
@@ -174,21 +126,25 @@
                 <li class="dropdown">
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="icon-folder-close"></i> Document <b class="caret"></b></a>
                     <ul class="dropdown-menu">
-                        <li><a href="#" data-toggle="modal" data-target="#newFileModal">New</a></li>
-                        <li><a href="#" data-toggle="modal" data-target="#openFileModal">Open</a></li>
+                        <li><a href="#" data-toggle="modal" data-target="#newFileModal" data-id="Create New Document">New</a></li>
+                        <li><a href="#" data-toggle="modal" data-target="#openFileModal">Open File</a></li>
+                        <li><a href="#" data-toggle="modal" data-target="#openDocumentModal">Open Document</a></li>
+<!--                         <li><a href="#" data-toggle="modal" data-target="#newFileModal" data-id="Save">Save</a></li>                        
+                        <li><a href="#" data-toggle="modal" data-target="#saveAsFileModal" data-id="Save As Document">Save As</a></li> -->
+                        <li><a href="#" onclick="closeDocument()">Close</a></li>
                         <li role="presentation" class="divider"></li>
                         <li><a href="#">Edit</a></li>
                         <li><a href="#">Duplicate</a></li>
                         <li><a href="#">Unlock</a></li>
                         <li><a href="#">Delete</a></li>
                         <li role="presentation" class="divider"></li>
-                        <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Download</a></li>
+						<li role="presentation"><a onclick="return setView('Print preview');" role="menuitem" tabindex="-1" href="#"><i class="icon-print"></i> Print preview</a></li>
+                        <li role="presentation"><a role="menuitem" tabindex="-1" href="#"><i class="icon-download-alt"></i> Download</a></li>
                     </ul>
                 </li>
                 <li><a href="#" onclick="return setView('WYSIWYG View');"><i class="icon-picture"></i> WYSIWYG View</a></li>
                 <li><a href="#" onclick="return setView('Xml View');"><i class="icon-code"></i> XML View</a></li>				
                 <li><a href="#" onclick="return setView('Print preview');"><i class="icon-print"></i> Print preview</a></li>				
-                <li><a href="#"><i class="icon-download-alt"></i> Download</a></li>
             </ul>
             <form class="navbar-form navbar-left" role="search">
                 <div class="form-group">
@@ -210,8 +166,8 @@
         </div>
         <!-- /.navbar-collapse -->
     </nav>
-    <iframe name="navigation" id="frame" style="border-right: solid 1px gray;" frameborder="0" width="20%" height="100%" src="navigation.aspx"></iframe>
-    <iframe id="xopusFrame" style="position: absolute; width: 80%; border-left: solid 1px lightgrey;" frameborder="0" width="80%" height="100%" src="empty.aspx"></iframe>
+    <!--<iframe name="navigation" id="frame" style="border-right: solid 1px gray;" frameborder="0" width="20%" height="100%" src="navigation.aspx"></iframe>-->
+    <iframe id="xopusFrame" style="position: absolute; width: 100%; border-left: solid 1px lightgrey;" frameborder="0" width="80%" height="100%" src="empty.aspx"></iframe>
 </body>
 </html>
 

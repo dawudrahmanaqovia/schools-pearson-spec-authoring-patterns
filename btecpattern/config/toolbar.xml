@@ -6,31 +6,5 @@
     <toolbar-button iconsrc="warning.gif" label="Insert Warning" role="warning" after="underlineRoleButton" id="warningRoleButton" />
     <toolbar-button iconsrc="code.gif" label="Insert Code" role="code" after="warningRoleButton" />
   </x:overlay>
-
-	<x:overlay xmlns="http://xopus.com/2009/lui">
-
-  <!-- adding drop down menu button -->
-  <dropdown-button 
-    after="hyperlinkRoleButton" 
-    iconsrc="notes.gif"
-    id="customMenuButton"
-    label="Custom Menu">
-    <menu>
-      <menu-group>
-        <menu-item 
-          command="insertFigure" 
-          label="Insert Figure" 
-          iconsrc="figurbutton.gif"
-          id="figureMenuItem" />
-        <menu-item
-          role="editorNote"
-          label="Insert Note"
-          iconsrc="loading.gif"
-          id="noteMenuItem" />
-      </menu-group>
-    </menu>
-  </dropdown-button>	  
-	  
-	</x:overlay>
 </x:config>
 
