@@ -1,3 +1,6 @@
+
+console.log('running: btec_initialize.js');
+
 $(document).ready(function () {
     $(".icon-question-sign").popover({
         placement : 'auto right',

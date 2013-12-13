@@ -1,4 +1,4 @@
-
+console.log('running: btec_navigation.js')
 function newDocument(url)
 {
   //test if the editor is loaded

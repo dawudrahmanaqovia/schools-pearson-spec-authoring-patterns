@@ -35,9 +35,12 @@
 				<script type="text/javascript" src="/api/objects/js/btec_jquery.min.js"/><!-- jQuery 2.0 -->
 				<script type="text/javascript" src="/api/objects/js/btec_bootstrap.min.js"/>
 				<script type="text/javascript" src="/api/objects/js/btec_initialize.js"/>
-                <script type="text/javascript" src="/api/objects/js/btec_navigation.js"/>
+                <!--<script type="text/javascript" src="/api/objects/js/btec_navigation.js"/>-->
 				<script type="text/javascript" src="/api/objects/js/btec_meta.js"/>
                 <script type="text/javascript" src="/api/objects/js/btec_pattern.main.js"></script>
+                <script type="text/javascript">
+                    console.log('script running');
+                </script>
 
 				
 			</head>

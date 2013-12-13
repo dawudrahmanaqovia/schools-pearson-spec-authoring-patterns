@@ -5,6 +5,8 @@
 ********************************************************************/
     "use strict"
 
+    console.log('running: btechpattern.main.js')
+
     var acddStr = '<div class="signposting-dropdown acceptance-criteria"><ul>';
     acddStr += '<li><p class="title">Functional Skills Signposting</p></li>';
     acddStr += '<li><p class="cat-title">English</p></li>';
@@ -60,7 +62,6 @@
          };
 
          var signPostsClose = function(){
-            console.log('signPostsClose function');
             $('.signposting-dropdown').hide(500);
          };
 
@@ -187,8 +188,7 @@
          });
 
     
-        //$('body').on("click", ".dropdownToggle", function(e){
-        $(".dropdownToggle").on("click", function(e){
+        $('body').on("click", ".dropdownToggle", function(e){        
 
             console.log("clicked dropdown toggle");
 
@@ -222,13 +222,10 @@
 
             if($dropdown.is(':visible')){
                 //console.log('I can see you');
-                console.log("closing");
                 signPostsClose();
             }
             else{
-                console.log("closing");
                 signPostsClose();
-                console.log("opening");
                 $dropdown.show(500);
             }
 

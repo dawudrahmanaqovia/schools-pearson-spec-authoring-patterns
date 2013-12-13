@@ -1,3 +1,4 @@
+console.log('running: btec_meta.js');
 
 /*
 //This function shows options for the categories
