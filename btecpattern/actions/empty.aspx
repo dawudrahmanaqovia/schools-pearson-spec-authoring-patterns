@@ -31,7 +31,7 @@
       <center>
         <h1 style="color:#888888;">Xopus is loaded</h1>
         <p>There is currently no document loaded in Xopus however.</p>
-        <p>Choose one of the documents to the left to start editing.</p>
+        <p>To start editing choose from the Document menu to create or open documents.</p>
       </center>
     </div>
   </body>

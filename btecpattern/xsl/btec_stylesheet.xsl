@@ -26,7 +26,6 @@
 
                 <!-- Stylesheet section -->
                 <link rel="stylesheet" href="/api/objects/css/btec_bootstrap.min.css" type="text/css"/><!-- Bootstrap -->
-                <!--<link rel="stylesheet" type="text/css" href="/api/objects/css/btec_bootstrap-dropdown-checkbox.css"/>-->
                 <link rel="stylesheet" href="/api/objects/css/font-awesome.css" type="text/css"/><!-- Font awesome font based icons  -->
                 <link rel="stylesheet" href="/api/objects/css/btec_common.css" type="text/css"/>
 
@@ -35,20 +34,13 @@
 				<script type="text/javascript" src="/api/objects/js/btec_jquery.min.js"/><!-- jQuery 2.0 -->
 				<script type="text/javascript" src="/api/objects/js/btec_bootstrap.min.js"/>
 				<script type="text/javascript" src="/api/objects/js/btec_initialize.js"/>
-                <!--<script type="text/javascript" src="/api/objects/js/btec_navigation.js"/>-->
+                <script type="text/javascript" src="/api/objects/js/btec_navigation.js"/>
 				<script type="text/javascript" src="/api/objects/js/btec_meta.js"/>
                 <script type="text/javascript" src="/api/objects/js/btec_pattern.main.js"></script>
-                <script type="text/javascript">
-                    console.log('script running');
-                </script>
 
 				
 			</head>
-			<body>
-    <div id="category_options" onclick="event.cancelBubble = true; ;return false;">
-      <div class="boxside-left"></div>
-      <div class="boxside-right"></div>
-    </div>                        
+						<body>
                                 <!-- Unit section -->
                                 <xsl:apply-templates select="unit"/>
                         </body>
